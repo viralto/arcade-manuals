@@ -93,9 +93,19 @@ body {
   letter-spacing: 1px;
 }
 
+/* Sticky controls */
+.controls-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cabinet);
+  padding: 12px 0 4px;
+  border-bottom: 1px solid #1a2a1a;
+}
+
 /* Search area */
 .search-area {
-  margin: 24px 0 16px;
+  margin: 0 0 10px;
   position: relative;
 }
 
@@ -136,7 +146,7 @@ body {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   align-items: center;
 }
 
@@ -360,6 +370,30 @@ body {
   margin-bottom: 10px;
 }
 
+.load-more-wrap {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.load-more-btn {
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid var(--phosphor-dim);
+  border-radius: 2px;
+  color: var(--phosphor);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.15s;
+}
+
+.load-more-btn:hover {
+  background: rgba(51, 255, 102, 0.1);
+  border-color: var(--phosphor);
+  box-shadow: 0 0 12px var(--border-glow);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .header h1 { font-size: 0.75rem; }
@@ -397,6 +431,7 @@ body {
     </div>
   </header>
 
+  <div class="controls-sticky">
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search" 
@@ -415,6 +450,7 @@ body {
     <button class="filter-btn" data-filter="Service Note">Service Notes</button>
     <button class="filter-btn" data-filter="Kit">Kits</button>
   </div>
+  </div>
 
   <div class="results-info" id="results-info"></div>
 
@@ -427,7 +463,9 @@ body {
   <footer class="footer">
     ARCADE MANUAL ARCHIVE &middot; A community resource<br>
     All manuals remain the property of their original copyright holders.<br>
-    Hosted for preservation and repair reference purposes.
+    Hosted for preservation and repair reference purposes.<br><br>
+    Found an error? Have manuals to contribute?<br>
+    <a href="mailto:viralto+rtfm@gmail.com">viralto+rtfm@gmail.com</a>
   </footer>
 </div>
 
@@ -438,6 +476,7 @@ let DATA = [];
 let currentFilter = 'all';
 let currentSearch = '';
 let debounceTimer = null;
+let displayLimit = 500;
 
 // Load the JSON index
 async function loadData() {
@@ -467,6 +506,7 @@ function init() {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
       currentSearch = e.target.value.trim().toLowerCase();
+      displayLimit = 500;
       render();
     }, 150);
   });
@@ -477,6 +517,7 @@ function init() {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentFilter = btn.dataset.filter;
+      displayLimit = 500;
       render();
     });
   });
@@ -564,7 +605,7 @@ function render() {
   // Build HTML - limit to 500 results for performance
   let html = '';
   let count = 0;
-  const MAX = 500;
+  const MAX = displayLimit;
   
   for (const [game, items] of groups) {
     if (count >= MAX) break;
@@ -614,10 +655,19 @@ function render() {
   }
   
   if (filtered.length > MAX) {
-    html += `<div class="no-results">Showing first ${MAX} of ${filtered.length.toLocaleString()} results. Narrow your search to see more.</div>`;
+    const remaining = filtered.length - MAX;
+    html += `<div class="load-more-wrap"><button class="load-more-btn" id="loadMore">LOAD MORE (${remaining.toLocaleString()} remaining)</button></div>`;
   }
   
   container.innerHTML = html;
+  
+  const loadMoreBtn = document.getElementById('loadMore');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      displayLimit += 500;
+      render();
+    });
+  }
 }
 
 // Boot
