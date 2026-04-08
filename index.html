@@ -88,6 +88,10 @@ body {
 
 .result-meta { font-size: 0.78rem; color: #88aa88; margin-top: 2px; }
 .result-detail { font-size: 0.72rem; color: #779977; margin-top: 3px; }
+.result-components { font-size: 0.72rem; color: var(--amber); margin-top: 4px; padding: 4px 8px; background: rgba(255, 170, 0, 0.06); border-left: 2px solid rgba(255, 170, 0, 0.3); }
+.result-components .comp-label { color: #997733; }
+.result-components .comp-part { color: var(--amber); font-weight: bold; }
+.result-components .comp-info { color: #998855; }
 
 .result-type { font-size: 0.72rem; color: var(--screen-bg); background: var(--phosphor-dim); padding: 3px 8px; border-radius: 1px; white-space: nowrap; text-align: right; }
 .result-type.schematics { background: #996633; }
@@ -181,13 +185,13 @@ body {
     All manuals remain the property of their original copyright holders.<br>
     Hosted for preservation and repair reference purposes.<br><br>
     Found an error? Have manuals to contribute?<br>
-    <a href="mailto:viralto+rtfm@gmail.com">viralto+rtfm@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#43352a31222f372c683137252e03242e222a2f6d202c2e"><span class="__cf_email__" data-cfemail="90e6f9e2f1fce4ffbbe2e4f6fdd0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a>
   </footer>
 </div>
 
 <button class="scroll-top" id="scrollTop" title="Back to top">&uarr;</button>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let DATA = [];
 let currentFilter = 'all';
 let currentSearch = '';
@@ -294,6 +298,73 @@ function buildDetail(item) {
   return parts.length ? parts.join(' &middot; ') : '';
 }
 
+function findMatchedComponents(item, terms) {
+  if (!terms.length || !item.search_blob) return '';
+  // Check if any search term matches the technical data (not just game/filename)
+  const basicFields = [item.game, item.doc_type, item.filename, item.manufacturer].filter(Boolean).join(' ').toLowerCase();
+  const blobOnly = item.search_blob.toLowerCase();
+  
+  // Find terms that matched in the blob but NOT in the basic fields
+  const techTerms = terms.filter(t => blobOnly.includes(t) && !basicFields.includes(t));
+  if (!techTerms.length) return '';
+  
+  const matches = [];
+  
+  // Check ICs
+  for (const ic of (item.key_ics || [])) {
+    const part = String(ic.part || '').toLowerCase();
+    const type = String(ic.type || '').toLowerCase();
+    if (techTerms.some(t => part.includes(t) || type.includes(t))) {
+      const loc = ic.location ? ` at ${ic.location}` : '';
+      const desc = ic.description ? ` - ${ic.description}` : '';
+      matches.push(`<span class="comp-part">${escapeHtml(String(ic.part || ''))}</span> <span class="comp-info">(${escapeHtml(String(ic.type || ''))}${loc}${desc})</span>`);
+    }
+  }
+  
+  // Check PCBs
+  for (const pcb of (item.pcbs || [])) {
+    const pn = String(pcb.part_number || '').toLowerCase();
+    const name = String(pcb.name || '').toLowerCase();
+    if (techTerms.some(t => pn.includes(t) || name.includes(t))) {
+      matches.push(`<span class="comp-part">${escapeHtml(String(pcb.part_number || pcb.name || ''))}</span> <span class="comp-info">(${escapeHtml(String(pcb.name || ''))}${pcb.description ? ' - ' + escapeHtml(String(pcb.description)) : ''})</span>`);
+    }
+  }
+
+  // Check fuses
+  for (const fuse of (item.fuses || [])) {
+    const rating = String(fuse.rating || '').toLowerCase();
+    if (techTerms.some(t => rating.includes(t))) {
+      matches.push(`<span class="comp-part">${escapeHtml(String(fuse.id || 'Fuse'))}</span> <span class="comp-info">(${escapeHtml(String(fuse.rating || ''))}${fuse.type ? ' ' + escapeHtml(String(fuse.type)) : ''})</span>`);
+    }
+  }
+  
+  // Check monitor
+  const mon = item.monitor || {};
+  const monStr = [mon.size, mon.type, mon.orientation].filter(Boolean).join(' ').toLowerCase();
+  if (techTerms.some(t => monStr.includes(t))) {
+    matches.push(`<span class="comp-part">Monitor</span> <span class="comp-info">(${escapeHtml([mon.size, mon.type, mon.orientation].filter(Boolean).join(' '))})</span>`);
+  }
+  
+  // Check controls
+  const ctrl = item.controls || {};
+  if (ctrl.type && techTerms.some(t => ctrl.type.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Controls</span> <span class="comp-info">(${escapeHtml(String(ctrl.type))})</span>`);
+  }
+  
+  // Check edge connector
+  if (item.edge_connector && techTerms.some(t => item.edge_connector.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Connector</span> <span class="comp-info">(${escapeHtml(String(item.edge_connector))})</span>`);
+  }
+  
+  // Check cabinet
+  if (item.cabinet_type && techTerms.some(t => item.cabinet_type.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Cabinet</span> <span class="comp-info">(${escapeHtml(String(item.cabinet_type))})</span>`);
+  }
+
+  if (!matches.length) return '';
+  return '<span class="comp-label">Matched: </span>' + matches.join(', ');
+}
+
 function render() {
   const filtered = DATA.filter(d => matchesFilter(d) && matchesSearch(d));
   const info = document.getElementById('results-info');
@@ -343,12 +414,15 @@ function render() {
         : `<a href="${escapeHtml(item.drive_link)}" target="_blank" rel="noopener">${escapeHtml(item.game)}</a>`;
 
       const detail = buildDetail(item);
+      const searchTerms = currentSearch ? currentSearch.split(/\s+/) : [];
+      const compMatch = findMatchedComponents(item, searchTerms);
 
       html += `<div class="result-item">
         <div>
           <div class="result-game">${titleHtml}</div>
           <div class="result-meta">${escapeHtml(item.filename)}${meta.length ? ' &middot; ' + meta.map(escapeHtml).join(' &middot; ') : ''}</div>
           ${detail ? '<div class="result-detail">' + detail + '</div>' : ''}
+          ${compMatch ? '<div class="result-components">' + compMatch + '</div>' : ''}
         </div>
         <div>
           <div class="result-type ${getTypeClass(item.doc_type)}">${escapeHtml(item.doc_type || 'Document')}</div>
@@ -361,17 +435,4 @@ function render() {
 
   if (filtered.length > MAX) {
     const remaining = filtered.length - MAX;
-    html += `<div class="load-more-wrap"><button class="load-more-btn" id="loadMore">LOAD MORE (${remaining.toLocaleString()} remaining)</button></div>`;
-  }
-
-  container.innerHTML = html;
-  const loadMoreBtn = document.getElementById('loadMore');
-  if (loadMoreBtn) {
-    loadMoreBtn.addEventListener('click', () => { displayLimit += 500; render(); });
-  }
-}
-
-loadData();
-</script>
-</body>
-</html>
+    html += `<div class="load-more-wrap"><button class="load-more-btn" id="loadMore">LOAD MORE (${remaining.toLocaleString()} remaining)</button></div
