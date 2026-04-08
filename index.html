@@ -58,7 +58,7 @@ body {
   font-family: 'Share Tech Mono', monospace; font-size: 1rem; outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.search-input::placeholder { color: #557755; }
+.search-input::placeholder { color: #668866; }
 .search-input:focus { border-color: var(--phosphor); box-shadow: 0 0 15px var(--border-glow), inset 0 0 10px rgba(51, 255, 102, 0.05); }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--phosphor-dim); font-size: 1.1rem; pointer-events: none; }
 
@@ -66,13 +66,13 @@ body {
 .filter-label { font-size: 0.75rem; color: var(--phosphor-dim); text-transform: uppercase; letter-spacing: 1px; margin-right: 4px; }
 .filter-btn {
   padding: 6px 11px; background: transparent; border: 1px solid #3a4a3a; border-radius: 2px;
-  color: #88aa88; font-family: 'Share Tech Mono', monospace; font-size: 0.78rem;
+  color: #99bb99; font-family: 'Share Tech Mono', monospace; font-size: 0.78rem;
   cursor: pointer; transition: all 0.15s; white-space: nowrap;
 }
 .filter-btn:hover { border-color: var(--phosphor-dim); color: var(--phosphor); }
 .filter-btn.active { background: rgba(51, 255, 102, 0.1); border-color: var(--phosphor); color: var(--phosphor); text-shadow: 0 0 6px rgba(51, 255, 102, 0.3); }
 
-.results-info { font-size: 0.8rem; color: #88aa88; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #1a2a1a; }
+.results-info { font-size: 0.8rem; color: #99bb99; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #1a2a1a; }
 .results-info span { color: var(--phosphor); }
 
 .result-item {
@@ -86,12 +86,12 @@ body {
 .result-game a { color: inherit; text-decoration: none; }
 .result-game a:hover { text-decoration: underline; text-shadow: 0 0 8px rgba(51, 255, 102, 0.4); }
 
-.result-meta { font-size: 0.78rem; color: #88aa88; margin-top: 2px; }
-.result-detail { font-size: 0.72rem; color: #779977; margin-top: 3px; }
+.result-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
+.result-detail { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
 .result-components { font-size: 0.72rem; color: var(--amber); margin-top: 4px; padding: 4px 8px; background: rgba(255, 170, 0, 0.06); border-left: 2px solid rgba(255, 170, 0, 0.3); }
 .result-components .comp-label { color: #997733; }
 .result-components .comp-part { color: var(--amber); font-weight: bold; }
-.result-components .comp-info { color: #998855; }
+.result-components .comp-info { color: #bbaa77; }
 
 .result-type { font-size: 0.72rem; color: var(--screen-bg); background: var(--phosphor-dim); padding: 3px 8px; border-radius: 1px; white-space: nowrap; text-align: right; }
 .result-type.schematics { background: #996633; }
@@ -100,12 +100,12 @@ body {
 .result-type.parts { background: #336666; }
 .result-type.drawing { background: #663366; }
 
-.result-size { font-size: 0.7rem; color: #779977; text-align: right; white-space: nowrap; }
+.result-size { font-size: 0.7rem; color: #8aaa8a; text-align: right; white-space: nowrap; }
 
 .game-group { padding: 8px 12px; background: rgba(51, 255, 102, 0.04); border-left: 2px solid var(--phosphor-dim); margin-top: 12px; font-family: 'Press Start 2P', cursive; font-size: 0.65rem; color: var(--amber); letter-spacing: 1px; }
 .game-group:first-child { margin-top: 0; }
 
-.footer { text-align: center; padding: 40px 0 30px; font-size: 0.75rem; color: #667766; line-height: 1.8; }
+.footer { text-align: center; padding: 40px 0 30px; font-size: 0.75rem; color: #7a997a; line-height: 1.8; }
 .footer a { color: var(--phosphor-dim); text-decoration: none; }
 .footer a:hover { color: var(--phosphor); }
 
@@ -148,7 +148,7 @@ body {
     <div class="stats-bar">
       <div class="stat"><div class="stat-num" id="stat-files">---</div><div class="stat-label">Documents</div></div>
       <div class="stat"><div class="stat-num" id="stat-games">---</div><div class="stat-label">Games</div></div>
-      <div class="stat"><div class="stat-num" id="stat-ics">---</div><div class="stat-label">ICs Indexed</div></div>
+      <div class="stat"><div class="stat-num" id="stat-ics">---</div><div class="stat-label">Components</div></div>
       <div class="stat"><div class="stat-num" id="stat-size">---</div><div class="stat-label">Total Size</div></div>
     </div>
   </header>
@@ -212,7 +212,12 @@ async function loadData() {
 function init() {
   const games = new Set(DATA.map(d => d.game));
   const totalMB = DATA.reduce((s, d) => s + d.size_mb, 0);
-  const totalICs = DATA.reduce((s, d) => s + (d.key_ics ? d.key_ics.length : 0), 0);
+  const totalICs = DATA.reduce((s, d) => {
+    let count = d.key_ics ? d.key_ics.length : 0;
+    count += d.pcbs ? d.pcbs.length : 0;
+    count += d.fuses ? d.fuses.length : 0;
+    return s + count;
+  }, 0);
 
   document.getElementById('stat-files').textContent = DATA.length.toLocaleString();
   document.getElementById('stat-games').textContent = games.size.toLocaleString();
@@ -294,7 +299,7 @@ function buildDetail(item) {
   const ctrl = item.controls;
   if (ctrl && ctrl.type) parts.push(ctrl.type);
   if (item.edge_connector) parts.push(item.edge_connector);
-  if (item.key_ics && item.key_ics.length > 0) parts.push(item.key_ics.length + ' ICs indexed');
+  if (item.key_ics && item.key_ics.length > 0) parts.push(item.key_ics.length + ' ICs');
   return parts.length ? parts.join(' &middot; ') : '';
 }
 
