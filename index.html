@@ -102,12 +102,11 @@ body {
 .machine-badges { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; }
 
 .badge { font-size: 0.68rem; padding: 2px 7px; border-radius: 1px; white-space: nowrap; }
-.badge-status { background: #336633; color: #88dd88; }
-.badge-status.imperfect { background: #665522; color: #ddaa44; }
-.badge-status.preliminary { background: #663333; color: #dd8888; }
+.badge-details { background: rgba(51, 255, 102, 0.08); color: var(--phosphor-dim); border: 1px solid #2a3a2a; cursor: pointer; transition: all 0.15s; }
+.badge-details:hover { color: var(--phosphor); border-color: var(--phosphor-dim); background: rgba(51, 255, 102, 0.15); }
+.machine.open .badge-details { color: var(--phosphor); border-color: var(--phosphor); background: rgba(51, 255, 102, 0.1); }
 .badge-manual { background: rgba(255, 170, 0, 0.15); color: var(--amber); border: 1px solid rgba(255, 170, 0, 0.3); cursor: pointer; }
 .badge-manual:hover { background: rgba(255, 170, 0, 0.25); }
-.badge-dip { background: rgba(68, 221, 221, 0.1); color: var(--cyan); border: 1px solid rgba(68, 221, 221, 0.2); }
 
 .machine-body {
   display: none;
@@ -402,16 +401,10 @@ function renderHead(item) {
 
   // Badges
   let badges = '';
-  if (item.st) {
-    const cls = item.st === 'good' ? '' : item.st === 'imperfect' ? ' imperfect' : ' preliminary';
-    badges += `<span class="badge badge-status${cls}">${esc(item.st)}</span>`;
-  }
-  if (item.dip && item.dip.length) {
-    badges += `<span class="badge badge-dip">${item.dip.length} DIP</span>`;
-  }
   if (item.docs) {
     badges += `<span class="badge badge-manual">${item.docs.length} manual${item.docs.length > 1 ? 's' : ''}</span>`;
   }
+  badges += `<span class="badge badge-details">Details</span>`;
 
   return `<div class="machine-head">
     <div>
