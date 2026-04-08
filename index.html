@@ -435,4 +435,17 @@ function render() {
 
   if (filtered.length > MAX) {
     const remaining = filtered.length - MAX;
-    html += `<div class="load-more-wrap"><button class="load-more-btn" id="loadMore">LOAD MORE (${remaining.toLocaleString()} remaining)</button></div
+    html += `<div class="load-more-wrap"><button class="load-more-btn" id="loadMore">LOAD MORE (${remaining.toLocaleString()} remaining)</button></div>`;
+  }
+
+  container.innerHTML = html;
+  const loadMoreBtn = document.getElementById('loadMore');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => { displayLimit += 500; render(); });
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
