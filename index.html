@@ -157,7 +157,7 @@ body {
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search"
-           placeholder="Search by game, manufacturer, IC part number, connector type..."
+           placeholder="Search by game, manufacturer, CPU, year, component..."
            autocomplete="off" autofocus>
   </div>
   <div class="filters" id="filters">
@@ -185,13 +185,13 @@ body {
     All manuals remain the property of their original copyright holders.<br>
     Hosted for preservation and repair reference purposes.<br><br>
     Found an error? Have manuals to contribute?<br>
-    <a href="/cdn-cgi/l/email-protection#43352a31222f372c683137252e03242e222a2f6d202c2e"><span class="__cf_email__" data-cfemail="90e6f9e2f1fce4ffbbe2e4f6fdd0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a>
+    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
   </footer>
 </div>
 
 <button class="scroll-top" id="scrollTop" title="Back to top">&uarr;</button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 let DATA = [];
 let currentFilter = 'all';
 let currentSearch = '';
@@ -216,6 +216,8 @@ function init() {
     let count = d.key_ics ? d.key_ics.length : 0;
     count += d.pcbs ? d.pcbs.length : 0;
     count += d.fuses ? d.fuses.length : 0;
+    count += d.mame_cpus ? d.mame_cpus.length : 0;
+    count += d.mame_audio ? d.mame_audio.filter(a => a.name !== 'Speaker').length : 0;
     return s + count;
   }, 0);
 
@@ -266,7 +268,8 @@ function matchesSearch(item) {
     item.game, item.doc_type, item.doc_code, item.doc_number,
     item.manufacturer, item.filename, item.variant, item.date,
     item.search_blob, item.cabinet_type,
-    item.year ? String(item.year) : null
+    item.year ? String(item.year) : null,
+    item.mame_description
   ].filter(Boolean).join(' ').toLowerCase();
   return terms.every(term => searchable.includes(term));
 }
@@ -295,11 +298,24 @@ function buildDetail(item) {
   if (mon) {
     const m = [mon.size, mon.type, mon.orientation].filter(Boolean);
     if (m.length) parts.push(m.join(' '));
+  } else if (item.mame_display && item.mame_display.length) {
+    const d = item.mame_display[0];
+    const dp = [d.type, d.rotate === 90 || d.rotate === 270 ? 'Vertical' : d.rotate === 0 ? 'Horizontal' : null].filter(Boolean);
+    if (dp.length) parts.push(dp.join(' '));
   }
   const ctrl = item.controls;
   if (ctrl && ctrl.type) parts.push(ctrl.type);
+  else if (item.mame_input && item.mame_input.controls) {
+    const types = [...new Set(item.mame_input.controls.map(c => c.type))];
+    if (types.length) parts.push(types.join('/'));
+  }
+  if (item.mame_input && item.mame_input.players) parts.push(item.mame_input.players + 'P');
   if (item.edge_connector) parts.push(item.edge_connector);
   if (item.key_ics && item.key_ics.length > 0) parts.push(item.key_ics.length + ' ICs');
+  if (item.mame_cpus && item.mame_cpus.length) {
+    const cpuNames = item.mame_cpus.map(c => c.name).slice(0, 2);
+    parts.push(cpuNames.join(', '));
+  }
   return parts.length ? parts.join(' &middot; ') : '';
 }
 
@@ -366,6 +382,49 @@ function findMatchedComponents(item, terms) {
     matches.push(`<span class="comp-part">Cabinet</span> <span class="comp-info">(${escapeHtml(String(item.cabinet_type))})</span>`);
   }
 
+  // Check MAME CPUs
+  for (const cpu of (item.mame_cpus || [])) {
+    const cn = String(cpu.name || '').toLowerCase();
+    if (techTerms.some(t => cn.includes(t))) {
+      const clk = cpu.clock_mhz ? ` ${cpu.clock_mhz} MHz` : (cpu.clock_khz ? ` ${cpu.clock_khz} kHz` : '');
+      matches.push(`<span class="comp-part">${escapeHtml(String(cpu.name))}</span> <span class="comp-info">(CPU${clk})</span>`);
+    }
+  }
+
+  // Check MAME audio chips
+  for (const aud of (item.mame_audio || [])) {
+    const an = String(aud.name || '').toLowerCase();
+    if (an === 'speaker') continue;
+    if (techTerms.some(t => an.includes(t))) {
+      const clk = aud.clock_mhz ? ` ${aud.clock_mhz} MHz` : (aud.clock_khz ? ` ${aud.clock_khz} kHz` : '');
+      matches.push(`<span class="comp-part">${escapeHtml(String(aud.name))}</span> <span class="comp-info">(Audio${clk})</span>`);
+    }
+  }
+
+  // Check MAME display
+  if (item.mame_display) {
+    for (const d of item.mame_display) {
+      const dt = String(d.type || '').toLowerCase();
+      if (techTerms.some(t => dt.includes(t))) {
+        const orient = d.rotate === 90 || d.rotate === 270 ? 'Vertical' : 'Horizontal';
+        matches.push(`<span class="comp-part">Display</span> <span class="comp-info">(${escapeHtml(d.type)} ${orient} ${d.width||''}x${d.height||''} ${d.refresh_hz||''}Hz)</span>`);
+      }
+    }
+  }
+
+  // Check MAME controls
+  if (item.mame_input && item.mame_input.controls) {
+    for (const c of item.mame_input.controls) {
+      const ct = String(c.type || '').toLowerCase();
+      if (techTerms.some(t => ct.includes(t))) {
+        const btns = c.buttons ? ` ${c.buttons} buttons` : '';
+        const ways = c.ways ? ` ${c.ways}-way` : '';
+        matches.push(`<span class="comp-part">Controls</span> <span class="comp-info">(${escapeHtml(c.type)}${ways}${btns})</span>`);
+        break;
+      }
+    }
+  }
+
   if (!matches.length) return '';
   return '<span class="comp-label">Matched: </span>' + matches.join(', ');
 }
@@ -376,7 +435,7 @@ function render() {
   if (currentSearch || currentFilter !== 'all') {
     info.innerHTML = `Showing <span>${filtered.length.toLocaleString()}</span> of ${DATA.length.toLocaleString()} documents`;
   } else {
-    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> documents &middot; Search by game name, IC part number, or manufacturer`;
+    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> documents &middot; Search by game, CPU, year, or component`;
   }
 
   const container = document.getElementById('results-container');
