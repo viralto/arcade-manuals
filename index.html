@@ -310,7 +310,7 @@ function buildDetail(item) {
     if (types.length) parts.push(types.join('/'));
   }
   if (item.mame_input && item.mame_input.players) parts.push(item.mame_input.players + 'P');
-  if (item.edge_connector) parts.push(item.edge_connector);
+  if (item.edge_connector) parts.push(typeof item.edge_connector === 'string' ? item.edge_connector : (item.edge_connector.pins ? item.edge_connector.pins + '-pin' : 'Edge connector'));
   if (item.key_ics && item.key_ics.length > 0) parts.push(item.key_ics.length + ' ICs');
   if (item.mame_cpus && item.mame_cpus.length) {
     const cpuNames = item.mame_cpus.map(c => c.name).slice(0, 2);
@@ -373,8 +373,13 @@ function findMatchedComponents(item, terms) {
   }
   
   // Check edge connector
-  if (item.edge_connector && techTerms.some(t => item.edge_connector.toLowerCase().includes(t))) {
-    matches.push(`<span class="comp-part">Connector</span> <span class="comp-info">(${escapeHtml(String(item.edge_connector))})</span>`);
+  const ec = item.edge_connector;
+  if (ec) {
+    const ecStr = (typeof ec === 'string' ? ec : JSON.stringify(ec)).toLowerCase();
+    if (techTerms.some(t => ecStr.includes(t))) {
+      const label = typeof ec === 'string' ? ec : (ec.pins ? ec.pins + '-pin connector' : 'Edge connector');
+      matches.push(`<span class="comp-part">Connector</span> <span class="comp-info">(${escapeHtml(String(label))})</span>`);
+    }
   }
   
   // Check cabinet
