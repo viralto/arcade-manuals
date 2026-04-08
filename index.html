@@ -35,7 +35,7 @@ body {
 
 .screen-wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px; }
 
-.header { text-align: center; padding: 30px 0 20px; }
+.header { text-align: center; padding: 16px 0 10px; }
 .header h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.1rem;
@@ -51,7 +51,7 @@ body {
 .stat-num { font-family: 'Press Start 2P', cursive; font-size: 1rem; color: var(--phosphor-bright); text-shadow: 0 0 10px rgba(51, 255, 102, 0.5); }
 .stat-label { font-size: 0.7rem; color: var(--phosphor-dim); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
 
-.controls-sticky { position: sticky; top: 0; z-index: 100; background: var(--cabinet); padding: 12px 0 4px; border-bottom: 1px solid #1a2a1a; }
+.controls-sticky { position: sticky; top: 0; z-index: 100; background: var(--cabinet); padding: 0 0 4px; border-bottom: 1px solid #1a2a1a; }
 
 .search-area { margin: 0 0 10px; position: relative; }
 .search-input {
@@ -184,17 +184,15 @@ body {
 <div class="scanlines"></div>
 
 <div class="screen-wrap">
+  <div class="controls-sticky">
   <header class="header">
-    <h1>ARCADE MANUAL<br>ARCHIVE</h1>
+    <h1>ARCADE MANUAL ARCHIVE</h1>
     <div class="subtitle">Machine Specs, DIP Switches & Service Manuals</div>
     <div class="stats-bar">
       <div class="stat"><div class="stat-num" id="stat-machines">---</div><div class="stat-label">Machines</div></div>
       <div class="stat"><div class="stat-num" id="stat-manuals">---</div><div class="stat-label">Service Manuals</div></div>
-      <div class="stat"><div class="stat-num" id="stat-dips">---</div><div class="stat-label">DIP Switch Tables</div></div>
     </div>
   </header>
-
-  <div class="controls-sticky">
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search"
@@ -221,7 +219,10 @@ body {
 
   <footer class="footer">
     ARCADE MANUAL ARCHIVE &middot; A community resource<br>
-    Technical data sourced from MAME &middot; All manuals remain the property of their original copyright holders<br>
+    Searchable. Free. No login. No user tracking. No email address harvesting.<br>
+    Nobody needs to know what a massive nerd you are!<br><br>
+    Technical data sourced from <a href="https://www.mamedev.org/" target="_blank" rel="noopener">MAME</a> and the manual archive<br>
+    All manuals remain the property of their original copyright holders<br>
     Hosted for preservation and repair reference purposes<br><br>
     Found an error? Have manuals to contribute?<br>
     <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
@@ -249,11 +250,9 @@ async function loadData() {
 }
 
 function init() {
-  const withDips = DATA.filter(d => d.dip && d.dip.length).length;
   const totalManuals = DATA.reduce((s, d) => s + (d.docs ? d.docs.length : 0), 0);
 
   document.getElementById('stat-machines').textContent = DATA.length.toLocaleString();
-  document.getElementById('stat-dips').textContent = withDips.toLocaleString();
   document.getElementById('stat-manuals').textContent = totalManuals.toLocaleString();
 
   document.getElementById('search').addEventListener('input', (e) => {
