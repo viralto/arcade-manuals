@@ -200,14 +200,9 @@ body {
            autocomplete="off" autofocus>
   </div>
   <div class="filters" id="filters">
-    <span class="filter-label">Display:</span>
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="raster">Raster</button>
-    <button class="filter-btn" data-filter="vector">Vector</button>
-    <button class="filter-btn" data-filter="lcd">LCD</button>
-    <span class="filter-label" style="margin-left:12px">Has:</span>
-    <button class="filter-btn" data-filter="has-dip">DIP Switches</button>
-    <button class="filter-btn" data-filter="has-manual">Manuals</button>
+    <span class="filter-label">Show:</span>
+    <button class="filter-btn" data-filter="has-manual">With Manuals</button>
+    <button class="filter-btn" data-filter="has-dip">With DIP Switches</button>
   </div>
   </div>
 
@@ -233,7 +228,6 @@ body {
 
 <script>
 let DATA = [];
-let currentFilter = 'all';
 let currentSearch = '';
 let debounceTimer = null;
 let displayLimit = 200;
@@ -266,19 +260,7 @@ function init() {
 
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
-      // Display type filters are mutually exclusive
-      const displayFilters = ['all', 'raster', 'vector', 'lcd'];
-      if (displayFilters.includes(filter)) {
-        document.querySelectorAll('.filter-btn').forEach(b => {
-          if (displayFilters.includes(b.dataset.filter)) b.classList.remove('active');
-        });
-        btn.classList.add('active');
-        currentFilter = filter;
-      } else {
-        // Toggle filters
-        btn.classList.toggle('active');
-      }
+      btn.classList.toggle('active');
       displayLimit = 200;
       render();
     });
@@ -325,11 +307,6 @@ function init() {
 }
 
 function matchesFilter(item) {
-  const displayFilters = ['raster', 'vector', 'lcd'];
-  if (currentFilter !== 'all' && displayFilters.includes(currentFilter)) {
-    if (!item.disp || !item.disp.some(d => d.type === currentFilter)) return false;
-  }
-  // Check toggle filters
   const hasDipBtn = document.querySelector('[data-filter="has-dip"]');
   if (hasDipBtn && hasDipBtn.classList.contains('active')) {
     if (!item.dip || !item.dip.length) return false;
@@ -503,10 +480,10 @@ function renderBody(item) {
 function render() {
   const filtered = DATA.filter(d => matchesFilter(d) && matchesSearch(d));
   const info = document.getElementById('results-info');
-  if (currentSearch || currentFilter !== 'all' || document.querySelector('[data-filter="has-dip"].active') || document.querySelector('[data-filter="has-manual"].active')) {
+  if (currentSearch || document.querySelector('.filter-btn.active')) {
     info.innerHTML = `Showing <span>${filtered.length.toLocaleString()}</span> of ${DATA.length.toLocaleString()} machines`;
   } else {
-    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> machines &middot; Search by game, CPU, audio chip, or manufacturer`;
+    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> machines &middot; Search by game, manufacturer, year, or component`;
   }
 
   const container = document.getElementById('results-container');
