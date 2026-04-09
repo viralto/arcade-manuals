@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ArcadeRTFM - Arcade Machine Database & Service Manuals</title>
-<meta name="description" content="Searchable archive of 10,000+ arcade machines with hardware specs, DIP switch settings, and 2,400+ service manuals. Search by game, CPU, audio chip, or component. Free community resource.">
+<title>ArcadeRTFM - 2400+ Arcade Service Manuals</title>
+<meta name="description" content="Searchable archive of 2,400+ arcade video game service, repair, and maintenance manuals with 5,800+ indexed components. Search by game, manufacturer, CPU, sound chip, or connector type. Free community resource.">
+<meta property="og:title" content="ArcadeRTFM - Arcade Machine Database & Service Manuals">
+<meta property="og:description" content="Searchable archive of 2,400+ arcade service manuals with 5,800+ indexed components. Search by game, CPU, sound chip, IC part number, or connector type. Free community resource for arcade repair.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arcadertfm.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ArcadeRTFM - Arcade Machine Database & Service Manuals">
+<meta name="twitter:description" content="Searchable archive of 2,400+ arcade service manuals with 5,800+ indexed components. Search by game, CPU, sound chip, or connector type. Free community resource.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
 
@@ -19,8 +26,6 @@
   --cabinet: #1a1a2e;
   --coin-slot: #ffcc00;
   --border-glow: rgba(51, 255, 102, 0.15);
-  --cyan: #44dddd;
-  --pink: #ff6699;
 }
 
 html { font-size: 16px; }
@@ -33,9 +38,9 @@ body {
   overflow-x: hidden;
 }
 
-.screen-wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 20px; }
+.screen-wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px; }
 
-.header { text-align: center; padding: 16px 0 10px; }
+.header { text-align: center; padding: 30px 0 20px; }
 .header h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.1rem;
@@ -51,7 +56,7 @@ body {
 .stat-num { font-family: 'Press Start 2P', cursive; font-size: 1rem; color: var(--phosphor-bright); text-shadow: 0 0 10px rgba(51, 255, 102, 0.5); }
 .stat-label { font-size: 0.7rem; color: var(--phosphor-dim); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
 
-.controls-sticky { position: sticky; top: 0; z-index: 100; background: var(--cabinet); padding: 20px 0 4px; border-bottom: 1px solid #1a2a1a; }
+.controls-sticky { position: sticky; top: 0; z-index: 100; background: var(--cabinet); padding: 12px 0 4px; border-bottom: 1px solid #1a2a1a; }
 
 .search-area { margin: 0 0 10px; position: relative; }
 .search-input {
@@ -77,72 +82,35 @@ body {
 .results-info { font-size: 0.8rem; color: #99bb99; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #1a2a1a; }
 .results-info span { color: var(--phosphor); }
 
-/* Machine cards */
-.machine {
-  border: 1px solid #1a2a1a;
-  margin-bottom: 2px;
-  transition: border-color 0.15s;
+.result-item {
+  padding: 12px; border-bottom: 1px solid #1a2a1a;
+  display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: baseline;
+  transition: background 0.1s;
 }
-.machine:hover { border-color: #2a3a2a; }
+.result-item:hover { background: rgba(51, 255, 102, 0.03); }
 
-.machine-head {
-  padding: 10px 12px;
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px;
-  align-items: baseline;
-  user-select: none;
-}
-.machine-head:hover { background: rgba(51, 255, 102, 0.03); }
+.result-game { color: var(--phosphor-bright); font-size: 0.95rem; font-weight: bold; }
+.result-game a { color: inherit; text-decoration: none; }
+.result-game a:hover { text-decoration: underline; text-shadow: 0 0 8px rgba(51, 255, 102, 0.4); }
 
-.machine-name { font-size: 0.95rem; font-weight: bold; color: var(--phosphor-bright); }
-.machine-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
-.machine-chips { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
-.machine-badges { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; }
+.result-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
+.result-detail { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
+.result-components { font-size: 0.72rem; color: var(--amber); margin-top: 4px; padding: 4px 8px; background: rgba(255, 170, 0, 0.06); border-left: 2px solid rgba(255, 170, 0, 0.3); }
+.result-components .comp-label { color: #997733; }
+.result-components .comp-part { color: var(--amber); font-weight: bold; }
+.result-components .comp-info { color: #bbaa77; }
 
-.badge { font-size: 0.68rem; padding: 2px 7px; border-radius: 1px; white-space: nowrap; }
-.badge-details { background: rgba(51, 255, 102, 0.08); color: var(--phosphor-dim); border: 1px solid #2a3a2a; cursor: pointer; transition: all 0.15s; }
-.badge-details:hover { color: var(--phosphor); border-color: var(--phosphor-dim); background: rgba(51, 255, 102, 0.15); }
-.machine.open .badge-details { color: var(--phosphor); border-color: var(--phosphor); background: rgba(51, 255, 102, 0.1); }
-.badge-manual { background: rgba(255, 170, 0, 0.15); color: var(--amber); border: 1px solid rgba(255, 170, 0, 0.3); cursor: pointer; }
-.badge-manual:hover { background: rgba(255, 170, 0, 0.25); }
+.result-type { font-size: 0.72rem; color: var(--screen-bg); background: var(--phosphor-dim); padding: 3px 8px; border-radius: 1px; white-space: nowrap; text-align: right; }
+.result-type.schematics { background: #996633; }
+.result-type.wiring { background: #666633; }
+.result-type.bulletin { background: #993333; }
+.result-type.parts { background: #336666; }
+.result-type.drawing { background: #663366; }
 
-.machine-body {
-  display: none;
-  padding: 0 12px 14px;
-  border-top: 1px solid #1a2a1a;
-}
-.machine.open .machine-body { display: block; }
+.result-size { font-size: 0.7rem; color: #8aaa8a; text-align: right; white-space: nowrap; }
 
-.spec-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.spec-section { padding: 8px 10px; background: rgba(10, 14, 10, 0.5); border-left: 2px solid #2a3a2a; }
-.spec-title { font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.spec-row { font-size: 0.78rem; color: var(--phosphor); padding: 1px 0; }
-.spec-row .label { color: #8aaa8a; }
-.spec-row .val { color: var(--phosphor-bright); }
-
-/* DIP switch table */
-.dip-section { grid-column: 1 / -1; }
-.dip-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; margin-top: 4px; }
-.dip-table th { text-align: left; padding: 4px 8px; color: var(--cyan); border-bottom: 1px solid #2a3a2a; font-weight: normal; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; }
-.dip-table td { padding: 4px 8px; border-bottom: 1px solid #141e14; color: var(--phosphor); }
-.dip-table td.dip-name { color: var(--phosphor-bright); white-space: nowrap; }
-.dip-table td.dip-values { color: #99bb99; }
-.dip-table td.dip-default { color: var(--amber); font-size: 0.74rem; }
-.dip-table tr:hover td { background: rgba(51, 255, 102, 0.03); }
-
-/* Manual links inside expanded card */
-.manual-links { grid-column: 1 / -1; margin-top: 4px; }
-.manual-links .spec-title { color: var(--amber); }
-.manual-link { display: inline-block; margin: 2px 6px 2px 0; padding: 3px 8px; background: rgba(255, 170, 0, 0.08); border: 1px solid rgba(255, 170, 0, 0.2); color: var(--amber); text-decoration: none; font-size: 0.74rem; border-radius: 1px; transition: all 0.15s; }
-.manual-link:hover { background: rgba(255, 170, 0, 0.2); border-color: var(--amber); }
+.game-group { padding: 8px 12px; background: rgba(51, 255, 102, 0.04); border-left: 2px solid var(--phosphor-dim); margin-top: 12px; font-family: 'Press Start 2P', cursive; font-size: 0.65rem; color: var(--amber); letter-spacing: 1px; }
+.game-group:first-child { margin-top: 0; }
 
 .footer { text-align: center; padding: 40px 0 30px; font-size: 0.75rem; color: #7a997a; line-height: 1.8; }
 .footer a { color: var(--phosphor-dim); text-decoration: none; }
@@ -164,18 +132,15 @@ body {
 .load-more-btn { padding: 10px 24px; background: transparent; border: 1px solid var(--phosphor-dim); border-radius: 2px; color: var(--phosphor); font-family: 'Press Start 2P', cursive; font-size: 0.6rem; cursor: pointer; letter-spacing: 1px; transition: all 0.15s; }
 .load-more-btn:hover { background: rgba(51, 255, 102, 0.1); border-color: var(--phosphor); box-shadow: 0 0 12px var(--border-glow); }
 
-.expand-arrow { display: inline-block; transition: transform 0.15s; font-size: 0.7rem; margin-right: 6px; color: var(--phosphor-dim); }
-.machine.open .expand-arrow { transform: rotate(90deg); }
-
 @media (max-width: 600px) {
   .header h1 { font-size: 0.75rem; }
   .stats-bar { gap: 16px; }
   .stat-num { font-size: 0.75rem; }
-  .spec-grid { grid-template-columns: 1fr; }
+  .result-item { grid-template-columns: 1fr; }
+  .result-type { justify-self: start; }
+  .result-size { text-align: left; }
   .filters { gap: 5px; }
   .filter-btn { font-size: 0.65rem; padding: 4px 7px; }
-  .machine-head { grid-template-columns: 1fr; }
-  .machine-badges { justify-content: flex-start; }
 }
 </style>
 </head>
@@ -184,83 +149,103 @@ body {
 <div class="scanlines"></div>
 
 <div class="screen-wrap">
-  <div class="controls-sticky">
   <header class="header">
-    <h1>ARCADE MANUAL ARCHIVE</h1>
-    <div class="subtitle">Machine Specs, DIP Switches & Service Manuals</div>
+    <h1>ARCADE MANUAL<br>ARCHIVE</h1>
+    <div class="subtitle">Service, Repair & Maintenance Manuals</div>
     <div class="stats-bar">
-      <div class="stat"><div class="stat-num" id="stat-machines">---</div><div class="stat-label">Machines</div></div>
-      <div class="stat"><div class="stat-num" id="stat-manuals">---</div><div class="stat-label">Service Manuals</div></div>
+      <div class="stat"><div class="stat-num" id="stat-files">---</div><div class="stat-label">Documents</div></div>
+      <div class="stat"><div class="stat-num" id="stat-games">---</div><div class="stat-label">Games</div></div>
+      <div class="stat"><div class="stat-num" id="stat-ics">---</div><div class="stat-label">Components</div></div>
+      <div class="stat"><div class="stat-num" id="stat-size">---</div><div class="stat-label">Total Size</div></div>
     </div>
   </header>
+
+  <div class="controls-sticky">
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search"
-           placeholder="Search by game, manufacturer, CPU, audio chip, year..."
+           placeholder="Search by game, manufacturer, IC part number, connector type..."
            autocomplete="off" autofocus>
   </div>
   <div class="filters" id="filters">
-    <span class="filter-label">Show:</span>
-    <button class="filter-btn" data-filter="has-manual">With Manuals</button>
-    <button class="filter-btn" data-filter="has-dip">With DIP Switches</button>
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Manual">Manuals</button>
+    <button class="filter-btn" data-filter="Schematics">Schematics</button>
+    <button class="filter-btn" data-filter="Wiring Diagram">Wiring</button>
+    <button class="filter-btn" data-filter="Drawing Package">Drawings</button>
+    <button class="filter-btn" data-filter="Parts">Parts</button>
+    <button class="filter-btn" data-filter="Service Bulletin">Bulletins</button>
+    <button class="filter-btn" data-filter="Service Note">Service Notes</button>
+    <button class="filter-btn" data-filter="Kit">Kits</button>
   </div>
-  <div class="results-info" id="results-info"></div>
   </div>
 
+  <div class="results-info" id="results-info"></div>
+
   <div id="results-container">
-    <div class="loading"><div>LOADING MACHINE DATABASE<span class="loading-dots"></span></div></div>
+    <div class="loading"><div>LOADING MANUAL DATABASE<span class="loading-dots"></span></div></div>
   </div>
 
   <footer class="footer">
     ARCADE MANUAL ARCHIVE &middot; A community resource<br>
-    Searchable. Free. No login. No user tracking. No email address harvesting.<br>
-    Nobody needs to know what a massive nerd you are!<br><br>
-    Technical data sourced from <a href="https://www.mamedev.org/" target="_blank" rel="noopener">MAME</a> and the manual archive<br>
-    All manuals remain the property of their original copyright holders<br>
-    Hosted for preservation and repair reference purposes<br><br>
+    All manuals remain the property of their original copyright holders.<br>
+    Hosted for preservation and repair reference purposes.<br><br>
     Found an error? Have manuals to contribute?<br>
-    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
+    <a href="/cdn-cgi/l/email-protection#43352a31222f372c683137252e03242e222a2f6d202c2e"><span class="__cf_email__" data-cfemail="90e6f9e2f1fce4ffbbe2e4f6fdd0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a>
   </footer>
 </div>
 
 <button class="scroll-top" id="scrollTop" title="Back to top">&uarr;</button>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let DATA = [];
+let currentFilter = 'all';
 let currentSearch = '';
 let debounceTimer = null;
-let displayLimit = 200;
+let displayLimit = 500;
 
 async function loadData() {
   try {
-    const resp = await fetch('machines.json');
+    const resp = await fetch('manuals.json');
     DATA = await resp.json();
     init();
   } catch (e) {
     document.getElementById('results-container').innerHTML =
-      '<div class="no-results"><div class="big">LOAD ERROR</div>Could not load machines.json.</div>';
+      '<div class="no-results"><div class="big">LOAD ERROR</div>Could not load manuals.json.</div>';
   }
 }
 
 function init() {
-  const totalManuals = DATA.reduce((s, d) => s + (d.docs ? d.docs.length : 0), 0);
+  const games = new Set(DATA.map(d => d.game));
+  const totalMB = DATA.reduce((s, d) => s + d.size_mb, 0);
+  const totalICs = DATA.reduce((s, d) => {
+    let count = d.key_ics ? d.key_ics.length : 0;
+    count += d.pcbs ? d.pcbs.length : 0;
+    count += d.fuses ? d.fuses.length : 0;
+    return s + count;
+  }, 0);
 
-  document.getElementById('stat-machines').textContent = DATA.length.toLocaleString();
-  document.getElementById('stat-manuals').textContent = totalManuals.toLocaleString();
+  document.getElementById('stat-files').textContent = DATA.length.toLocaleString();
+  document.getElementById('stat-games').textContent = games.size.toLocaleString();
+  document.getElementById('stat-ics').textContent = totalICs.toLocaleString();
+  document.getElementById('stat-size').textContent = (totalMB / 1024).toFixed(1) + ' GB';
 
   document.getElementById('search').addEventListener('input', (e) => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
       currentSearch = e.target.value.trim().toLowerCase();
-      displayLimit = 200;
+      displayLimit = 500;
       render();
-    }, 200);
+    }, 150);
   });
 
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      btn.classList.toggle('active');
-      displayLimit = 200;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      displayLimit = 500;
       render();
     });
   });
@@ -269,220 +254,136 @@ function init() {
   window.addEventListener('scroll', () => { scrollBtn.style.display = window.scrollY > 400 ? 'flex' : 'none'; });
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Delegate click for expand/collapse
-  document.getElementById('results-container').addEventListener('click', (e) => {
-    const head = e.target.closest('.machine-head');
-    if (head) {
-      const machine = head.closest('.machine');
-      machine.classList.toggle('open');
-      // Lazy-render body on first open
-      if (machine.classList.contains('open') && !machine.dataset.rendered) {
-        const idx = parseInt(machine.dataset.idx);
-        const item = DATA[idx];
-        if (item) {
-          machine.querySelector('.machine-body').innerHTML = renderBody(item);
-          machine.dataset.rendered = '1';
-        }
-      }
-    }
-    // Manual badge click
-    const manualBadge = e.target.closest('.badge-manual');
-    if (manualBadge) {
-      e.stopPropagation();
-      const machine = manualBadge.closest('.machine');
-      machine.classList.add('open');
-      if (!machine.dataset.rendered) {
-        const idx = parseInt(machine.dataset.idx);
-        const item = DATA[idx];
-        if (item) {
-          machine.querySelector('.machine-body').innerHTML = renderBody(item);
-          machine.dataset.rendered = '1';
-        }
-      }
-    }
-  });
-
   render();
 }
 
 function matchesFilter(item) {
-  const hasDipBtn = document.querySelector('[data-filter="has-dip"]');
-  if (hasDipBtn && hasDipBtn.classList.contains('active')) {
-    if (!item.dip || !item.dip.length) return false;
-  }
-  const hasManualBtn = document.querySelector('[data-filter="has-manual"]');
-  if (hasManualBtn && hasManualBtn.classList.contains('active')) {
-    if (!item.docs) return false;
-  }
-  return true;
+  if (currentFilter === 'all') return true;
+  const t = item.doc_type || '';
+  if (currentFilter === 'Manual') return t === 'Manual' || t === 'Technical Manual' || t === 'Instruction Manual' || t === 'Operating Manual' || t === "Owner's Manual";
+  if (currentFilter === 'Parts') return t.includes('Parts');
+  if (currentFilter === 'Kit') return t.includes('Kit');
+  return t === currentFilter;
 }
 
 function matchesSearch(item) {
   if (!currentSearch) return true;
   const terms = currentSearch.split(/\s+/);
-  const searchable = (item.sb || '').toLowerCase();
+  const searchable = [
+    item.game, item.doc_type, item.doc_code, item.doc_number,
+    item.manufacturer, item.filename, item.variant, item.date,
+    item.search_blob, item.cabinet_type,
+    item.year ? String(item.year) : null
+  ].filter(Boolean).join(' ').toLowerCase();
   return terms.every(term => searchable.includes(term));
 }
 
-function esc(str) {
-  if (!str) return '';
-  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
-function fmtClock(chip) {
-  if (chip.mhz) return chip.mhz + ' MHz';
-  if (chip.khz) return chip.khz + ' kHz';
+function getTypeClass(docType) {
+  if (!docType) return '';
+  const t = docType.toLowerCase();
+  if (t.includes('schematic')) return 'schematics';
+  if (t.includes('wiring')) return 'wiring';
+  if (t.includes('bulletin') || t.includes('service note')) return 'bulletin';
+  if (t.includes('parts')) return 'parts';
+  if (t.includes('drawing')) return 'drawing';
   return '';
 }
 
-function renderHead(item) {
-  // Meta line: manufacturer, year, display type
-  const meta = [];
-  if (item.m) meta.push(item.m);
-  if (item.y) meta.push(item.y);
-  if (item.disp && item.disp.length) {
-    const d = item.disp[0];
-    const orient = d.rot === 90 || d.rot === 270 ? 'Vertical' : d.rot === 0 || d.rot === 180 ? 'Horizontal' : '';
-    meta.push([d.type, orient].filter(Boolean).join(' '));
-  }
-  if (item.inp) {
-    if (item.inp.p) meta.push(item.inp.p + 'P');
-    if (item.inp.ctrl) {
-      const types = [...new Set(item.inp.ctrl.map(c => c.type))];
-      meta.push(types.join('/'));
-    }
-  }
-
-  // Chips summary
-  const chips = [];
-  if (item.cpu) {
-    const seen = new Set();
-    for (const c of item.cpu) {
-      const key = c.n;
-      if (!seen.has(key)) {
-        const count = item.cpu.filter(x => x.n === key).length;
-        const clk = fmtClock(c);
-        chips.push((count > 1 ? count + 'x ' : '') + c.n + (clk ? ' ' + clk : ''));
-        seen.add(key);
-      }
-    }
-  }
-  if (item.aud) {
-    for (const a of item.aud) {
-      const clk = fmtClock(a);
-      chips.push(a.n + (clk ? ' ' + clk : ''));
-    }
-  }
-
-  // Badges
-  let badges = '';
-  if (item.docs) {
-    badges += `<span class="badge badge-manual">${item.docs.length} manual${item.docs.length > 1 ? 's' : ''}</span>`;
-  }
-  badges += `<span class="badge badge-details">Details</span>`;
-
-  return `<div class="machine-head">
-    <div>
-      <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
-      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + '</div>' : ''}
-      ${chips.length ? '<div class="machine-chips">' + chips.map(esc).join(' &middot; ') + '</div>' : ''}
-    </div>
-    <div class="machine-badges">${badges}</div>
-  </div>`;
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-function renderBody(item) {
-  let html = '<div class="spec-grid">';
+function buildDetail(item) {
+  const parts = [];
+  if (item.manufacturer) parts.push(item.manufacturer);
+  if (item.year) parts.push(String(item.year));
+  if (item.cabinet_type) parts.push(item.cabinet_type);
+  const mon = item.monitor;
+  if (mon) {
+    const m = [mon.size, mon.type, mon.orientation].filter(Boolean);
+    if (m.length) parts.push(m.join(' '));
+  }
+  const ctrl = item.controls;
+  if (ctrl && ctrl.type) parts.push(ctrl.type);
+  if (item.edge_connector) parts.push(item.edge_connector);
+  if (item.key_ics && item.key_ics.length > 0) parts.push(item.key_ics.length + ' ICs');
+  return parts.length ? parts.join(' &middot; ') : '';
+}
 
-  // Display
-  if (item.disp && item.disp.length) {
-    html += '<div class="spec-section"><div class="spec-title">Display</div>';
-    for (const d of item.disp) {
-      const orient = d.rot === 90 || d.rot === 270 ? 'Vertical' : d.rot === 0 || d.rot === 180 ? 'Horizontal' : '';
-      html += `<div class="spec-row"><span class="label">Type: </span><span class="val">${esc(d.type)}${orient ? ' ' + orient : ''}</span></div>`;
-      if (d.w && d.h) html += `<div class="spec-row"><span class="label">Resolution: </span><span class="val">${d.w} x ${d.h}</span></div>`;
-      if (d.hz) html += `<div class="spec-row"><span class="label">Refresh: </span><span class="val">${d.hz} Hz</span></div>`;
+function findMatchedComponents(item, terms) {
+  if (!terms.length || !item.search_blob) return '';
+  // Check if any search term matches the technical data (not just game/filename)
+  const basicFields = [item.game, item.doc_type, item.filename, item.manufacturer].filter(Boolean).join(' ').toLowerCase();
+  const blobOnly = item.search_blob.toLowerCase();
+  
+  // Find terms that matched in the blob but NOT in the basic fields
+  const techTerms = terms.filter(t => blobOnly.includes(t) && !basicFields.includes(t));
+  if (!techTerms.length) return '';
+  
+  const matches = [];
+  
+  // Check ICs
+  for (const ic of (item.key_ics || [])) {
+    const part = String(ic.part || '').toLowerCase();
+    const type = String(ic.type || '').toLowerCase();
+    if (techTerms.some(t => part.includes(t) || type.includes(t))) {
+      const loc = ic.location ? ` at ${ic.location}` : '';
+      const desc = ic.description ? ` - ${ic.description}` : '';
+      matches.push(`<span class="comp-part">${escapeHtml(String(ic.part || ''))}</span> <span class="comp-info">(${escapeHtml(String(ic.type || ''))}${loc}${desc})</span>`);
     }
-    html += '</div>';
+  }
+  
+  // Check PCBs
+  for (const pcb of (item.pcbs || [])) {
+    const pn = String(pcb.part_number || '').toLowerCase();
+    const name = String(pcb.name || '').toLowerCase();
+    if (techTerms.some(t => pn.includes(t) || name.includes(t))) {
+      matches.push(`<span class="comp-part">${escapeHtml(String(pcb.part_number || pcb.name || ''))}</span> <span class="comp-info">(${escapeHtml(String(pcb.name || ''))}${pcb.description ? ' - ' + escapeHtml(String(pcb.description)) : ''})</span>`);
+    }
   }
 
-  // CPU
-  if (item.cpu && item.cpu.length) {
-    html += '<div class="spec-section"><div class="spec-title">Processors</div>';
-    const counted = [];
-    const seen = new Set();
-    for (const c of item.cpu) {
-      const key = c.n + '|' + (c.mhz || c.khz || '');
-      if (!seen.has(key)) {
-        const count = item.cpu.filter(x => (x.n + '|' + (x.mhz || x.khz || '')) === key).length;
-        counted.push({ ...c, count });
-        seen.add(key);
-      }
+  // Check fuses
+  for (const fuse of (item.fuses || [])) {
+    const rating = String(fuse.rating || '').toLowerCase();
+    if (techTerms.some(t => rating.includes(t))) {
+      matches.push(`<span class="comp-part">${escapeHtml(String(fuse.id || 'Fuse'))}</span> <span class="comp-info">(${escapeHtml(String(fuse.rating || ''))}${fuse.type ? ' ' + escapeHtml(String(fuse.type)) : ''})</span>`);
     }
-    for (const c of counted) {
-      const clk = fmtClock(c);
-      html += `<div class="spec-row"><span class="val">${c.count > 1 ? c.count + 'x ' : ''}${esc(c.n)}</span>${clk ? ' <span class="label">@ ' + clk + '</span>' : ''}</div>`;
-    }
-    html += '</div>';
+  }
+  
+  // Check monitor
+  const mon = item.monitor || {};
+  const monStr = [mon.size, mon.type, mon.orientation].filter(Boolean).join(' ').toLowerCase();
+  if (techTerms.some(t => monStr.includes(t))) {
+    matches.push(`<span class="comp-part">Monitor</span> <span class="comp-info">(${escapeHtml([mon.size, mon.type, mon.orientation].filter(Boolean).join(' '))})</span>`);
+  }
+  
+  // Check controls
+  const ctrl = item.controls || {};
+  if (ctrl.type && techTerms.some(t => ctrl.type.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Controls</span> <span class="comp-info">(${escapeHtml(String(ctrl.type))})</span>`);
+  }
+  
+  // Check edge connector
+  if (item.edge_connector && techTerms.some(t => item.edge_connector.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Connector</span> <span class="comp-info">(${escapeHtml(String(item.edge_connector))})</span>`);
+  }
+  
+  // Check cabinet
+  if (item.cabinet_type && techTerms.some(t => item.cabinet_type.toLowerCase().includes(t))) {
+    matches.push(`<span class="comp-part">Cabinet</span> <span class="comp-info">(${escapeHtml(String(item.cabinet_type))})</span>`);
   }
 
-  // Audio
-  if (item.aud && item.aud.length) {
-    html += '<div class="spec-section"><div class="spec-title">Audio</div>';
-    for (const a of item.aud) {
-      const clk = fmtClock(a);
-      html += `<div class="spec-row"><span class="val">${esc(a.n)}</span>${clk ? ' <span class="label">@ ' + clk + '</span>' : ''}</div>`;
-    }
-    if (item.ch) html += `<div class="spec-row"><span class="label">Channels: </span><span class="val">${item.ch}</span></div>`;
-    html += '</div>';
-  }
-
-  // Controls
-  if (item.inp) {
-    html += '<div class="spec-section"><div class="spec-title">Controls</div>';
-    if (item.inp.p) html += `<div class="spec-row"><span class="label">Players: </span><span class="val">${item.inp.p}</span></div>`;
-    if (item.inp.co) html += `<div class="spec-row"><span class="label">Coin slots: </span><span class="val">${item.inp.co}</span></div>`;
-    if (item.inp.ctrl) {
-      for (const c of item.inp.ctrl) {
-        const parts = [c.type];
-        if (c.ways) parts.push(c.ways + '-way');
-        if (c.btn) parts.push(c.btn + ' button' + (c.btn > 1 ? 's' : ''));
-        html += `<div class="spec-row"><span class="val">${esc(parts.join(', '))}</span></div>`;
-      }
-    }
-    html += '</div>';
-  }
-
-  // DIP switches
-  if (item.dip && item.dip.length) {
-    html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings</div>';
-    html += '<table class="dip-table"><tr><th>Setting</th><th>Options</th><th>Default</th></tr>';
-    for (const d of item.dip) {
-      html += `<tr><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(', ')}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
-    }
-    html += '</table></div>';
-  }
-
-  // Manual links
-  if (item.docs) {
-    html += '<div class="spec-section manual-links"><div class="spec-title">Available Manuals</div>';
-    for (const doc of item.docs) {
-      html += `<a href="${esc(doc.l)}" target="_blank" rel="noopener" class="manual-link">${esc(doc.t || 'Document')} - ${esc(doc.f)}</a>`;
-    }
-    html += '</div>';
-  }
-
-  html += '</div>';
-  return html;
+  if (!matches.length) return '';
+  return '<span class="comp-label">Matched: </span>' + matches.join(', ');
 }
 
 function render() {
   const filtered = DATA.filter(d => matchesFilter(d) && matchesSearch(d));
   const info = document.getElementById('results-info');
-  if (currentSearch || document.querySelector('.filter-btn.active')) {
-    info.innerHTML = `Showing <span>${filtered.length.toLocaleString()}</span> of ${DATA.length.toLocaleString()} machines`;
+  if (currentSearch || currentFilter !== 'all') {
+    info.innerHTML = `Showing <span>${filtered.length.toLocaleString()}</span> of ${DATA.length.toLocaleString()} documents`;
   } else {
-    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> machines &middot; Search by game, manufacturer, year, or component`;
+    info.innerHTML = `<span>${DATA.length.toLocaleString()}</span> documents &middot; Search by game name, IC part number, or manufacturer`;
   }
 
   const container = document.getElementById('results-container');
@@ -491,17 +392,57 @@ function render() {
     return;
   }
 
-  let html = '';
-  const MAX = displayLimit;
-  const shown = Math.min(filtered.length, MAX);
+  const groups = new Map();
+  filtered.forEach(item => {
+    const key = item.game;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(item);
+  });
 
-  for (let i = 0; i < shown; i++) {
-    const item = filtered[i];
-    const idx = DATA.indexOf(item);
-    html += `<div class="machine" data-idx="${idx}">
-      ${renderHead(item)}
-      <div class="machine-body"></div>
-    </div>`;
+  let html = '';
+  let count = 0;
+  const MAX = displayLimit;
+
+  for (const [game, items] of groups) {
+    if (count >= MAX) break;
+    if (currentSearch || currentFilter !== 'all') {
+      html += `<div class="game-group">${escapeHtml(game)}</div>`;
+    }
+    for (const item of items) {
+      if (count >= MAX) break;
+      const meta = [];
+      if (item.doc_code) meta.push(item.doc_code);
+      if (item.doc_number) meta.push(item.doc_number);
+      if (item.variant) meta.push(item.variant);
+      if (item.date) meta.push(item.date);
+
+      const sizeStr = item.size_mb > 0
+        ? (item.size_mb >= 1 ? item.size_mb.toFixed(1) + ' MB' : (item.size_mb * 1024).toFixed(0) + ' KB')
+        : '';
+
+      const showGroupHeaders = currentSearch || currentFilter !== 'all';
+      const titleHtml = showGroupHeaders
+        ? `<a href="${escapeHtml(item.drive_link)}" target="_blank" rel="noopener">${escapeHtml(item.doc_type || 'Document')}</a>`
+        : `<a href="${escapeHtml(item.drive_link)}" target="_blank" rel="noopener">${escapeHtml(item.game)}</a>`;
+
+      const detail = buildDetail(item);
+      const searchTerms = currentSearch ? currentSearch.split(/\s+/) : [];
+      const compMatch = findMatchedComponents(item, searchTerms);
+
+      html += `<div class="result-item">
+        <div>
+          <div class="result-game">${titleHtml}</div>
+          <div class="result-meta">${escapeHtml(item.filename)}${meta.length ? ' &middot; ' + meta.map(escapeHtml).join(' &middot; ') : ''}</div>
+          ${detail ? '<div class="result-detail">' + detail + '</div>' : ''}
+          ${compMatch ? '<div class="result-components">' + compMatch + '</div>' : ''}
+        </div>
+        <div>
+          <div class="result-type ${getTypeClass(item.doc_type)}">${escapeHtml(item.doc_type || 'Document')}</div>
+          <div class="result-size">${sizeStr}</div>
+        </div>
+      </div>`;
+      count++;
+    }
   }
 
   if (filtered.length > MAX) {
@@ -512,7 +453,7 @@ function render() {
   container.innerHTML = html;
   const loadMoreBtn = document.getElementById('loadMore');
   if (loadMoreBtn) {
-    loadMoreBtn.addEventListener('click', () => { displayLimit += 200; render(); });
+    loadMoreBtn.addEventListener('click', () => { displayLimit += 500; render(); });
   }
 }
 
