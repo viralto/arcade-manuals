@@ -473,7 +473,8 @@ function renderBody(item) {
       const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
       const rowClass = isUnknown ? ' class="dip-unknown"' : '';
       const loc = d.loc || '';
-      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(', ')}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
+      const valsSep = d.vals.length > 4 ? '<br>' : ', ';
+      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(valsSep)}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
     }
     html += '</table></div>';
   }
