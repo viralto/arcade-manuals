@@ -626,7 +626,8 @@ function renderBody(item) {
     html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings <button class="dip-print-btn" title="Print DIP switch settings">&#9113; Print DIP crib sheet</button></div>';
     html += '<div class="dip-note">Data from MAME. On later hardware, game settings are typically in the Test/Service Menu, not DIP switches. <a href="dip-info.html" style="color:#8a998a;text-decoration:underline" target="_blank">Learn more</a></div>';
     if (!hasAnyLoc) {
-      html += '<div class="dip-note">Physical switch positions not available for this machine in MAME.</div>';
+      const manualHint = item.docs ? ' Check the service manual below for DIP switch details.' : '';
+      html += `<div class="dip-note">Physical switch positions not available for this machine in MAME.${manualHint}</div>`;
     }
     html += hasAnyLoc
       ? '<table class="dip-table"><tr><th>Switch</th><th>Setting</th><th>Options</th><th>Default</th></tr>'
