@@ -150,11 +150,12 @@ body {
 .dip-note { font-size: 0.7rem; color: #8a998a; font-style: italic; margin-bottom: 6px; }
 .dip-toggle { cursor: pointer; color: var(--cyan); font-size: 0.72rem; }
 .dip-toggle:hover { color: var(--phosphor-bright); }
-.dip-expanded { margin-top: 4px; line-height: 1.6; }
+.dip-expanded { margin-top: 4px; line-height: 1.6; display: none; }
 .dip-sw { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; margin-right: 4px; }
-.sw-on { color: #1a1a2e; background: var(--phosphor); padding: 1px 4px; border-radius: 1px; font-weight: bold; font-size: 0.62rem; }
-.sw-off { color: #667766; background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 1px; font-size: 0.62rem; }
-.dip-opt { line-height: 1.8; }
+.sw-on, .sw-off { display: inline-block; width: 28px; text-align: center; padding: 1px 0; border-radius: 1px; font-size: 0.62rem; margin-right: 1px; }
+.sw-on { color: #1a1a2e; background: var(--phosphor); font-weight: bold; }
+.sw-off { color: #667766; background: rgba(255,255,255,0.06); }
+.dip-opt { line-height: 1.8; display: block; }
 .dip-opt-def { color: var(--phosphor-bright); }
 .dip-opt-def .sw-on { background: var(--amber); }
 
@@ -488,21 +489,17 @@ function renderBody(item) {
       const locs = loc ? loc.split(', ') : [];
 
       let optsHtml;
+      const renderOpt = (o) => {
+        const isDefault = o.n === d.def;
+        const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
+        return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
+      };
+
       if (opts.length <= 4) {
-        // Inline: show each option with switch positions
-        optsHtml = opts.map(o => {
-          const isDefault = o.n === d.def;
-          const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
-          return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
-        }).join('<br>');
+        optsHtml = opts.map(renderOpt).join('');
       } else {
-        // Collapsible for long lists
-        const expandedHtml = opts.map(o => {
-          const isDefault = o.n === d.def;
-          const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
-          return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
-        }).join('<br>');
-        optsHtml = `<span class="dip-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.textContent=this.nextElementSibling.style.display==='block'?'▾ hide':'▸ ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded" style="display:none">${expandedHtml}</span>`;
+        const expandedHtml = opts.map(renderOpt).join('');
+        optsHtml = `<span class="dip-toggle" onclick="event.stopPropagation();var exp=this.nextElementSibling;var show=exp.style.display!=='block';exp.style.display=show?'block':'none';this.textContent=show?'\\u25BE hide':'\\u25B8 ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded">${expandedHtml}</span>`;
       }
 
       html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
