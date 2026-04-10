@@ -153,8 +153,10 @@ body {
 .dip-expanded { margin-top: 4px; line-height: 1.6; display: none; }
 .dip-sw { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; margin-right: 4px; }
 .sw-on, .sw-off { display: inline-block; width: 28px; text-align: center; padding: 2px 0; border-radius: 1px; font-size: 0.64rem; margin-right: 1px; letter-spacing: 0.5px; }
-.sw-on { color: #0a0e0a; background: var(--phosphor); font-weight: bold; }
+.sw-on { color: #fff; background: var(--phosphor); font-weight: bold; }
 .sw-off { color: #556655; background: rgba(255,255,255,0.08); }
+.dip-sw-header { display: block; margin-bottom: 2px; }
+.sw-label { display: inline-block; width: 28px; text-align: center; font-size: 0.56rem; color: var(--cyan); margin-right: 1px; }
 .dip-opt { line-height: 1.8; display: block; }
 .dip-opt-def { color: var(--phosphor-bright); }
 
@@ -494,11 +496,17 @@ function renderBody(item) {
         return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
       };
 
+      // Column headers for multi-switch settings
+      let swHeader = '';
+      if (hasSw && locs.length > 1) {
+        swHeader = `<span class="dip-sw-header"><span class="dip-sw">${locs.map(l => `<span class="sw-label">${esc(l)}</span>`).join(' ')}</span></span>`;
+      }
+
       if (opts.length <= 4) {
-        optsHtml = opts.map(renderOpt).join('');
+        optsHtml = swHeader + opts.map(renderOpt).join('');
       } else {
         const expandedHtml = opts.map(renderOpt).join('');
-        optsHtml = `<span class="dip-toggle" onclick="event.stopPropagation();var exp=this.nextElementSibling;var show=exp.style.display!=='block';exp.style.display=show?'block':'none';this.textContent=show?'\\u25BE hide':'\\u25B8 ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded">${expandedHtml}</span>`;
+        optsHtml = `<span class="dip-toggle" onclick="event.stopPropagation();var exp=this.nextElementSibling;var show=exp.style.display!=='block';exp.style.display=show?'block':'none';this.textContent=show?'\\u25BE hide':'\\u25B8 ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded">${swHeader}${expandedHtml}</span>`;
       }
 
       html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
