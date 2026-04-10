@@ -105,6 +105,7 @@ body {
 
 .machine-name { font-size: 0.95rem; font-weight: bold; color: var(--phosphor-bright); }
 .machine-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
+.rom-name { color: #667766; }
 .machine-chips { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
 .machine-badges { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; }
 
@@ -450,7 +451,7 @@ function renderHead(item) {
   return `<div class="machine-head">
     <div>
       <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
-      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + '</div>' : ''}
+      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + (item.id ? ' &middot; <span class="rom-name">' + esc(item.id) + '</span>' : '') + '</div>' : ''}
     </div>
     <div class="machine-badges">${badges}</div>
   </div>`;
