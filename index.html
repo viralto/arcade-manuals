@@ -622,15 +622,21 @@ function renderBody(item) {
 
   // DIP switches
   if (item.dip && item.dip.length) {
+    const hasAnyLoc = item.dip.some(d => d.loc);
     html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings <button class="dip-print-btn" title="Print DIP switch settings">&#9113; Print DIP crib sheet</button></div>';
     html += '<div class="dip-note">Data from MAME. On later hardware, game settings are typically in the Test/Service Menu, not DIP switches. <a href="dip-info.html" style="color:#8a998a;text-decoration:underline" target="_blank">Learn more</a></div>';
-    html += '<table class="dip-table"><tr><th>Switch</th><th>Setting</th><th>Options</th><th>Default</th></tr>';
+    if (!hasAnyLoc) {
+      html += '<div class="dip-note">Physical switch positions not available for this machine in MAME.</div>';
+    }
+    html += hasAnyLoc
+      ? '<table class="dip-table"><tr><th>Switch</th><th>Setting</th><th>Options</th><th>Default</th></tr>'
+      : '<table class="dip-table"><tr><th>Setting</th><th>Options</th><th>Default</th></tr>';
     for (const d of item.dip) {
       const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
       const rowClass = isUnknown ? ' class="dip-unknown"' : '';
       const loc = d.loc || '';
       const opts = d.opts || [];
-      const hasSw = opts.length > 0 && opts[0].sw;
+      const hasSw = opts.length > 0 && opts[0] && opts[0].sw;
       const locs = loc ? loc.split(', ') : [];
 
       let optsHtml;
@@ -653,7 +659,9 @@ function renderBody(item) {
         optsHtml = `<span class="dip-toggle" onclick="event.stopPropagation();var exp=this.nextElementSibling;var show=exp.style.display!=='block';exp.style.display=show?'block':'none';this.textContent=show?'\\u25BE hide':'\\u25B8 ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded">${swHeader}${expandedHtml}</span>`;
       }
 
-      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
+      html += hasAnyLoc
+        ? `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`
+        : `<tr${rowClass}><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
     }
     html += '</table></div>';
   }
