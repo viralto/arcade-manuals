@@ -219,7 +219,7 @@ body {
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search"
-           placeholder="Search by game, manufacturer, CPU, audio chip, year..."
+           placeholder="Search by game, manufacturer, CPU, audio chip, IC part number, year..."
            autocomplete="off" autofocus>
   </div>
   <div class="filters" id="filters">
@@ -242,7 +242,8 @@ body {
     All manuals remain the property of their original copyright holders<br>
     Hosted for preservation and repair reference purposes<br><br>
     Found an error? Have manuals to contribute?<br>
-    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
+    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a><br><br>
+    <a href="links.html">Links</a>
   </footer>
 </div>
 
@@ -472,6 +473,46 @@ function renderBody(item) {
         if (c.btn) parts.push(c.btn + ' button' + (c.btn > 1 ? 's' : ''));
         html += `<div class="spec-row"><span class="val">${esc(parts.join(', '))}</span></div>`;
       }
+    }
+    html += '</div>';
+  }
+
+  // ICs (from LLM extraction)
+  if (item.ics && item.ics.length) {
+    html += '<div class="spec-section"><div class="spec-title">Components (from manual)</div>';
+    for (const ic of item.ics) {
+      if (typeof ic === 'object') {
+        const part = ic.part || '?';
+        const type = ic.type || '';
+        const loc = ic.location || '';
+        const desc = ic.description || '';
+        const details = [type, loc, desc].filter(Boolean).join(' · ');
+        html += `<div class="spec-row"><span class="val">${esc(part)}</span>${details ? ' <span class="label">' + esc(details) + '</span>' : ''}</div>`;
+      }
+    }
+    html += '</div>';
+  }
+
+  // PCBs (from LLM extraction)
+  if (item.pcbs && item.pcbs.length) {
+    html += '<div class="spec-section"><div class="spec-title">PCBs (from manual)</div>';
+    for (const p of item.pcbs) {
+      const name = p.name || '?';
+      const pn = p.part_number || '';
+      const desc = p.description || '';
+      html += `<div class="spec-row"><span class="val">${esc(name)}</span>${pn ? ' <span class="label">' + esc(pn) + '</span>' : ''}${desc ? '<br><span class="label">' + esc(desc) + '</span>' : ''}</div>`;
+    }
+    html += '</div>';
+  }
+
+  // Fuses (from LLM extraction)
+  if (item.fuses && item.fuses.length) {
+    html += '<div class="spec-section"><div class="spec-title">Fuses (from manual)</div>';
+    for (const f of item.fuses) {
+      const id = f.id || '?';
+      const rating = f.rating || '';
+      const type = f.type || '';
+      html += `<div class="spec-row"><span class="val">${esc(id)}</span> <span class="label">${esc([rating, type].filter(Boolean).join(' · '))}</span></div>`;
     }
     html += '</div>';
   }
