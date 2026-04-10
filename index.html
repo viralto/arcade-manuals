@@ -70,6 +70,7 @@ body {
 .search-input::placeholder { color: #668866; }
 .search-input:focus { border-color: var(--phosphor); box-shadow: 0 0 15px var(--border-glow), inset 0 0 10px rgba(51, 255, 102, 0.05); }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--phosphor-dim); font-size: 1.1rem; pointer-events: none; }
+.search-tip { font-size: 0.72rem; color: #668866; margin: 4px 0 8px; letter-spacing: 0.3px; }
 
 .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; align-items: center; }
 .filter-label { font-size: 0.75rem; color: var(--phosphor-dim); text-transform: uppercase; letter-spacing: 1px; margin-right: 4px; }
@@ -227,6 +228,7 @@ body {
            placeholder="Search by game, manufacturer, CPU, audio chip, IC part number, year..."
            autocomplete="off" autofocus>
   </div>
+  <div class="search-tip">Got an unknown board? Type the chip numbers you can read (e.g. Z80 YM2151 74LS245) to narrow down what it is.</div>
   <div class="filters" id="filters">
     <span class="filter-label">Show:</span>
     <button class="filter-btn" data-filter="has-manual">With Manuals</button>
