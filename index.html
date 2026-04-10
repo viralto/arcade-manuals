@@ -151,6 +151,13 @@ body {
 .dip-toggle { cursor: pointer; color: var(--cyan); font-size: 0.72rem; }
 .dip-toggle:hover { color: var(--phosphor-bright); }
 .dip-expanded { margin-top: 4px; line-height: 1.6; }
+.dip-sw { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; margin-right: 4px; }
+.sw-on { color: #1a1a2e; background: var(--phosphor); padding: 1px 4px; border-radius: 1px; font-weight: bold; font-size: 0.62rem; }
+.sw-off { color: #667766; background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 1px; font-size: 0.62rem; }
+.dip-opt { line-height: 1.8; }
+.dip-opt-def { color: var(--phosphor-bright); }
+.dip-opt-def .sw-on { background: var(--amber); }
+
 
 /* Manual links inside expanded card */
 .manual-links { grid-column: 1 / -1; margin-top: 4px; }
@@ -476,14 +483,29 @@ function renderBody(item) {
       const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
       const rowClass = isUnknown ? ' class="dip-unknown"' : '';
       const loc = d.loc || '';
-      let valsHtml;
-      if (d.vals.length > 4) {
-        const id = 'dip_' + Math.random().toString(36).slice(2, 8);
-        valsHtml = `<span class="dip-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.textContent=this.nextElementSibling.style.display==='block'?'▾ hide':'▸ ${d.vals.length} options'">▸ ${d.vals.length} options</span><span class="dip-expanded" style="display:none">${d.vals.map(esc).join('<br>')}</span>`;
+      const opts = d.opts || [];
+      const hasSw = opts.length > 0 && opts[0].sw;
+      const locs = loc ? loc.split(', ') : [];
+
+      let optsHtml;
+      if (opts.length <= 4) {
+        // Inline: show each option with switch positions
+        optsHtml = opts.map(o => {
+          const isDefault = o.n === d.def;
+          const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
+          return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
+        }).join('<br>');
       } else {
-        valsHtml = d.vals.map(esc).join(', ');
+        // Collapsible for long lists
+        const expandedHtml = opts.map(o => {
+          const isDefault = o.n === d.def;
+          const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
+          return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
+        }).join('<br>');
+        optsHtml = `<span class="dip-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.textContent=this.nextElementSibling.style.display==='block'?'▾ hide':'▸ ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded" style="display:none">${expandedHtml}</span>`;
       }
-      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${valsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
+
+      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
     }
     html += '</table></div>';
   }
