@@ -372,7 +372,7 @@ function renderHead(item) {
   if (item.inp) {
     if (item.inp.p) meta.push(item.inp.p + 'P');
     if (item.inp.ctrl) {
-      const types = [...new Set(item.inp.ctrl.map(c => c.type))];
+      const types = [...new Set(item.inp.ctrl.map(c => c.type === 'paddle' ? 'rotary' : c.type))];
       meta.push(types.join('/'));
     }
   }
@@ -409,7 +409,6 @@ function renderHead(item) {
     <div>
       <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
       ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + '</div>' : ''}
-      ${chips.length ? '<div class="machine-chips">' + chips.map(esc).join(' &middot; ') + '</div>' : ''}
     </div>
     <div class="machine-badges">${badges}</div>
   </div>`;
@@ -468,7 +467,7 @@ function renderBody(item) {
     if (item.inp.co) html += `<div class="spec-row"><span class="label">Coin slots: </span><span class="val">${item.inp.co}</span></div>`;
     if (item.inp.ctrl) {
       for (const c of item.inp.ctrl) {
-        const parts = [c.type];
+        const parts = [c.type === 'paddle' ? 'rotary' : c.type];
         if (c.ways) parts.push(c.ways + '-way');
         if (c.btn) parts.push(c.btn + ' button' + (c.btn > 1 ? 's' : ''));
         html += `<div class="spec-row"><span class="val">${esc(parts.join(', '))}</span></div>`;
