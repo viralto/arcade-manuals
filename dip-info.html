@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArcadeRTFM - About DIP Switch Data</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --phosphor: #44ff77;
+  --phosphor-dim: #33bb66;
+  --phosphor-bright: #77ffbb;
+  --amber: #ffaa00;
+  --screen-bg: #0a0e0a;
+  --cabinet: #1a1a2e;
+  --coin-slot: #ffcc00;
+  --cyan: #44dddd;
+}
+body {
+  background: var(--cabinet);
+  color: var(--phosphor);
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+.scanlines { pointer-events: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.04) 2px, rgba(0,0,0,0.04) 4px); z-index: 999; }
+.wrap { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9rem;
+  color: var(--coin-slot);
+  text-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 1rem;
+  color: var(--amber);
+  margin: 28px 0 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 170, 0, 0.2);
+}
+p { margin-bottom: 14px; font-size: 0.88rem; color: var(--phosphor); }
+.dim { color: #99bb99; }
+.bright { color: var(--phosphor-bright); }
+.amber { color: var(--amber); }
+.cyan { color: var(--cyan); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.82rem; }
+th { text-align: left; padding: 6px 10px; color: var(--cyan); border-bottom: 1px solid #2a3a2a; font-weight: normal; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+td { padding: 6px 10px; border-bottom: 1px solid #141e14; color: var(--phosphor); }
+td:first-child { color: var(--phosphor-bright); white-space: nowrap; }
+.back { display: inline-block; margin-bottom: 20px; color: var(--phosphor-dim); text-decoration: none; font-size: 0.82rem; }
+.back:hover { color: var(--phosphor); }
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="wrap">
+
+<a href="index.html" class="back">&larr; Back to Machine Database</a>
+
+<h1>ABOUT DIP SWITCH DATA</h1>
+
+<h2>Where the data comes from</h2>
+<p>DIP switch data on ArcadeRTFM comes from two sources. The majority is sourced from the <a href="https://www.mamedev.org/" target="_blank" rel="noopener" style="color: var(--phosphor-bright)">MAME</a> (Multiple Arcade Machine Emulator) project's machine database. Some entries also contain DIP switch information extracted from the original service manuals using LLM vision analysis of the scanned pages. Where both sources are available, the data is combined.</p>
+
+<h2>The early era: DIP switches controlled everything</h2>
+<p>On hardware from the late 1970s through the late 1980s, DIP switches were the primary way to configure a game. Difficulty, number of lives, coinage, bonus thresholds, cabinet type, language. It was all set via physical switches on the PCB. For these machines, the DIP tables shown on ArcadeRTFM are the complete configuration reference. This covers most of the classic era: Pac-Man, Galaga, Donkey Kong, Defender, Robotron, and hundreds of others.</p>
+
+<h2>The transition: later hardware moved to service menus</h2>
+<p>From the early 1990s onward, most arcade hardware shifted game configuration to software-based Test/Service Menus, with settings saved to battery-backed NVRAM. On these machines, you access settings by pressing the Test or Service button inside the cabinet, navigating an on-screen menu, and the board remembers the changes after power-off.</p>
+<p>DIP switches still exist on some of these later boards, but they typically control low-level hardware functions rather than game settings: debug modes, graphics layer enables, and test features that were used during development.</p>
+
+<h2>The Model 2 / Versus City quirk</h2>
+<p>Sega's Model 2 platform (and some Model 3 and ST-V games) has a specific known quirk that affects how DIP data appears in MAME and therefore on this site.</p>
+<p>These systems supported an optional accessory called the <span class="bright">Versus City Billboard</span>, a separate display unit mounted on top of linked cabinets for head-to-head play. The billboard unit had its own 6-8 position DIP switch pack controlling test LEDs, 7-segment display tests, and demo mode.</p>
+<p>MAME exposes the billboard DIP switches in its standard DIP menu, which means they appear in our database. However, the main game board's own DIP switches (typically labeled SW3 on the PCB) are either hidden, labeled as "Unknown", or filed under a different internal port name in MAME. These main board switches mostly control debug features and have little effect on normal gameplay.</p>
+
+<p>In practice, this means:</p>
+
+<table>
+<tr><th>DIP Type</th><th>Controls</th><th>Shown on ArcadeRTFM?</th></tr>
+<tr><td class="amber">Billboard DIPs</td><td>Test LEDs, demo mode, 7-segment test patterns</td><td>Yes (from MAME)</td></tr>
+<tr><td class="amber">Main board DIPs</td><td>Debug features, hidden test modes</td><td>No (hidden/unnamed in MAME)</td></tr>
+<tr><td class="amber">Game settings</td><td>Difficulty, coinage, timer, free play, etc.</td><td>No (configured via Test Menu, stored in NVRAM)</td></tr>
+</table>
+
+<p>This is not an error in our data. It accurately reflects what MAME documents. The game settings that operators actually need to change (difficulty, coinage, round timer) were never configured via DIP switches on Model 2 hardware. They are set through the on-screen Test Menu accessed via the service button.</p>
+
+<h2>Why some switches are shown as "Unknown"</h2>
+<p>The DIP switch table shows every switch position that MAME documents, including those labeled "Unknown" or "Unused". These are shown dimmed in the table. We include them rather than hiding them because the physical DIP switch pack on the board has a fixed number of positions, and if we skipped the unknown ones, the remaining entries would appear to be in the wrong positions. Someone reading "Coinage" as the third row might assume it is physical switch 3, when it is actually switch 5 because switches 3 and 4 are undocumented.</p>
+<p>Each row shows the physical switch location (e.g. SW1:3, SW2:7) in the first column so you can match the setting to the correct physical switch on the board. The "Unknown" entries typically have no observable effect during normal operation. In some cases they were factory test points, in others they were reserved for regional variants that were never produced, and in many cases nobody has yet reverse-engineered what they do.</p>
+
+<h2>Which machines are affected?</h2>
+<p>This primarily affects Sega Model 2, Model 3, ST-V, Naomi, and similar later platforms from the mid-1990s onward. It also applies to many Namco System boards, Konami boards, Capcom CPS-3, and most other hardware from the 3D polygon era. If a machine is from roughly 1993 or later and shows only a handful of DIP switches with options like "Off/On" and test-related names, the actual game configuration is almost certainly in a service menu.</p>
+
+<h2>General guidance</h2>
+<p>For <span class="bright">pre-1990 hardware</span>: DIP tables on this site are likely the complete game configuration reference. Cross-reference with the service manual if one is available.</p>
+<p>For <span class="bright">post-1993 hardware</span>: DIP switches shown are probably hardware-level or accessory settings. Look for the Test/Service button on the cabinet to access the actual game settings menu.</p>
+<p>For <span class="bright">the early 1990s transition period</span>: it varies by manufacturer and platform. Some boards used both DIP switches and service menus. Check the manual if available.</p>
+
+<p class="dim" style="margin-top: 30px; font-size: 0.8rem;">If you spot an error or have additional information, contact <a href="mailto:info@arcadertfm.com" style="color: var(--phosphor-dim)">info@arcadertfm.com</a></p>
+
+</div>
+</body>
+</html>
