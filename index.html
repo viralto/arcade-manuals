@@ -106,6 +106,7 @@ body {
 .machine-name { font-size: 0.95rem; font-weight: bold; color: var(--phosphor-bright); }
 .machine-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
 .rom-name { color: #667766; }
+.match-indicator { font-size: 0.74rem; color: var(--amber); margin-top: 3px; }
 .machine-chips { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
 .machine-badges { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; }
 
@@ -441,6 +442,51 @@ function renderHead(item) {
     }
   }
 
+  // Component match indicator
+  let matchHtml = '';
+  if (currentSearch) {
+    const terms = currentSearch.split(/\s+/);
+    const basicText = [item.name, item.m || '', item.y || '', item.id || ''].join(' ').toLowerCase();
+    const matches = [];
+
+    for (const term of terms) {
+      if (term.length < 2 || basicText.includes(term)) continue;
+
+      // Check MAME CPUs
+      if (item.cpu) {
+        for (const c of item.cpu) {
+          if (c.n && c.n.toLowerCase().includes(term)) {
+            const clk = fmtClock(c);
+            matches.push(c.n + (clk ? ' ' + clk : '') + ' (CPU)');
+          }
+        }
+      }
+      // Check MAME audio
+      if (item.aud) {
+        for (const a of item.aud) {
+          if (a.n && a.n.toLowerCase().includes(term)) {
+            const clk = fmtClock(a);
+            matches.push(a.n + (clk ? ' ' + clk : '') + ' (Audio)');
+          }
+        }
+      }
+      // Check LLM-extracted ICs
+      if (item.ics) {
+        for (const ic of item.ics) {
+          if (typeof ic === 'object' && ic.part && ic.part.toLowerCase().includes(term)) {
+            const desc = ic.description || ic.type || '';
+            matches.push(ic.part + (desc ? ' · ' + desc : ''));
+          }
+        }
+      }
+    }
+
+    if (matches.length) {
+      const unique = [...new Set(matches)].slice(0, 3);
+      matchHtml = '<div class="match-indicator">&#9889; ' + unique.map(esc).join(' &middot; ') + '</div>';
+    }
+  }
+
   // Badges
   let badges = '';
   if (item.docs) {
@@ -452,6 +498,7 @@ function renderHead(item) {
     <div>
       <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
       ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + (item.id ? ' &middot; <span class="rom-name">' + esc(item.id) + '</span>' : '') + '</div>' : ''}
+      ${matchHtml}
     </div>
     <div class="machine-badges">${badges}</div>
   </div>`;
