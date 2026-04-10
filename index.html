@@ -148,6 +148,9 @@ body {
 .dip-table tr.dip-unknown td.dip-name { font-style: italic; }
 .dip-table tr:hover td { background: rgba(51, 255, 102, 0.03); }
 .dip-note { font-size: 0.7rem; color: #8a998a; font-style: italic; margin-bottom: 6px; }
+.dip-toggle { cursor: pointer; color: var(--cyan); font-size: 0.72rem; }
+.dip-toggle:hover { color: var(--phosphor-bright); }
+.dip-expanded { margin-top: 4px; line-height: 1.6; }
 
 /* Manual links inside expanded card */
 .manual-links { grid-column: 1 / -1; margin-top: 4px; }
@@ -473,8 +476,14 @@ function renderBody(item) {
       const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
       const rowClass = isUnknown ? ' class="dip-unknown"' : '';
       const loc = d.loc || '';
-      const valsSep = d.vals.length > 4 ? '<br>' : ', ';
-      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(valsSep)}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
+      let valsHtml;
+      if (d.vals.length > 4) {
+        const id = 'dip_' + Math.random().toString(36).slice(2, 8);
+        valsHtml = `<span class="dip-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.textContent=this.nextElementSibling.style.display==='block'?'▾ hide':'▸ ${d.vals.length} options'">▸ ${d.vals.length} options</span><span class="dip-expanded" style="display:none">${d.vals.map(esc).join('<br>')}</span>`;
+      } else {
+        valsHtml = d.vals.map(esc).join(', ');
+      }
+      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${valsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
     }
     html += '</table></div>';
   }
