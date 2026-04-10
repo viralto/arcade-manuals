@@ -144,6 +144,7 @@ body {
 .dip-table td.dip-values { color: #99bb99; }
 .dip-table td.dip-default { color: var(--amber); font-size: 0.74rem; }
 .dip-table tr:hover td { background: rgba(51, 255, 102, 0.03); }
+.dip-note { font-size: 0.7rem; color: #8a998a; font-style: italic; margin-bottom: 6px; }
 
 /* Manual links inside expanded card */
 .manual-links { grid-column: 1 / -1; margin-top: 4px; }
@@ -463,6 +464,7 @@ function renderBody(item) {
   // DIP switches
   if (item.dip && item.dip.length) {
     html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings</div>';
+    html += '<div class="dip-note">Data from MAME. On later hardware (Model 2, Model 3, Naomi, etc.) game settings are typically configured via the Test/Service Menu, not DIP switches. DIP entries shown may refer to auxiliary hardware.</div>';
     html += '<table class="dip-table"><tr><th>Setting</th><th>Options</th><th>Default</th></tr>';
     for (const d of item.dip) {
       html += `<tr><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(', ')}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
