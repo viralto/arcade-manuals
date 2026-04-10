@@ -70,7 +70,6 @@ body {
 .search-input::placeholder { color: #668866; }
 .search-input:focus { border-color: var(--phosphor); box-shadow: 0 0 15px var(--border-glow), inset 0 0 10px rgba(51, 255, 102, 0.05); }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--phosphor-dim); font-size: 1.1rem; pointer-events: none; }
-.search-tip { font-size: 0.72rem; color: #668866; margin: 4px 0 8px; letter-spacing: 0.3px; }
 
 .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; align-items: center; }
 .filter-label { font-size: 0.75rem; color: var(--phosphor-dim); text-transform: uppercase; letter-spacing: 1px; margin-right: 4px; }
@@ -106,8 +105,6 @@ body {
 
 .machine-name { font-size: 0.95rem; font-weight: bold; color: var(--phosphor-bright); }
 .machine-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
-.rom-name { color: #667766; }
-.match-indicator { font-size: 0.74rem; color: var(--amber); margin-top: 3px; }
 .machine-chips { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
 .machine-badges { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; }
 
@@ -151,21 +148,6 @@ body {
 .dip-table tr.dip-unknown td.dip-name { font-style: italic; }
 .dip-table tr:hover td { background: rgba(51, 255, 102, 0.03); }
 .dip-note { font-size: 0.7rem; color: #8a998a; font-style: italic; margin-bottom: 6px; }
-.dip-toggle { cursor: pointer; color: var(--cyan); font-size: 0.72rem; }
-.dip-toggle:hover { color: var(--phosphor-bright); }
-.dip-expanded { margin-top: 4px; line-height: 1.6; display: none; }
-.dip-sw { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; margin-right: 4px; }
-.sw-on, .sw-off { display: inline-block; width: 32px; text-align: center; padding: 2px 0; border-radius: 2px; font-size: 0.65rem; margin-right: 2px; font-family: system-ui, -apple-system, sans-serif; letter-spacing: 0.5px; }
-.sw-on { color: #000; background: var(--phosphor); font-weight: 700; }
-.sw-off { color: #556655; background: rgba(255,255,255,0.08); }
-.dip-sw-header { display: block; margin-bottom: 2px; }
-.sw-label { display: inline-block; width: 32px; text-align: center; font-size: 0.56rem; color: var(--cyan); margin-right: 2px; }
-.dip-opt { line-height: 1.8; display: block; }
-.dip-opt-def { color: var(--phosphor-bright); }
-.dip-print-btn { background: rgba(68,255,119,0.1); border: 1px solid rgba(68,255,119,0.3); color: var(--phosphor); font-family: 'Share Tech Mono', monospace; font-size: 0.65rem; padding: 3px 10px; cursor: pointer; margin-left: 10px; border-radius: 2px; vertical-align: middle; }
-.dip-print-btn:hover { background: rgba(68,255,119,0.2); border-color: var(--phosphor); color: var(--phosphor-bright); }
-@media print { body * { display: none !important; } #print-area, #print-area * { display: block !important; } }
-
 
 /* Manual links inside expanded card */
 .manual-links { grid-column: 1 / -1; margin-top: 4px; }
@@ -225,10 +207,9 @@ body {
   <div class="search-area">
     <span class="search-icon">&#9654;</span>
     <input type="text" class="search-input" id="search"
-           placeholder="Search by game, manufacturer, CPU, audio chip, IC part number, year..."
+           placeholder="Search by game, manufacturer, CPU, audio chip, year..."
            autocomplete="off" autofocus>
   </div>
-  <div class="search-tip">Got an unknown board? Type the chip numbers you can read (e.g. Z80 YM2151 74LS245) to narrow down what it is.</div>
   <div class="filters" id="filters">
     <span class="filter-label">Show:</span>
     <button class="filter-btn" data-filter="has-manual">With Manuals</button>
@@ -249,8 +230,7 @@ body {
     All manuals remain the property of their original copyright holders<br>
     Hosted for preservation and repair reference purposes<br><br>
     Found an error? Have manuals to contribute?<br>
-    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a><br><br>
-    <a href="links.html">Links</a>
+    <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
   </footer>
 </div>
 
@@ -315,14 +295,6 @@ function init() {
           machine.dataset.rendered = '1';
         }
       }
-      // Update URL hash
-      if (machine.classList.contains('open')) {
-        const idx = parseInt(machine.dataset.idx);
-        const item = DATA[idx];
-        if (item && item.id) history.replaceState(null, '', '#' + item.id);
-      } else {
-        history.replaceState(null, '', location.pathname);
-      }
     }
     // Manual badge click
     const manualBadge = e.target.closest('.badge-manual');
@@ -339,40 +311,9 @@ function init() {
         }
       }
     }
-    // Print DIP button
-    const printBtn = e.target.closest('.dip-print-btn');
-    if (printBtn) {
-      e.stopPropagation();
-      const machine = printBtn.closest('.machine');
-      const idx = parseInt(machine.dataset.idx);
-      printDIP(DATA[idx]);
-    }
   });
 
   render();
-
-  // Check URL hash for direct link
-  if (location.hash) {
-    const targetId = location.hash.slice(1).toLowerCase();
-    const idx = DATA.findIndex(m => (m.id || '').toLowerCase() === targetId);
-    if (idx >= 0) {
-      const item = DATA[idx];
-      // Put it in search to ensure it's visible
-      document.getElementById('search').value = item.name;
-      currentSearch = item.name.toLowerCase();
-      render();
-      // Open it
-      setTimeout(() => {
-        const el = document.querySelector(`[data-idx="${idx}"]`);
-        if (el) {
-          el.classList.add('open');
-          el.querySelector('.machine-body').innerHTML = renderBody(item);
-          el.dataset.rendered = '1';
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    }
-  }
 }
 
 function matchesFilter(item) {
@@ -418,7 +359,7 @@ function renderHead(item) {
   if (item.inp) {
     if (item.inp.p) meta.push(item.inp.p + 'P');
     if (item.inp.ctrl) {
-      const types = [...new Set(item.inp.ctrl.map(c => c.type === 'paddle' ? 'rotary' : c.type))];
+      const types = [...new Set(item.inp.ctrl.map(c => c.type))];
       meta.push(types.join('/'));
     }
   }
@@ -444,51 +385,6 @@ function renderHead(item) {
     }
   }
 
-  // Component match indicator
-  let matchHtml = '';
-  if (currentSearch) {
-    const terms = currentSearch.split(/\s+/);
-    const basicText = [item.name, item.m || '', item.y || '', item.id || ''].join(' ').toLowerCase();
-    const matches = [];
-
-    for (const term of terms) {
-      if (term.length < 2 || basicText.includes(term)) continue;
-
-      // Check MAME CPUs
-      if (item.cpu) {
-        for (const c of item.cpu) {
-          if (c.n && c.n.toLowerCase().includes(term)) {
-            const clk = fmtClock(c);
-            matches.push(c.n + (clk ? ' ' + clk : '') + ' (CPU)');
-          }
-        }
-      }
-      // Check MAME audio
-      if (item.aud) {
-        for (const a of item.aud) {
-          if (a.n && a.n.toLowerCase().includes(term)) {
-            const clk = fmtClock(a);
-            matches.push(a.n + (clk ? ' ' + clk : '') + ' (Audio)');
-          }
-        }
-      }
-      // Check LLM-extracted ICs
-      if (item.ics) {
-        for (const ic of item.ics) {
-          if (typeof ic === 'object' && ic.part && ic.part.toLowerCase().includes(term)) {
-            const desc = ic.description || ic.type || '';
-            matches.push(ic.part + (desc ? ' · ' + desc : ''));
-          }
-        }
-      }
-    }
-
-    if (matches.length) {
-      const unique = [...new Set(matches)].slice(0, 3);
-      matchHtml = '<div class="match-indicator">&#9889; ' + unique.map(esc).join(' &middot; ') + '</div>';
-    }
-  }
-
   // Badges
   let badges = '';
   if (item.docs) {
@@ -499,8 +395,8 @@ function renderHead(item) {
   return `<div class="machine-head">
     <div>
       <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
-      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + (item.id ? ' &middot; <span class="rom-name">' + esc(item.id) + '</span>' : '') + '</div>' : ''}
-      ${matchHtml}
+      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + '</div>' : ''}
+      ${chips.length ? '<div class="machine-chips">' + chips.map(esc).join(' &middot; ') + '</div>' : ''}
     </div>
     <div class="machine-badges">${badges}</div>
   </div>`;
@@ -559,7 +455,7 @@ function renderBody(item) {
     if (item.inp.co) html += `<div class="spec-row"><span class="label">Coin slots: </span><span class="val">${item.inp.co}</span></div>`;
     if (item.inp.ctrl) {
       for (const c of item.inp.ctrl) {
-        const parts = [c.type === 'paddle' ? 'rotary' : c.type];
+        const parts = [c.type];
         if (c.ways) parts.push(c.ways + '-way');
         if (c.btn) parts.push(c.btn + ' button' + (c.btn > 1 ? 's' : ''));
         html += `<div class="spec-row"><span class="val">${esc(parts.join(', '))}</span></div>`;
@@ -568,80 +464,17 @@ function renderBody(item) {
     html += '</div>';
   }
 
-  // ICs (from LLM extraction)
-  if (item.ics && item.ics.length) {
-    html += '<div class="spec-section"><div class="spec-title">Components (from manual)</div>';
-    for (const ic of item.ics) {
-      if (typeof ic === 'object') {
-        const part = ic.part || '?';
-        const type = ic.type || '';
-        const loc = ic.location || '';
-        const desc = ic.description || '';
-        const details = [type, loc, desc].filter(Boolean).join(' · ');
-        html += `<div class="spec-row"><span class="val">${esc(part)}</span>${details ? ' <span class="label">' + esc(details) + '</span>' : ''}</div>`;
-      }
-    }
-    html += '</div>';
-  }
-
-  // PCBs (from LLM extraction)
-  if (item.pcbs && item.pcbs.length) {
-    html += '<div class="spec-section"><div class="spec-title">PCBs (from manual)</div>';
-    for (const p of item.pcbs) {
-      const name = p.name || '?';
-      const pn = p.part_number || '';
-      const desc = p.description || '';
-      html += `<div class="spec-row"><span class="val">${esc(name)}</span>${pn ? ' <span class="label">' + esc(pn) + '</span>' : ''}${desc ? '<br><span class="label">' + esc(desc) + '</span>' : ''}</div>`;
-    }
-    html += '</div>';
-  }
-
-  // Fuses (from LLM extraction)
-  if (item.fuses && item.fuses.length) {
-    html += '<div class="spec-section"><div class="spec-title">Fuses (from manual)</div>';
-    for (const f of item.fuses) {
-      const id = f.id || '?';
-      const rating = f.rating || '';
-      const type = f.type || '';
-      html += `<div class="spec-row"><span class="val">${esc(id)}</span> <span class="label">${esc([rating, type].filter(Boolean).join(' · '))}</span></div>`;
-    }
-    html += '</div>';
-  }
-
   // DIP switches
   if (item.dip && item.dip.length) {
-    html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings <button class="dip-print-btn" title="Print DIP switch settings">&#9113; Print DIP crib sheet</button></div>';
+    html += '<div class="spec-section dip-section"><div class="spec-title">DIP Switch Settings</div>';
     html += '<div class="dip-note">Data from MAME. On later hardware, game settings are typically in the Test/Service Menu, not DIP switches. <a href="dip-info.html" style="color:#8a998a;text-decoration:underline" target="_blank">Learn more</a></div>';
     html += '<table class="dip-table"><tr><th>Switch</th><th>Setting</th><th>Options</th><th>Default</th></tr>';
     for (const d of item.dip) {
       const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
       const rowClass = isUnknown ? ' class="dip-unknown"' : '';
       const loc = d.loc || '';
-      const opts = d.opts || [];
-      const hasSw = opts.length > 0 && opts[0].sw;
-      const locs = loc ? loc.split(', ') : [];
-
-      let optsHtml;
-      const renderOpt = (o) => {
-        const isDefault = o.n === d.def;
-        const swBits = (hasSw && o.sw) ? `<span class="dip-sw">${o.sw.split(' ').map(s => `<span class="sw-${s.toLowerCase()}">${s}</span>`).join(' ')}</span> ` : '';
-        return `<span class="dip-opt${isDefault ? ' dip-opt-def' : ''}">${swBits}${esc(o.n)}${isDefault ? ' ✱' : ''}</span>`;
-      };
-
-      // Column headers for multi-switch settings
-      let swHeader = '';
-      if (hasSw && locs.length > 1) {
-        swHeader = `<span class="dip-sw-header"><span class="dip-sw">${locs.map(l => `<span class="sw-label">${esc(l)}</span>`).join(' ')}</span></span>`;
-      }
-
-      if (opts.length <= 4) {
-        optsHtml = swHeader + opts.map(renderOpt).join('');
-      } else {
-        const expandedHtml = opts.map(renderOpt).join('');
-        optsHtml = `<span class="dip-toggle" onclick="event.stopPropagation();var exp=this.nextElementSibling;var show=exp.style.display!=='block';exp.style.display=show?'block':'none';this.textContent=show?'\\u25BE hide':'\\u25B8 ${opts.length} options'">▸ ${opts.length} options</span><span class="dip-expanded">${swHeader}${expandedHtml}</span>`;
-      }
-
-      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${optsHtml}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
+      const valsSep = d.vals.length > 4 ? '<br>' : ', ';
+      html += `<tr${rowClass}><td class="dip-loc">${esc(loc)}</td><td class="dip-name">${esc(d.name)}</td><td class="dip-values">${d.vals.map(esc).join(valsSep)}</td><td class="dip-default">${d.def ? esc(d.def) : ''}</td></tr>`;
     }
     html += '</table></div>';
   }
@@ -697,58 +530,6 @@ function render() {
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => { displayLimit += 200; render(); });
   }
-}
-
-function printDIP(item) {
-  if (!item || !item.dip) return;
-  const w = window.open('', '_blank');
-  let html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>DIP Settings - ${item.name}</title>
-<style>
-body { font-family: monospace; font-size: 11px; margin: 20px; color: #000; }
-h1 { font-size: 16px; margin: 0 0 4px; }
-h2 { font-size: 12px; font-weight: normal; color: #555; margin: 0 0 12px; }
-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
-th { text-align: left; padding: 3px 6px; border-bottom: 2px solid #000; font-size: 10px; text-transform: uppercase; }
-td { padding: 3px 6px; border-bottom: 1px solid #ccc; font-size: 11px; }
-.sw { display: inline-block; width: 24px; text-align: center; font-size: 9px; border: 1px solid #999; margin-right: 1px; padding: 1px 0; }
-.sw-on { background: #000; color: #fff; font-weight: bold; }
-.sw-off { background: #fff; color: #999; }
-.def { font-weight: bold; }
-.unknown td { color: #999; }
-.hdr { display: inline-block; width: 24px; text-align: center; font-size: 8px; color: #666; margin-right: 1px; }
-.opt { display: block; line-height: 1.6; }
-.footer { margin-top: 12px; font-size: 9px; color: #999; }
-</style></head><body>
-<h1>${esc(item.name)}</h1>
-<h2>${[item.m, item.y].filter(Boolean).join(' · ')} · arcadertfm.com/#${item.id || ''}</h2>
-<table><tr><th>Switch</th><th>Setting</th><th>Options</th><th>Default</th></tr>`;
-
-  for (const d of item.dip) {
-    const isUnknown = d.name === 'Unknown' || d.name === 'Unused';
-    const cls = isUnknown ? ' class="unknown"' : '';
-    const loc = d.loc || '';
-    const opts = d.opts || [];
-    const hasSw = opts.length > 0 && opts[0] && opts[0].sw;
-    const locs = loc ? loc.split(', ') : [];
-
-    let swHeader = '';
-    if (hasSw && locs.length > 1) {
-      swHeader = '<span class="opt">' + locs.map(l => '<span class="hdr">' + l + '</span>').join(' ') + '</span>';
-    }
-
-    let optsHtml = swHeader + opts.map(o => {
-      const isDef = o.n === d.def;
-      const sw = (hasSw && o.sw) ? o.sw.split(' ').map(s => '<span class="sw sw-' + s.toLowerCase() + '">' + s + '</span>').join(' ') + ' ' : '';
-      return '<span class="opt' + (isDef ? ' def' : '') + '">' + sw + esc(o.n) + (isDef ? ' ✱' : '') + '</span>';
-    }).join('');
-
-    html += '<tr' + cls + '><td>' + esc(loc) + '</td><td>' + esc(d.name) + '</td><td>' + optsHtml + '</td><td>' + (d.def ? esc(d.def) : '') + '</td></tr>';
-  }
-
-  html += '</table><div class="footer">Source: MAME · arcadertfm.com</div></body></html>';
-  w.document.write(html);
-  w.document.close();
-  w.print();
 }
 
 loadData();
