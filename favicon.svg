@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+<rect width="16" height="16" rx="2" fill="#1a1a2e"/>
+<!-- ball -->
+<rect x="6" y="1" width="4" height="1" fill="#ffcc00"/>
+<rect x="5" y="2" width="6" height="2" fill="#ffcc00"/>
+<rect x="6" y="4" width="4" height="1" fill="#ffcc00"/>
+<rect x="6" y="2" width="1" height="1" fill="#ffe680"/>
+<!-- shaft -->
+<rect x="7" y="5" width="2" height="6" fill="#44ff77"/>
+<!-- base -->
+<rect x="5" y="11" width="6" height="1" fill="#44ff77"/>
+<rect x="3" y="12" width="10" height="2" fill="#33bb66"/>
+<rect x="3" y="14" width="10" height="1" fill="#227744"/>
+<!-- button -->
+<rect x="12" y="9" width="2" height="2" fill="#ff6699"/>
+</svg>
