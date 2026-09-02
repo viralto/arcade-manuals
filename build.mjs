@@ -9,7 +9,7 @@ import { join } from 'node:path';
 
 const SITE = 'https://arcadertfm.com';
 const OUT = 'dist';
-const SKIP = new Set(['build.mjs', 'aliases.json', 'package.json', 'package-lock.json', 'README.md', '.gitignore', '.DS_Store']);
+const SKIP = new Set(['build.mjs', 'aliases.json', 'LICENSE', 'package.json', 'package-lock.json', 'README.md', '.gitignore', '.DS_Store']);
 
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(join(OUT, 'm'), { recursive: true });
@@ -194,6 +194,7 @@ const head = (title, desc, canonical) => `<!DOCTYPE html>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${SITE}${canonical}">
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ArcadeRTFM">
 <meta property="og:title" content="${esc(title)}">
@@ -223,7 +224,8 @@ const head = (title, desc, canonical) => `<!DOCTYPE html>
 
 const footer = `
 <footer class="footer">
-  <a href="/">Search the database</a> &middot; <a href="/machines">All machines A&ndash;Z</a> &middot; <a href="/dip-info">About DIP switch data</a><br>
+  <a href="/">Search the database</a> &middot; <a href="/machines">All machines A&ndash;Z</a> &middot; <a href="/dip-info">About DIP switch data</a> &middot; <a href="/licence">Licence</a><br>
+  Site code and compiled data: <a href="/licence">CC0, no rights reserved</a>. Service manuals remain &copy; their original publishers.<br>
   Technical data sourced from <a href="https://www.mamedev.org/" target="_blank" rel="noopener">MAME</a> and the manual archive<br>
   All manuals remain the property of their original copyright holders &middot; Hosted for preservation and repair reference purposes<br>
   Found an error? Have manuals to contribute? <a href="mailto:info@arcadertfm.com">info@arcadertfm.com</a>
@@ -234,7 +236,7 @@ const footer = `
 `;
 
 // 2. One page per machine.
-const urls = [{ loc: '/', pri: '1.0', freq: 'weekly' }, { loc: '/machines', pri: '0.6', freq: 'weekly' }, { loc: '/dip-info', pri: '0.4', freq: 'yearly' }];
+const urls = [{ loc: '/', pri: '1.0', freq: 'weekly' }, { loc: '/machines', pri: '0.6', freq: 'weekly' }, { loc: '/dip-info', pri: '0.4', freq: 'yearly' }, { loc: '/licence', pri: '0.3', freq: 'yearly' }];
 for (const item of machines) {
   const meta = metaLine(item);
   const who = [mfr(item), item.y].filter(Boolean).join(', ');
