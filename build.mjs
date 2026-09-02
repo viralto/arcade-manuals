@@ -9,7 +9,7 @@ import { join } from 'node:path';
 
 const SITE = 'https://arcadertfm.com';
 const OUT = 'dist';
-const SKIP = new Set(['build.mjs', 'package.json', 'package-lock.json', 'README.md', '.gitignore', '.DS_Store']);
+const SKIP = new Set(['build.mjs', 'aliases.json', 'package.json', 'package-lock.json', 'README.md', '.gitignore', '.DS_Store']);
 
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(join(OUT, 'm'), { recursive: true });
@@ -21,6 +21,15 @@ for (const f of readdirSync('.')) {
 }
 
 const DATA = JSON.parse(readFileSync('machines.json', 'utf8'));
+// Alternate titles (regional names, licensed re-releases) derived from MAME clone families.
+// Merged into the copy of machines.json that ships, so the homepage search finds them too.
+let ALIASES = {};
+try { ALIASES = JSON.parse(readFileSync('aliases.json', 'utf8')); } catch {}
+for (const m of DATA) {
+  const aka = m.id && ALIASES[m.id];
+  if (aka && aka.length) { m.aka = aka; m.sb = (m.sb || '') + ' ' + aka.join(' '); }
+}
+writeFileSync(join(OUT, 'machines.json'), JSON.stringify(DATA));
 const machines = DATA.filter(m => m.id && /^[a-z0-9_]+$/.test(m.id));
 const lastmod = new Date().toISOString().slice(0, 10);
 
@@ -163,7 +172,8 @@ function renderBody(item) {
 
 function description(item) {
   const who = [mfr(item), item.y].filter(Boolean).join(', ');
-  const lead = `${item.name}${who ? ' (' + who + ')' : ''} arcade machine specs`;
+  const aka = item.aka && item.aka.length ? ', also known as ' + item.aka[0] : '';
+  const lead = `${item.name}${who ? ' (' + who + ')' : ''}${aka}: arcade machine specs`;
   const parts = [];
   const chips = chipSummary(item);
   if (chips.length) parts.push('Hardware: ' + chips.slice(0, 4).join(', '));
@@ -171,8 +181,8 @@ function description(item) {
   if (item.docs && item.docs.length) parts.push(item.docs.length + ' service manual' + (item.docs.length > 1 ? 's' : ''));
   const tail = ' Free repair reference from ArcadeRTFM.';
   // Drop detail from the front (hardware first) until it fits a search snippet.
-  while (parts.length && (lead + ': ' + parts.join('. ') + '.' + tail).length > 158) parts.shift();
-  return parts.length ? `${lead}: ${parts.join('. ')}.${tail}` : `${lead}.${tail}`;
+  while (parts.length && (lead + '. ' + parts.join('. ') + '.' + tail).length > 158) parts.shift();
+  return parts.length ? `${lead}. ${parts.join('. ')}.${tail}` : `${lead}.${tail}`;
 }
 const mfr = item => (item.m && item.m !== '<unknown>') ? item.m : '';
 
@@ -228,12 +238,13 @@ const urls = [{ loc: '/', pri: '1.0', freq: 'weekly' }, { loc: '/machines', pri:
 for (const item of machines) {
   const meta = metaLine(item);
   const who = [mfr(item), item.y].filter(Boolean).join(', ');
-  const title = `${item.name}${who ? ' (' + who + ')' : ''} - Specs, DIP Switches & Manuals | ArcadeRTFM`;
+  const akaT = item.aka && item.aka.length ? ' aka ' + item.aka[0] : '';
+  const title = `${item.name}${akaT}${who ? ' (' + who + ')' : ''} - Specs, DIP Switches & Manuals | ArcadeRTFM`;
   const path = `/m/${item.id}`;
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'WebPage', name: item.name, url: SITE + path, description: description(item),
     isPartOf: { '@type': 'WebSite', name: 'ArcadeRTFM', url: SITE + '/' },
-    about: { '@type': 'Thing', name: item.name, ...(mfr(item) ? { manufacturer: { '@type': 'Organization', name: mfr(item) } } : {}) },
+    about: { '@type': 'Thing', name: item.name, ...(item.aka && item.aka.length ? { alternateName: item.aka } : {}), ...(mfr(item) ? { manufacturer: { '@type': 'Organization', name: mfr(item) } } : {}) },
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'ArcadeRTFM', item: SITE + '/' },
       { '@type': 'ListItem', position: 2, name: 'All machines', item: SITE + '/machines' },
@@ -244,6 +255,7 @@ for (const item of machines) {
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">ArcadeRTFM</a> &rsaquo; <a href="/machines">All machines</a> &rsaquo; <span>${esc(item.name)}</span></nav>
   <h1>${esc(item.name)}</h1>
   ${meta.length ? '<p class="machine-meta">' + meta.map(esc).join(' &middot; ') + ' &middot; <span class="rom-name">' + esc(item.id) + '</span></p>' : ''}
+  ${item.aka && item.aka.length ? '<p class="machine-aka">Also known as: ' + item.aka.map(esc).join(', ') + '</p>' : ''}
   <p class="open-app"><a class="btn" href="/#${esc(item.id)}">&#9654; Open in the searchable database</a></p>
   ${renderBody(item)}
 </main>` + footer;
@@ -268,7 +280,7 @@ let idx = head('All Arcade Machines A-Z | ArcadeRTFM', `Alphabetical index of ${
 `;
 for (const [l, list] of groups) {
   idx += `<section><h2 id="${l === '#' ? 'other' : l}">${l === '#' ? '0-9 &amp; other' : l}</h2><ul class="machine-list">`;
-  for (const m of list) idx += `<li><a href="/m/${m.id}">${esc(m.name)}</a>${mfr(m) || m.y ? ' <span class="label">' + esc([mfr(m), m.y].filter(Boolean).join(', ')) + '</span>' : ''}${m.docs ? ' <span class="badge-manual">' + m.docs.length + ' manual' + (m.docs.length > 1 ? 's' : '') + '</span>' : ''}</li>`;
+  for (const m of list) idx += `<li><a href="/m/${m.id}">${esc(m.name)}</a>${m.aka && m.aka.length ? ' <span class="aka">aka ' + esc(m.aka[0]) + '</span>' : ''}${mfr(m) || m.y ? ' <span class="label">' + esc([mfr(m), m.y].filter(Boolean).join(', ')) + '</span>' : ''}${m.docs ? ' <span class="badge-manual">' + m.docs.length + ' manual' + (m.docs.length > 1 ? 's' : '') + '</span>' : ''}</li>`;
   idx += '</ul></section>';
 }
 idx += '</main>' + footer;
@@ -292,6 +304,8 @@ h1 { font-size: 1.25rem; color: var(--phosphor-bright); font-weight: bold; margi
 .machine-meta { font-size: 0.82rem; color: #99bb99; margin-bottom: 10px; }
 .machine-meta a { color: var(--cyan); }
 .rom-name { color: #667766; }
+.machine-aka, .aka { font-size: 0.8rem; color: #7a997a; font-style: italic; }
+.machine-aka { margin: -6px 0 10px; }
 .open-app { margin: 10px 0 16px; }
 .btn { display: inline-block; padding: 8px 14px; background: rgba(68,255,119,0.1); border: 1px solid var(--phosphor-dim); color: var(--phosphor); text-decoration: none; font-size: 0.82rem; border-radius: 2px; }
 .btn:hover { background: rgba(68,255,119,0.2); border-color: var(--phosphor); color: var(--phosphor-bright); box-shadow: 0 0 10px var(--border-glow); }
