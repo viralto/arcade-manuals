@@ -125,6 +125,7 @@ body {
 
 .machine-name { font-size: 0.95rem; font-weight: bold; color: var(--phosphor-bright); }
 .machine-meta { font-size: 0.78rem; color: #99bb99; margin-top: 2px; }
+.machine-meta .aka { color: #7a997a; font-style: italic; }
 .rom-name { color: #667766; }
 .match-indicator { font-size: 0.74rem; color: var(--amber); margin-top: 3px; }
 .machine-chips { font-size: 0.74rem; color: #8aaa8a; margin-top: 3px; }
@@ -277,6 +278,7 @@ body {
     ARCADE MANUAL ARCHIVE &middot; A community resource<br>
     Searchable. Free. No login. No user tracking. No email address harvesting.<br>
     Nobody needs to know what a massive nerd you are!<br><br>
+    <a href="/machines">Browse all machines A&ndash;Z</a> &middot; <a href="/dip-info">About DIP switch data</a><br>
     Technical data sourced from <a href="https://www.mamedev.org/" target="_blank" rel="noopener">MAME</a> and the manual archive<br>
     All manuals remain the property of their original copyright holders<br>
     Hosted for preservation and repair reference purposes<br><br>
@@ -434,11 +436,22 @@ function matchesFilter(item) {
   return true;
 }
 
+// Fold case and drop punctuation so "pac-man", "pacman" and "Pac Man" all match.
+function normText(s) {
+  return String(s || '').toLowerCase().replace(/[^a-z0-9\s]+/g, '').replace(/\s+/g, ' ').trim();
+}
+
 function matchesSearch(item) {
   if (!currentSearch) return true;
-  const terms = currentSearch.split(/\s+/);
-  const searchable = (item.sb || '').toLowerCase();
-  return terms.every(term => searchable.includes(term));
+  if (item.sbn === undefined) {
+    item.sbn = normText((item.sb || '') + ' ' + (item.aka || []).join(' '));
+    item.sbj = item.sbn.replace(/ /g, '');
+  }
+  const terms = normText(currentSearch).split(' ').filter(Boolean);
+  if (!terms.length) return true;
+  if (terms.every(term => item.sbn.includes(term))) return true;
+  // "pac man" typed as two words should still find "Pac-Man".
+  return terms.length > 1 && item.sbj.includes(terms.join(''));
 }
 
 function esc(str) {
@@ -546,7 +559,7 @@ function renderHead(item) {
   return `<div class="machine-head">
     <div>
       <div class="machine-name"><span class="expand-arrow">&#9654;</span>${esc(item.name)}</div>
-      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + (item.id ? ' &middot; <span class="rom-name">' + esc(item.id) + '</span>' : '') + '</div>' : ''}
+      ${meta.length ? '<div class="machine-meta">' + meta.map(esc).join(' &middot; ') + (item.id ? ' &middot; <span class="rom-name">' + esc(item.id) + '</span>' : '') + (item.aka && item.aka.length ? ' <span class="aka">aka ' + item.aka.map(esc).join(', ') + '</span>' : '') + '</div>' : ''}
       ${matchHtml}
     </div>
     <div class="machine-badges">${badges}</div>
