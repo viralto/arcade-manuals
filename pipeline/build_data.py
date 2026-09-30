@@ -155,10 +155,13 @@ def aliases_for(fam):
     return out
 
 
+SCOPE = json.load(open('pipeline/scope.json'))
 records, aliases = [], {}
 for fam in ids:
     r = mame[fam]
     docs = placed.get(('game', fam), [])
+    if SCOPE.get('video_only_without_manual') and not S[fam]['screens'] and not docs:
+        continue                             # manuals first: non-video machines stay only with a manual
     r['docs'] = [doc for doc, _, _ in docs]
     # Manual-extracted fields: keep the old record's own only if some of its manuals stayed with it,
     # otherwise take them from a merged manual-only record.

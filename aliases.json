@@ -286,6 +286,9 @@
 "bwcasino": [
 "Atlantic City Action"
 ],
+"bwidow": [
+"Gravitar Retrofit"
+],
 "bwings": [
 "Battle Wings"
 ],
@@ -408,7 +411,8 @@
 "Champion Golf"
 ],
 "crimfght": [
-"The Main Event to Crime Fighters Conversion"
+"The Main Event to Crime Fighters Conversion",
+"The Ocean Hunter: The Seven Seas Adventure"
 ],
 "critcrsh": [
 "Tatacot"
@@ -546,6 +550,9 @@
 ],
 "dkmb": [
 "Donkey Kong / Donkey Kong Junior / Mario Bros"
+],
+"dkong": [
+"Eight Ball Action (Donkey Kong Conversion)"
 ],
 "dkongjr": [
 "Donkey Kong Jr."
@@ -738,7 +745,8 @@
 "galaxian": [
 "Moon Alien",
 "T.T Spacian Part-2",
-"Super GX"
+"Super GX",
+"Warriors of Faith"
 ],
 "galaxyr": [
 "Star Blazer"
@@ -1058,7 +1066,8 @@
 ],
 "junglek": [
 "Jungle Hunt",
-"Pirate Pete"
+"Pirate Pete",
+"Jungle Hunt to Elevator Action Conversion"
 ],
 "kaiserkn": [
 "Global Champion"
@@ -1215,7 +1224,8 @@
 "Led Storm"
 ],
 "mainevt": [
-"Ring no Ohja"
+"Ring no Ohja",
+"The Ocean Hunter: The Seven Seas Adventure"
 ],
 "majtitl2": [
 "The Irem Skins Game"
@@ -1345,6 +1355,9 @@
 "mslug2": [
 "Metal Slug 2"
 ],
+"mspacman": [
+"Pac-Man & Ms. Pac-Man"
+],
 "mstworld": [
 "Monsters World 2"
 ],
@@ -1452,9 +1465,6 @@
 ],
 "nyny": [
 "Waga Seishun no Arcadia"
-],
-"oceanhun": [
-"The Ocean Hunter: The Seven Seas Adventure"
 ],
 "offroad": [
 "Ivan 'Ironman' Stewart's Super Off-Road"
@@ -1725,6 +1735,9 @@
 ],
 "robby": [
 "Robby Roto"
+],
+"robotron": [
+"Stargate / Robotron"
 ],
 "rockrage": [
 "Koi no Hotrock"
@@ -2037,8 +2050,12 @@
 "starforc": [
 "Mega Force"
 ],
+"stargate": [
+"Stargate / Robotron"
+],
 "stargrds": [
-"Star Guards U.R."
+"Star Guards U.R.",
+"Star Guards U.R. to Rampage U.R."
 ],
 "startrek": [
 "Star Trek Cockpit"
@@ -2135,6 +2152,9 @@
 ],
 "tekken51": [
 "Tekken 5"
+],
+"tempest": [
+"Major Havoc Conversion Kit A"
 ],
 "tengai": [
 "Sengoku Blade: Sengoku Ace Episode II"
@@ -2348,7 +2368,8 @@
 "Wardner no Mori"
 ],
 "warofbug": [
-"War of the Bugs"
+"War of the Bugs",
+"Warriors of Faith"
 ],
 "warpwarp": [
 "Rock-Ola Warp-Warp"
@@ -2387,8 +2408,7 @@
 ],
 "wof": [
 "Sangokushi II",
-"Tenchi wo Kurau II: Sekiheki no Tatakai",
-"Warriors of Faith"
+"Tenchi wo Kurau II: Sekiheki no Tatakai"
 ],
 "worldwar": [
 "Bermuda Triangle"
@@ -2409,8 +2429,7 @@
 ],
 "wsbbgd": [
 "World Series 2001",
-"World Series Baseball",
-"World Series Baseball 2001"
+"World Series Baseball"
 ],
 "wwjgtin": [
 "Photo Finish"
