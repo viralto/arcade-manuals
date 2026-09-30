@@ -465,8 +465,8 @@ function matchesSearch(item) {
   const terms = normText(currentSearch).split(' ').filter(Boolean);
   if (!terms.length) return true;
   if (terms.every(term => item.sbn.includes(term))) return true;
-  // "pac man" typed as two words should still find "Pac-Man".
-  return terms.length > 1 && item.sbj.includes(terms.join(''));
+  // Ignore spaces too: "pac man" finds "Pac-Man" and "burgertime" finds "Burger Time".
+  return terms.every(term => item.sbj.includes(term));
 }
 
 function esc(str) {
