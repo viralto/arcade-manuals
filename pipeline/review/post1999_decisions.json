@@ -1,0 +1,1091 @@
+[
+ {
+  "key": "1944|1944.pdf",
+  "file": "1944.pdf",
+  "decision": "keep",
+  "target": "1944",
+  "title": "1944: The Loop Master (Europe 000620)",
+  "confidence": "high",
+  "note": "1944 continues the 19XX series (19xx, 1996)"
+ },
+ {
+  "key": "400 in 1 Gamebox|400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf",
+  "file": "400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf",
+  "decision": "keep",
+  "target": null,
+  "title": "400 in 1 Gamebox",
+  "confidence": "low",
+  "note": "Multigame board of pre-2000 classics (compilation, non-gambling)"
+ },
+ {
+  "key": "airtrix|Air Trix DX Wiring Diagrams.pdf",
+  "file": "Air Trix DX Wiring Diagrams.pdf",
+  "decision": "keep",
+  "target": "airtrix",
+  "title": "Air Trix (Rev A)",
+  "confidence": "medium",
+  "note": "Air Trix is the sequel to Top Skater (1997)"
+ },
+ {
+  "key": "airtrix|Air Trix DX.pdf",
+  "file": "Air Trix DX.pdf",
+  "decision": "keep",
+  "target": "airtrix",
+  "title": "Air Trix (Rev A)",
+  "confidence": "medium",
+  "note": "Air Trix is the sequel to Top Skater (1997)"
+ },
+ {
+  "key": "Arcade Legends|Arcade Legends Manual Rev1.pdf",
+  "file": "Arcade Legends Manual Rev1.pdf",
+  "decision": "keep",
+  "target": null,
+  "title": "Arcade Legends (Chicago Gaming)",
+  "confidence": "medium",
+  "note": "Chicago Gaming multigame of classic pre-2000 arcade titles"
+ },
+ {
+  "key": "arctthnd|Artic Thunder 27in.pdf",
+  "file": "Artic Thunder 27in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Arctic Thunder (v1.002)",
+  "confidence": "low",
+  "note": "Arctic Thunder new 2001 title; only loose Hydro Thunder link"
+ },
+ {
+  "key": "arctthnd|Artic Thunder 39in.pdf",
+  "file": "Artic Thunder 39in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Arctic Thunder (v1.002)",
+  "confidence": "low",
+  "note": "Arctic Thunder new 2001 title; only loose Hydro Thunder link"
+ },
+ {
+  "key": "atvtrack|ATV Track.pdf",
+  "file": "ATV Track.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "ATV Track (set 1)",
+  "confidence": "high",
+  "note": "New 2002 Gaelco title"
+ },
+ {
+  "key": "Beach Head 2000 / Beach Head 2002 Multi-Game|Global VR 040-1005-01-SX-PUP_SW_Install.pdf",
+  "file": "Global VR 040-1005-01-SX-PUP_SW_Install.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Beach Head 2000 / Beach Head 2002 Multi-Game",
+  "confidence": "high",
+  "note": "Global VR post-2000 PC-based titles"
+ },
+ {
+  "key": "blshark|Blue_Shark_Schematic_(M051-00742-A005).pdf",
+  "file": "Blue_Shark_Schematic_(M051-00742-A005).pdf",
+  "decision": "move",
+  "target": "blueshrk",
+  "title": "Blue Shark (Midway)",
+  "confidence": "high",
+  "note": "M051 part number = Midway 1978 Blue Shark schematic"
+ },
+ {
+  "key": "brvblade|BraveBlade.pdf",
+  "file": "BraveBlade.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Brave Blade (World)",
+  "confidence": "high",
+  "note": "New 2000 Raizing title"
+ },
+ {
+  "key": "cvs2|Capcom vs SNK 2.pdf",
+  "file": "Capcom vs SNK 2.pdf",
+  "decision": "keep",
+  "target": "cvs2",
+  "title": "Capcom Vs. SNK 2: Mark Of The Millennium 2001 (USA) (GDL-0008)",
+  "confidence": "medium",
+  "note": "Capcom Vs. crossover series (Street Fighter lineage)"
+ },
+ {
+  "key": "capsnk|Capcom_vs_SNK.pdf",
+  "file": "Capcom_vs_SNK.pdf",
+  "decision": "keep",
+  "target": "capsnk",
+  "title": "Capcom Vs. SNK: Millennium Fight 2000 (Rev C)",
+  "confidence": "medium",
+  "note": "Capcom Vs. crossover series (Street Fighter lineage)"
+ },
+ {
+  "key": "cartfury|Cart Fury Dedicated 27in Amendment.pdf",
+  "file": "Cart Fury Dedicated 27in Amendment.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "cartfury|Cart Fury Dedicated 27in.pdf",
+  "file": "Cart Fury Dedicated 27in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "cartfury|Cart Fury Dedicated 39in.pdf",
+  "file": "Cart Fury Dedicated 39in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "cartfury|Kart Fury 27in Amendment.pdf",
+  "file": "Kart Fury 27in Amendment.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "cartfury|Kart Fury 27in.pdf",
+  "file": "Kart Fury 27in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "cartfury|Kart Fury 39in.pdf",
+  "file": "Kart Fury 39in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "CART Fury Championship Racing (ver 1.00)",
+  "confidence": "high",
+  "note": "CART Fury: new 2000 Midway title"
+ },
+ {
+  "key": "Club Kart|Club Kart DX.pdf",
+  "file": "Club Kart DX.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "Club Kart|Club Kart STD Wiring Diagrams.pdf",
+  "file": "Club Kart STD Wiring Diagrams.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "Club Kart|Club Kart STD.pdf",
+  "file": "Club Kart STD.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "Club Kart DX|Club Kart DX Wiring Diagrams.pdf",
+  "file": "Club Kart DX Wiring Diagrams.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart DX",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "clubkrt|Club Kart (Card Replacement Interface System) Manual.pdf",
+  "file": "Club Kart (Card Replacement Interface System) Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart: European Session (Rev D)",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "clubkrt|Club Kart (Card Replacement Interface System) Brochure.pdf",
+  "file": "Club Kart (Card Replacement Interface System) Brochure.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Club Kart: European Session (Rev D)",
+  "confidence": "high",
+  "note": "Club Kart is a brand-new post-1999 title"
+ },
+ {
+  "key": "Cruisin' Exotica|Cruisn Exotica 27in.pdf",
+  "file": "Cruisn Exotica 27in.pdf",
+  "decision": "keep",
+  "target": "crusnexo",
+  "title": "Cruis'n Exotica (version 2.4)",
+  "confidence": "high",
+  "note": "Cruis'n series; MAME crusnexo dated 1999"
+ },
+ {
+  "key": "Cruisin' Exotica|Cruisn Exotica 39in.pdf",
+  "file": "Cruisn Exotica 39in.pdf",
+  "decision": "keep",
+  "target": "crusnexo",
+  "title": "Cruis'n Exotica (version 2.4)",
+  "confidence": "high",
+  "note": "Cruis'n series; MAME crusnexo dated 1999"
+ },
+ {
+  "key": "Cruisin' Exotica|Cruisn Exotica 39in Grounding Amendment.pdf",
+  "file": "Cruisn Exotica 39in Grounding Amendment.pdf",
+  "decision": "keep",
+  "target": "crusnexo",
+  "title": "Cruis'n Exotica (version 2.4)",
+  "confidence": "high",
+  "note": "Cruis'n series; MAME crusnexo dated 1999"
+ },
+ {
+  "key": "Cruisin' Exotica|Cruisn Exotica 39in Motion.pdf",
+  "file": "Cruisn Exotica 39in Motion.pdf",
+  "decision": "keep",
+  "target": "crusnexo",
+  "title": "Cruis'n Exotica (version 2.4)",
+  "confidence": "high",
+  "note": "Cruis'n series; MAME crusnexo dated 1999"
+ },
+ {
+  "key": "ddp2|Dodonpachi 2.pdf",
+  "file": "Dodonpachi 2.pdf",
+  "decision": "keep",
+  "target": "ddp2",
+  "title": "DoDonPachi II - Bee Storm (World, ver. 102)",
+  "confidence": "high",
+  "note": "DoDonPachi II continues DoDonPachi (1997)"
+ },
+ {
+  "key": "Donkey Kong / Donkey Kong Junior / Mario Bros|DK_DK-JR_Mario_Bros_Combo_by_Namco_2005.pdf",
+  "file": "DK_DK-JR_Mario_Bros_Combo_by_Namco_2005.pdf",
+  "decision": "keep",
+  "target": "dkmb",
+  "title": "Donkey Kong / Donkey Kong Jr / Mario Bros",
+  "confidence": "high",
+  "note": "Compilation of 1981-83 Nintendo classics"
+ },
+ {
+  "key": "dragnblz|Dragon Blaze.pdf",
+  "file": "Dragon Blaze.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Dragon Blaze",
+  "confidence": "medium",
+  "note": "New 2000 Psikyo title"
+ },
+ {
+  "key": "Global VR Parts Catalog|Global VR Parts Catalogue.pdf",
+  "file": "Global VR Parts Catalogue.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Global VR Parts Catalog",
+  "confidence": "medium",
+  "note": "Global VR post-2000 product parts catalogue"
+ },
+ {
+  "key": "gnbarich|Gunbarich.pdf",
+  "file": "Gunbarich.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Gunbarich",
+  "confidence": "low",
+  "note": "Gunbird-character spin-off breakout game; loose"
+ },
+ {
+  "key": "GVR SX and PUP Multi-Game System|Global VR 040-1002-01-SX-PUP-System-Manual.pdf",
+  "file": "Global VR 040-1002-01-SX-PUP-System-Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "GVR SX and PUP Multi-Game System",
+  "confidence": "high",
+  "note": "Global VR post-2000 PC multigame platform"
+ },
+ {
+  "key": "Initial D|Initial D Wiring Diagrams.pdf",
+  "file": "Initial D Wiring Diagrams.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "Initial D|Initial D.pdf",
+  "file": "Initial D.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "initdv2j|Initial D 2 Kit.pdf",
+  "file": "Initial D 2 Kit.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D Arcade Stage Ver. 2 (Japan, Rev B) (GDS-0026B)",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "initdv3e|Initial D 3 Kit Manual.pdf",
+  "file": "Initial D 3 Kit Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D Arcade Stage Ver. 3 (Export) (GDS-0033)",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "Initial D Ver.2|Initial D 2 DLX.pdf",
+  "file": "Initial D 2 DLX.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D Ver.2",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "Initial D Ver.2|Initial D 2 Twin.pdf",
+  "file": "Initial D 2 Twin.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D Ver.2",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "Initial D Version 3|Initial D 3 Twin Manual.pdf",
+  "file": "Initial D 3 Twin Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Initial D Version 3",
+  "confidence": "high",
+  "note": "Initial D is a brand-new post-1999 title"
+ },
+ {
+  "key": "jnero|Johnny_Nero_Action_Hero_Mainboard_Tshoot_Guide.pdf",
+  "file": "Johnny_Nero_Action_Hero_Mainboard_Tshoot_Guide.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Johnny Nero Action Hero (v01.01.08)",
+  "confidence": "high",
+  "note": "New 2004 ICE title"
+ },
+ {
+  "key": "jnero|Johnny_Nero_Action_Hero_Tech_Bulletin.pdf",
+  "file": "Johnny_Nero_Action_Hero_Tech_Bulletin.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Johnny Nero Action Hero (v01.01.08)",
+  "confidence": "high",
+  "note": "New 2004 ICE title"
+ },
+ {
+  "key": "jnero|Johnny_Nero_Action_Hero_Owner and_Service_Manual.pdf",
+  "file": "Johnny_Nero_Action_Hero_Owner and_Service_Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Johnny Nero Action Hero (v01.01.08)",
+  "confidence": "high",
+  "note": "New 2004 ICE title"
+ },
+ {
+  "key": "kartduel|Kart Duel.pdf",
+  "file": "Kart Duel.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Kart Duel (World, KTD2/VER.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco/Gaps title"
+ },
+ {
+  "key": "kartduel|Kart Duel Updates 1 & 2.pdf",
+  "file": "Kart Duel Updates 1 & 2.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Kart Duel (World, KTD2/VER.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco/Gaps title"
+ },
+ {
+  "key": "loderndf|Lode Runner DigFight.pdf",
+  "file": "Lode Runner DigFight.pdf",
+  "decision": "keep",
+  "target": "loderndf",
+  "title": "Lode Runner - The Dig Fight (ver. B)",
+  "confidence": "high",
+  "note": "Lode Runner arcade series continuation"
+ },
+ {
+  "key": "Mars Matrix|Mars Matrix.pdf",
+  "file": "Mars Matrix.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Mars Matrix",
+  "confidence": "medium",
+  "note": "New 2000 Takumi title"
+ },
+ {
+  "key": "mvsc2|Marvel vs Capcom 2.pdf",
+  "file": "Marvel vs Capcom 2.pdf",
+  "decision": "keep",
+  "target": "mvsc2",
+  "title": "Marvel Vs. Capcom 2: New Age of Heroes (Export, Korea, Rev A)",
+  "confidence": "high",
+  "note": "Marvel vs. Capcom sequel"
+ },
+ {
+  "key": "mazan|Mazan.pdf",
+  "file": "Mazan.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Mazan: Flash of the Blade (World, MAZ2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2002 Namco title"
+ },
+ {
+  "key": "Mesmerizer|Mesmerizer.pdf",
+  "file": "Mesmerizer.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Mesmerizer",
+  "confidence": "medium",
+  "note": "New 2001 ICE redemption title"
+ },
+ {
+  "key": "mslug4|Metal Slug 4.pdf",
+  "file": "Metal Slug 4.pdf",
+  "decision": "keep",
+  "target": "mslug4",
+  "title": "Metal Slug 4 (NGM-2630)",
+  "confidence": "high",
+  "note": "Metal Slug series sequel"
+ },
+ {
+  "key": "Model T-35HD|Wave Runner GP Thomas Compressor Manual.pdf",
+  "file": "Wave Runner GP Thomas Compressor Manual.pdf",
+  "decision": "keep",
+  "target": "wrungp",
+  "title": "Wave Runner GP",
+  "confidence": "medium",
+  "note": "Compressor manual for Wave Runner GP (Wave Runner sequel)"
+ },
+ {
+  "key": "mrdrilr2|Mr Driller 2.pdf",
+  "file": "Mr Driller 2.pdf",
+  "decision": "keep",
+  "target": "mrdrilr2",
+  "title": "Mr. Driller 2 (World, DR22 Ver.A)",
+  "confidence": "high",
+  "note": "Mr. Driller sequel"
+ },
+ {
+  "key": "Multigame 400 in 1|Multigame_400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf",
+  "file": "Multigame_400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf",
+  "decision": "keep",
+  "target": null,
+  "title": "Multigame 400 in 1 Gamebox",
+  "confidence": "low",
+  "note": "Multigame board of pre-2000 classics (compilation, non-gambling)"
+ },
+ {
+  "key": "NBA Showtime Gold Edition / NFL Blitz 2000 Gold Edition|Midway Sportstation 25in Conversion Kit.pdf",
+  "file": "Midway Sportstation 25in Conversion Kit.pdf",
+  "decision": "keep",
+  "target": "nbagold",
+  "title": "SportStation: NBA Showtime NBA on NBC Gold Edition (ver 3.0, Feb 18 2000) / NFL Blitz 2000 Gold Edition",
+  "confidence": "high",
+  "note": "Gold update of 1999 NBA Showtime / NFL Blitz 2000"
+ },
+ {
+  "key": "NBA Showtime Gold Edition / NFL Blitz 2000 Gold Edition|Showtime Gold Edition (NBA on NBC and NFL Blitz) 25in Dedicated.pdf",
+  "file": "Showtime Gold Edition (NBA on NBC and NFL Blitz) 25in Dedicated.pdf",
+  "decision": "keep",
+  "target": "nbagold",
+  "title": "SportStation: NBA Showtime NBA on NBC Gold Edition (ver 3.0, Feb 18 2000) / NFL Blitz 2000 Gold Edition",
+  "confidence": "high",
+  "note": "Gold update of 1999 NBA Showtime / NFL Blitz 2000"
+ },
+ {
+  "key": "nitd|Nightmare in the Dark.pdf",
+  "file": "Nightmare in the Dark.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Nightmare in the Dark",
+  "confidence": "high",
+  "note": "New 2000 title"
+ },
+ {
+  "key": "ninjaslt|Ninja Assault Booster.pdf",
+  "file": "Ninja Assault Booster.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Ninja Assault (World, NJA2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "ninjaslt|Ninja Assault Deluxe.pdf",
+  "file": "Ninja Assault Deluxe.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Ninja Assault (World, NJA2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "Ninja Assault SD|Ninja Assault Standard.pdf",
+  "file": "Ninja Assault Standard.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Ninja Assault SD",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "offrthnd|Off Road Thunder Amendment.pdf",
+  "file": "Off Road Thunder Amendment.pdf",
+  "decision": "keep",
+  "target": "offrthnd",
+  "title": "Offroad Thunder",
+  "confidence": "medium",
+  "note": "Sequel to Midway Off Road Challenge (1997)"
+ },
+ {
+  "key": "offrthnd|Off Road Thunder 27in.pdf",
+  "file": "Off Road Thunder 27in.pdf",
+  "decision": "keep",
+  "target": "offrthnd",
+  "title": "Offroad Thunder",
+  "confidence": "medium",
+  "note": "Sequel to Midway Off Road Challenge (1997)"
+ },
+ {
+  "key": "offrthnd|Off Road Thunder 39in Amendment.pdf",
+  "file": "Off Road Thunder 39in Amendment.pdf",
+  "decision": "keep",
+  "target": "offrthnd",
+  "title": "Offroad Thunder",
+  "confidence": "medium",
+  "note": "Sequel to Midway Off Road Challenge (1997)"
+ },
+ {
+  "key": "offrthnd|Off Road Thunder 39in.pdf",
+  "file": "Off Road Thunder 39in.pdf",
+  "decision": "keep",
+  "target": "offrthnd",
+  "title": "Offroad Thunder",
+  "confidence": "medium",
+  "note": "Sequel to Midway Off Road Challenge (1997)"
+ },
+ {
+  "key": "ollie|Ollie King Schematics.pdf",
+  "file": "Ollie King Schematics.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Ollie King (GDX-0007)",
+  "confidence": "high",
+  "note": "New 2003 Sega title"
+ },
+ {
+  "key": "ollie|Ollie King 29Dlx.pdf",
+  "file": "Ollie King 29Dlx.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Ollie King (GDX-0007)",
+  "confidence": "high",
+  "note": "New 2003 Sega title"
+ },
+ {
+  "key": "Operation Blockade Incoming Multi-Game|Global VR 040-1004-01-Vortek_SW_Install.pdf",
+  "file": "Global VR 040-1004-01-Vortek_SW_Install.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Operation Blockade Incoming Multi-Game",
+  "confidence": "high",
+  "note": "Global VR post-2000 PC-based titles"
+ },
+ {
+  "key": "outr2|Outrun 2 DLX.pdf",
+  "file": "Outrun 2 DLX.pdf",
+  "decision": "keep",
+  "target": "outr2",
+  "title": "OutRun 2 (Rev A) (GDX-0004A)",
+  "confidence": "high",
+  "note": "OutRun arcade sequel"
+ },
+ {
+  "key": "outr2|Outrun 2 Std.pdf",
+  "file": "Outrun 2 Std.pdf",
+  "decision": "keep",
+  "target": "outr2",
+  "title": "OutRun 2 (Rev A) (GDX-0004A)",
+  "confidence": "high",
+  "note": "OutRun arcade sequel"
+ },
+ {
+  "key": "outr2|Outrun 2 Twin.pdf",
+  "file": "Outrun 2 Twin.pdf",
+  "decision": "keep",
+  "target": "outr2",
+  "title": "OutRun 2 (Rev A) (GDX-0004A)",
+  "confidence": "high",
+  "note": "OutRun arcade sequel"
+ },
+ {
+  "key": "OutRun 2 Mini DX|Outrun 2 DLX Wiring Diagrams.pdf",
+  "file": "Outrun 2 DLX Wiring Diagrams.pdf",
+  "decision": "keep",
+  "target": "outr2",
+  "title": "OutRun 2 (Rev A) (GDX-0004A)",
+  "confidence": "high",
+  "note": "OutRun arcade sequel"
+ },
+ {
+  "key": "OutRun 2 SP Standard|OutRun_2_SP_Standard_Wiring.pdf",
+  "file": "OutRun_2_SP_Standard_Wiring.pdf",
+  "decision": "keep",
+  "target": "outr2st",
+  "title": "OutRun 2 Special Tours (Rev A) (GDX-0014A)",
+  "confidence": "high",
+  "note": "OutRun 2 SP / Special Tours, OutRun sequel"
+ },
+ {
+  "key": "ptblank3|Point Blank 3.pdf",
+  "file": "Point Blank 3.pdf",
+  "decision": "keep",
+  "target": "ptblank3",
+  "title": "Point Blank 3 (World, GNN2 Ver.A)",
+  "confidence": "high",
+  "note": "Point Blank sequel"
+ },
+ {
+  "key": "progear|Progear.pdf",
+  "file": "Progear.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Progear (Europe 010117)",
+  "confidence": "high",
+  "note": "New 2001 Cave title"
+ },
+ {
+  "key": "rotd|Rage of the Dragons.pdf",
+  "file": "Rage of the Dragons.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Rage of the Dragons (NGM-2640?)",
+  "confidence": "low",
+  "note": "Loose Double Dragon spiritual successor; new IP"
+ },
+ {
+  "key": "sscopex|Silent_Scope_EX_Kit_(400875_GEA13).pdf",
+  "file": "Silent_Scope_EX_Kit_(400875_GEA13).pdf",
+  "decision": "keep",
+  "target": "sscopex",
+  "title": "Silent Scope EX (ver EAC 1.20)",
+  "confidence": "high",
+  "note": "Silent Scope series continuation"
+ },
+ {
+  "key": "mwskins|Skins Game 25in.pdf",
+  "file": "Skins Game 25in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Skins Game (1.06)",
+  "confidence": "medium",
+  "note": "New Midway golf title; NSS Skins Game unrelated"
+ },
+ {
+  "key": "mwskins|Skins Game Conversion Kit.pdf",
+  "file": "Skins Game Conversion Kit.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Skins Game (1.06)",
+  "confidence": "medium",
+  "note": "New Midway golf title; NSS Skins Game unrelated"
+ },
+ {
+  "key": "mwskins|Skins Game Joystick Calibration.pdf",
+  "file": "Skins Game Joystick Calibration.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Skins Game (1.06)",
+  "confidence": "medium",
+  "note": "New Midway golf title; NSS Skins Game unrelated"
+ },
+ {
+  "key": "mwskins|Skins Game Keypad Connection.pdf",
+  "file": "Skins Game Keypad Connection.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Skins Game (1.06)",
+  "confidence": "medium",
+  "note": "New Midway golf title; NSS Skins Game unrelated"
+ },
+ {
+  "key": "mwskins|Skins Game Kit Templete.pdf",
+  "file": "Skins Game Kit Templete.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Skins Game (1.06)",
+  "confidence": "medium",
+  "note": "New Midway golf title; NSS Skins Game unrelated"
+ },
+ {
+  "key": "smashdrv|Smashing_Drive_NYC_IIxM_Sit_Down.pdf",
+  "file": "Smashing_Drive_NYC_IIxM_Sit_Down.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Smashing Drive (World)",
+  "confidence": "high",
+  "note": "New 2000 Gaelco title"
+ },
+ {
+  "key": "sprtjam|SportsJam.pdf",
+  "file": "SportsJam.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Sports Jam (GDS-0003)",
+  "confidence": "high",
+  "note": "New 2000 Sega title"
+ },
+ {
+  "key": "tekken4|Tekkan 4 Parts List.pdf",
+  "file": "Tekkan 4 Parts List.pdf",
+  "decision": "keep",
+  "target": "tekken4",
+  "title": "Tekken 4 (TEF3 Ver. C)",
+  "confidence": "high",
+  "note": "Tekken series sequel"
+ },
+ {
+  "key": "tekken4|Tekken 4 Kit.pdf",
+  "file": "Tekken 4 Kit.pdf",
+  "decision": "keep",
+  "target": "tekken4",
+  "title": "Tekken 4 (TEF3 Ver. C)",
+  "confidence": "high",
+  "note": "Tekken series sequel"
+ },
+ {
+  "key": "The Fast and the Furious Drift|The_Fast_and_the_Furious_Service_Bulletin_(900-00001-01).pdf",
+  "file": "The_Fast_and_the_Furious_Service_Bulletin_(900-00001-01).pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "The Fast and the Furious Drift",
+  "confidence": "high",
+  "note": "New post-2000 Raw Thrills title"
+ },
+ {
+  "key": "thegrid|The Grid Amendment.pdf",
+  "file": "The Grid Amendment.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "The Grid (version 1.2)",
+  "confidence": "high",
+  "note": "The Grid is a brand-new post-1999 title"
+ },
+ {
+  "key": "thegrid|The Grid 25in.pdf",
+  "file": "The Grid 25in.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "The Grid (version 1.2)",
+  "confidence": "high",
+  "note": "The Grid is a brand-new post-1999 title"
+ },
+ {
+  "key": "thegrid|The Grid Header Installation.pdf",
+  "file": "The Grid Header Installation.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "The Grid (version 1.2)",
+  "confidence": "high",
+  "note": "The Grid is a brand-new post-1999 title"
+ },
+ {
+  "key": "timecrs4|Time_Crisis_4_DX_Manual_Issue2.pdf",
+  "file": "Time_Crisis_4_DX_Manual_Issue2.pdf",
+  "decision": "keep",
+  "target": "timecrs4",
+  "title": "Time Crisis 4 (World, TSF1002-NA-A)",
+  "confidence": "high",
+  "note": "Time Crisis series sequel"
+ },
+ {
+  "key": "Ultracade|Ultracade System 3.0.pdf",
+  "file": "Ultracade System 3.0.pdf",
+  "decision": "keep",
+  "target": null,
+  "title": "UltraCade",
+  "confidence": "medium",
+  "note": "UltraCade multigame of licensed pre-2000 classics"
+ },
+ {
+  "key": "UltraCade Universal Conversion Kit|UltraCade Universal Kit.pdf",
+  "file": "UltraCade Universal Kit.pdf",
+  "decision": "keep",
+  "target": null,
+  "title": "UltraCade Universal Conversion Kit",
+  "confidence": "medium",
+  "note": "UltraCade multigame of licensed pre-2000 classics"
+ },
+ {
+  "key": "vnight|Vampire Night Deluxe.pdf",
+  "file": "Vampire Night Deluxe.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Vampire Night (VPN3 Ver. B)",
+  "confidence": "high",
+  "note": "Vampire Night is a brand-new post-1999 title"
+ },
+ {
+  "key": "Vampire Night SD|Vampire Night Standard.pdf",
+  "file": "Vampire Night Standard.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Vampire Night SD",
+  "confidence": "high",
+  "note": "Vampire Night is a brand-new post-1999 title"
+ },
+ {
+  "key": "vasara2|Vasara 2.pdf",
+  "file": "Vasara 2.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Vasara 2 (set 1)",
+  "confidence": "high",
+  "note": "Vasara series began 2000"
+ },
+ {
+  "key": "vf4|Virtua Fighter 4.pdf",
+  "file": "Virtua Fighter 4.pdf",
+  "decision": "keep",
+  "target": "vf4",
+  "title": "Virtua Fighter 4 Version C (GDS-0012C)",
+  "confidence": "high",
+  "note": "Virtua Fighter series sequel"
+ },
+ {
+  "key": "vf4evo|Virtua Fighter 4 Evolution.pdf",
+  "file": "Virtua Fighter 4 Evolution.pdf",
+  "decision": "keep",
+  "target": "vf4evo",
+  "title": "Virtua Fighter 4: Evolution (Version B) (Japan) (GDS-0024C)",
+  "confidence": "high",
+  "note": "Virtua Fighter series sequel"
+ },
+ {
+  "key": "virnba|Virtua NBA.pdf",
+  "file": "Virtua NBA.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Virtua NBA (USA)",
+  "confidence": "medium",
+  "note": "New 2000 Sega basketball title"
+ },
+ {
+  "key": "vs2002ex|Virtua Striker 2002.pdf",
+  "file": "Virtua Striker 2002.pdf",
+  "decision": "keep",
+  "target": "vs2002ex",
+  "title": "Virtua Striker 2002 (Export) (GDT-0002)",
+  "confidence": "high",
+  "note": "Virtua Striker series sequel"
+ },
+ {
+  "key": "vstrik3|Virtua Striker 3.pdf",
+  "file": "Virtua Striker 3.pdf",
+  "decision": "keep",
+  "target": "vstrik3",
+  "title": "Virtua Striker 3 (GDS-0006)",
+  "confidence": "high",
+  "note": "Virtua Striker series sequel"
+ },
+ {
+  "key": "Virtua Tennis|Virtua Tennis.pdf",
+  "file": "Virtua Tennis.pdf",
+  "decision": "move",
+  "target": "vtennis",
+  "title": "Virtua Tennis / Power Smash",
+  "confidence": "high",
+  "note": "Virtua Tennis is 1999 in MAME (vtennis)"
+ },
+ {
+  "key": "Virtua Tennis 2|Virtua Tennis 2.pdf",
+  "file": "Virtua Tennis 2.pdf",
+  "decision": "keep",
+  "target": "vtenis2c",
+  "title": "Virtua Tennis 2 / Power Smash 2 (Rev A)",
+  "confidence": "medium",
+  "note": "Virtua Tennis sequel; vtennis2 is the GD-ROM parent"
+ },
+ {
+  "key": "Vortek 3 Multi-Game System|Global VR 040-1001-01-V3-System-Manual.pdf",
+  "file": "Global VR 040-1001-01-V3-System-Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Vortek 3 Multi-Game System",
+  "confidence": "high",
+  "note": "Global VR post-2000 PC multigame platform"
+ },
+ {
+  "key": "Wacky Ducks|Wacky Ducks.pdf",
+  "file": "Wacky Ducks.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Wacky Ducks",
+  "confidence": "medium",
+  "note": "New 2000 ICE redemption title"
+ },
+ {
+  "key": "wanganmd|Wangan Midnight Manual.pdf",
+  "file": "Wangan Midnight Manual.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Wangan Midnight (WMN1 Ver. A)",
+  "confidence": "high",
+  "note": "Wangan Midnight is a brand-new post-1999 title"
+ },
+ {
+  "key": "wanganmd|Wangan_Midnight_Update_1.pdf",
+  "file": "Wangan_Midnight_Update_1.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Wangan Midnight (WMN1 Ver. A)",
+  "confidence": "high",
+  "note": "Wangan Midnight is a brand-new post-1999 title"
+ },
+ {
+  "key": "wrungp|Wave Runner GP.pdf",
+  "file": "Wave Runner GP.pdf",
+  "decision": "keep",
+  "target": "wrungp",
+  "title": "Wave Runner GP",
+  "confidence": "high",
+  "note": "Wave Runner GP, sequel to Wave Runner (1996)"
+ },
+ {
+  "key": "wrungp|Wave Runner GP STD Wiring Diagrams.pdf",
+  "file": "Wave Runner GP STD Wiring Diagrams.pdf",
+  "decision": "keep",
+  "target": "wrungp",
+  "title": "Wave Runner GP",
+  "confidence": "high",
+  "note": "Wave Runner GP, sequel to Wave Runner (1996)"
+ },
+ {
+  "key": "wrungp|Wave Runner GP STD.pdf",
+  "file": "Wave Runner GP STD.pdf",
+  "decision": "keep",
+  "target": "wrungp",
+  "title": "Wave Runner GP",
+  "confidence": "high",
+  "note": "Wave Runner GP, sequel to Wave Runner (1996)"
+ },
+ {
+  "key": "wrungp|Wave Runner GP STD Wiring Pipe Diagrams.pdf",
+  "file": "Wave Runner GP STD Wiring Pipe Diagrams.pdf",
+  "decision": "keep",
+  "target": "wrungp",
+  "title": "Wave Runner GP",
+  "confidence": "high",
+  "note": "Wave Runner GP, sequel to Wave Runner (1996)"
+ },
+ {
+  "key": "wldrider|Wild Riders STD Wiring Diagrams.pdf",
+  "file": "Wild Riders STD Wiring Diagrams.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Wild Riders",
+  "confidence": "high",
+  "note": "New 2001 Wow Entertainment title"
+ },
+ {
+  "key": "wldrider|Wild Riders STD.pdf",
+  "file": "Wild Riders STD.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "Wild Riders",
+  "confidence": "high",
+  "note": "New 2001 Wow Entertainment title"
+ },
+ {
+  "key": "wldkicks|World Kicks.pdf",
+  "file": "World Kicks.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "World Kicks (World, WK2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "wldkicks|World Kicks 2 Player Kit.pdf",
+  "file": "World Kicks 2 Player Kit.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "World Kicks (World, WK2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "wldkicks|World Kicks Update 1.pdf",
+  "file": "World Kicks Update 1.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "World Kicks (World, WK2 Ver.A)",
+  "confidence": "high",
+  "note": "New 2000 Namco title"
+ },
+ {
+  "key": "World Series 2001|World Series 2001 KIT Wiring Diagrams.pdf",
+  "file": "World Series 2001 KIT Wiring Diagrams.pdf",
+  "decision": "keep",
+  "target": "wsbbgd",
+  "title": "World Series Baseball / Super Major League (GDS-0010)",
+  "confidence": "medium",
+  "note": "Sega World Series Baseball; sequel to World Series 99"
+ },
+ {
+  "key": "World Series Baseball|World Series 2001.pdf",
+  "file": "World Series 2001.pdf",
+  "decision": "keep",
+  "target": "wsbbgd",
+  "title": "World Series Baseball / Super Major League (GDS-0010)",
+  "confidence": "medium",
+  "note": "Sega World Series Baseball; sequel to World Series 99"
+ },
+ {
+  "key": "World Series Baseball 2001|World Series 2001 KIT.pdf",
+  "file": "World Series 2001 KIT.pdf",
+  "decision": "keep",
+  "target": "wsbbgd",
+  "title": "World Series Baseball / Super Major League (GDS-0010)",
+  "confidence": "medium",
+  "note": "Sega World Series Baseball; sequel to World Series 99"
+ },
+ {
+  "key": "wwfroyal|WWF Royal Rumble.pdf",
+  "file": "WWF Royal Rumble.pdf",
+  "decision": "drop",
+  "target": null,
+  "title": "WWF Royal Rumble",
+  "confidence": "low",
+  "note": "WWF license only; not continuation of earlier WWF arcade games"
+ }
+]

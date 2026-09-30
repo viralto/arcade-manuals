@@ -1,0 +1,17 @@
+{
+ "_comment": "Manual links whose PDF is not in the R2 bucket (link check 2026-09-30). Upload the file, then remove it from this list.",
+ "files": [
+  "Bowling_Alley_(M051-90000-A000).PDF",
+  "Dark_Adventure_Schematics.PDF",
+  "Devastators_Schematics.PDF",
+  "Gun_Fight_Game_Logic_Schematics_(597-907).PDF",
+  "Gun_Fight_Game_Logic_and_Sound_(597-907E).PDF",
+  "OperationWolfSchematicsComplete.PDF",
+  "Speedway_Wiring_Diagram.PDF",
+  "Super_Pac-Man_Video_Board_Rev_D_(A084_91435_D316).PDF",
+  "Ten Yard Fight and Savage Bees.PDF",
+  "The_Main_Event_Schematics.PDF",
+  "World Series 99 Controls.PDF",
+  "Yie_Ar_Kung_Fu_Schematics.PDF"
+ ]
+}

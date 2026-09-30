@@ -1,0 +1,188 @@
+{
+ "_comment": "Hand corrections that win over every automatic or reviewed decision. docs: keyed by \"<old record id or name>|<file>\". decision: keep|move|drop|multi (multi takes targets).",
+ "docs": {
+  "Candy Shop|Grayhound Crane Candy Shop.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "Congorilla|Congorilla.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "Godzilla Wars Jnr.|Godzilla Wars.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "ssf2|Street Fighter II.pdf": {
+   "decision": "keep",
+   "note": "site owner review 2026-09-30",
+   "target": "ssf2"
+  },
+  "Gun Games|Gun_Games_Bulletin_(MGS-01).pdf": {
+   "decision": "multi",
+   "note": "site owner review 2026-09-30",
+   "targets": [
+    "duckhunt",
+    "hogalley",
+    "vsfdf",
+    "vsgshoe"
+   ]
+  },
+  "gravitar|Gravitar_Black_Widow_Retrofit_TM-232_1st_Printing.pdf": {
+   "decision": "multi",
+   "targets": [
+    "bwidow",
+    "gravitar"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Gravitar Retrofit|Gravitar_Black_Widow_Retrofit_TM-232_2nd_Printing.pdf": {
+   "decision": "multi",
+   "targets": [
+    "bwidow",
+    "gravitar"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Pac-Man & Ms. Pac-Man|Pac-Man_MsPac-Man_Troubleshooting_Logic_Board_Part_1.pdf": {
+   "decision": "multi",
+   "targets": [
+    "puckman",
+    "mspacman"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Pac-Man & Ms. Pac-Man|Pac-Man_MsPac-Man_Troubleshooting_Logic_Board_Part_2.pdf": {
+   "decision": "multi",
+   "targets": [
+    "puckman",
+    "mspacman"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Stargate / Robotron|Williams_Recap_Stargate_&_Robotron_Troubleshooting.pdf": {
+   "decision": "multi",
+   "targets": [
+    "stargate",
+    "robotron"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Gun Games|Gun_Games_Bulletin_(MGS-02).pdf": {
+   "decision": "multi",
+   "targets": [
+    "duckhunt",
+    "hogalley",
+    "vsfdf",
+    "vsgshoe"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Eight Ball Action (Donkey Kong Conversion)|Eight_Ball_Action_Conversion_for_Donkey_Kong.pdf": {
+   "decision": "multi",
+   "targets": [
+    "8ballact",
+    "dkong"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Jungle Hunt to Elevator Action Conversion|Jungle_Hunt_to_Elevation_Action_Conversion_Kit.pdf": {
+   "decision": "multi",
+   "targets": [
+    "elevator",
+    "junglek"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Major Havoc Conversion Kit A|Major_Havoc_Conversion_Kit_A_Tempest.pdf": {
+   "decision": "multi",
+   "targets": [
+    "mhavoc",
+    "tempest"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Star Guards U.R. to Rampage U.R.|Star_Gaurds_UR_to_Rampage_UR_Field_Conversion_Kit_Instructions_(M051-00F06-A010).pdf": {
+   "decision": "multi",
+   "targets": [
+    "rampage",
+    "stargrds"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "The Ocean Hunter: The Seven Seas Adventure|Ocean Hunter.pdf": {
+   "decision": "multi",
+   "targets": [
+    "crimfght",
+    "mainevt"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Warriors of Faith|Warriors of Faith.pdf": {
+   "decision": "multi",
+   "targets": [
+    "warofbug",
+    "galaxian"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "puckman|Driving_Force_Conversion_(Different_Version).pdf": {
+   "decision": "multi",
+   "targets": [
+    "drivfrcp",
+    "puckman"
+   ],
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "World Series 99|World Series 99 (Naomi Kit) Wiring Diagrams.pdf": {
+   "decision": "standalone",
+   "title": "World Series 2001",
+   "year": "2001",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "World Series Baseball 2001|World Series 2001 KIT.pdf": {
+   "decision": "standalone",
+   "title": "World Series 2001",
+   "year": "2001",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "wwfroyal|WWF Royal Rumble.pdf": {
+   "decision": "standalone",
+   "title": "World Series 2001",
+   "year": "2001",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Classical Game Collection|Multigame_39-in-1_PCB_Manual.pdf": {
+   "decision": "standalone",
+   "title": "JAMMA multigame boards",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Multi-game System|Multigame_1000_Game_List.pdf": {
+   "decision": "standalone",
+   "title": "JAMMA multigame boards",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Multi-Game System|Multigame_465_Game_List.pdf": {
+   "decision": "standalone",
+   "title": "JAMMA multigame boards",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "400 in 1 Gamebox|400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf": {
+   "decision": "standalone",
+   "title": "JAMMA multigame boards",
+   "note": "manuals-first pass 2026-09-30"
+  },
+  "Multigame 400 in 1|Multigame_400_in_1_Gamebox_Jamma_Installation_&_User_Manual.pdf": {
+   "decision": "standalone",
+   "title": "JAMMA multigame boards",
+   "note": "manuals-first pass 2026-09-30"
+  }
+ },
+ "include": [],
+ "exclude": [
+  "4in1boot",
+  "anpanman2",
+  "pacmball",
+  "prc2ksu"
+ ]
+}

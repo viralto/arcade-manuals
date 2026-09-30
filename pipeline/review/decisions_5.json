@@ -1,0 +1,68 @@
+[
+ {
+  "key": "carrera|Bomberman.pdf",
+  "file": "Bomberman.pdf",
+  "decision": "move",
+  "target": "dynablst",
+  "platform": null,
+  "title": null,
+  "year": null,
+  "confidence": "medium",
+  "note": "Irem Bomber Man arcade; was on a Carrera poker board"
+ },
+ {
+  "key": "qncrash|Quick and Crash.pdf",
+  "file": "Quick and Crash.pdf",
+  "decision": "keep",
+  "target": "qncrash",
+  "platform": null,
+  "title": null,
+  "year": null,
+  "confidence": "high",
+  "note": "Namco 1999 gun game; MAME lists no screen so classifier missed it"
+ },
+ {
+  "key": "qncrash|Quick and Crash Amendum.pdf",
+  "file": "Quick and Crash Amendum.pdf",
+  "decision": "keep",
+  "target": "qncrash",
+  "platform": null,
+  "title": null,
+  "year": null,
+  "confidence": "high",
+  "note": "Namco 1999 gun game"
+ },
+ {
+  "key": "speedway|Speedway_Wiring_Diagram.PDF",
+  "file": "Speedway_Wiring_Diagram.PDF",
+  "decision": "standalone",
+  "target": null,
+  "platform": null,
+  "title": "Speedway",
+  "year": null,
+  "confidence": "low",
+  "note": "Not the slot hack it was on; probably Midway's EM Speedway, not in MAME"
+ },
+ {
+  "key": "schexx|Super Chexx.pdf",
+  "file": "Super Chexx.pdf",
+  "decision": "keep",
+  "target": "schexx",
+  "platform": null,
+  "title": null,
+  "year": null,
+  "confidence": "high",
+  "note": "ICE electro-mechanical bubble hockey; in scope as EM arcade"
+ },
+ {
+  "key": "winner|Winner.pdf",
+  "file": "Winner.pdf",
+  "decision": "standalone",
+  "target": null,
+  "platform": null,
+  "title": "Winner",
+  "year": null,
+  "confidence": "low",
+  "note": "Unidentified; was on a Videos AA gambling machine"
+ }
+]
