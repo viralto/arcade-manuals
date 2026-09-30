@@ -1,0 +1,9 @@
+{
+ "_comment": "Scope choices made by the site owner in the data review (2026-09-30). classify.py and build_data.py read these. mahjong=false drops every machine with a mahjong or hanafuda control panel.",
+ "last_year": 1999,
+ "series_continuations": true,
+ "prize_machines": false,
+ "pinball": false,
+ "licensed_post1999_without_arcade_predecessor": false,
+ "mahjong": false
+}

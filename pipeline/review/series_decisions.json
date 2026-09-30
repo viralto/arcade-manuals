@@ -1,0 +1,4188 @@
+[
+ {
+  "id": "18wheelr",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Sega 2000 original; Midway 1979 18 Wheeler unrelated"
+ },
+ {
+  "id": "20pacgal",
+  "include": true,
+  "series_of": "mspacman",
+  "confidence": "high",
+  "note": "20th anniversary compilation of Ms. Pac-Man and Galaga"
+ },
+ {
+  "id": "25pacman",
+  "include": true,
+  "series_of": "puckman",
+  "confidence": "high",
+  "note": "Pac-Man re-release anniversary edition"
+ },
+ {
+  "id": "4in1boot",
+  "include": true,
+  "series_of": "snowbros",
+  "confidence": "low",
+  "note": "Bootleg compilation incl. Snow Bros., Tetris; mostly pre-2000 games"
+ },
+ {
+  "id": "abclimax",
+  "include": true,
+  "series_of": "aburner",
+  "confidence": "high",
+  "note": "After Burner arcade sequel"
+ },
+ {
+  "id": "acedriv3",
+  "include": true,
+  "series_of": "acedrive",
+  "confidence": "high",
+  "note": "Ace Driver series sequel"
+ },
+ {
+  "id": "aerofgtsg",
+  "include": true,
+  "series_of": "aerofgts",
+  "confidence": "medium",
+  "note": "2011 bootleg mod of 1996 Aero Fighters Special"
+ },
+ {
+  "id": "alien",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "alienfnt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "am_mg24",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg24a",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg35i",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg3g",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg3ga",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg4sk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg4v",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "am_mg5hu",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "amazoni2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "amaztsk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "animalc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "animalk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "animalke1",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "animalke2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "animalke8",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "animalkeu",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "anmlbskt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "anpanman2",
+  "include": true,
+  "series_of": "anpanman",
+  "confidence": "medium",
+  "note": "Sequel to 1992 Sega Anpanman Popcorn Koujou kiddie game"
+ },
+ {
+  "id": "arajewel",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "asurabus",
+  "include": true,
+  "series_of": "asurabld",
+  "confidence": "high",
+  "note": "Sequel to Asura Blade"
+ },
+ {
+  "id": "atgame40",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "b2b",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New title; unrelated to Bang Bang Ball"
+ },
+ {
+  "id": "basschal",
+  "include": true,
+  "series_of": "bassdx",
+  "confidence": "high",
+  "note": "Sega Bass Fishing series continuation"
+ },
+ {
+  "id": "batlgr2",
+  "include": true,
+  "series_of": "batlgear",
+  "confidence": "high",
+  "note": "Battle Gear sequel"
+ },
+ {
+  "id": "batlgr3",
+  "include": true,
+  "series_of": "batlgear",
+  "confidence": "high",
+  "note": "Battle Gear sequel"
+ },
+ {
+  "id": "beachspi",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "bingogal",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "bingogals",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "bingopar",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "bingopd",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "bldyr3b",
+  "include": true,
+  "series_of": "bldyror2",
+  "confidence": "high",
+  "note": "Bloody Roar 3, arcade sequel (bootleg set)"
+ },
+ {
+  "id": "blkrose",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "blokpong",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "blshark",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "MDS Hellas gambling game; not Midway Blue Shark"
+ },
+ {
+  "id": "bm3",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm36th",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm37th",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm3core",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm3final",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm6thmix",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bm7thmix",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bmclubmx",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bmcompm2",
+  "include": true,
+  "series_of": "bmcompmx",
+  "confidence": "high",
+  "note": "beatmania complete MIX sequel"
+ },
+ {
+  "id": "bmcorerm",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bmdct",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bmfinal",
+  "include": true,
+  "series_of": "bm1stmix",
+  "confidence": "high",
+  "note": "beatmania series continuation"
+ },
+ {
+  "id": "bmiidx3",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bmiidx4",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bmiidx5",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bmiidx6",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bmiidx7",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bmiidx8",
+  "include": true,
+  "series_of": "bmiidx",
+  "confidence": "high",
+  "note": "beatmania IIDX series continuation"
+ },
+ {
+  "id": "bowltry",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "boxingm",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "brickppl",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "brvblade",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "brvbladeg",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "bsbonanza",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "capsnk",
+  "include": true,
+  "series_of": "xmvsf",
+  "confidence": "medium",
+  "note": "Capcom Vs. crossover series; Street Fighter lineage"
+ },
+ {
+  "id": "carnking",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "cb2001",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfever1k",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfever40",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfever50",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfever51",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfever61",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "cfield",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "chaosbrk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "chasehq2",
+  "include": true,
+  "series_of": "chasehq",
+  "confidence": "high",
+  "note": "Chase H.Q. arcade sequel"
+ },
+ {
+  "id": "checkma5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "chewheel",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "chleague",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "chocovdr",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New Namco prize game"
+ },
+ {
+  "id": "cjbq",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjddz",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjddzlf",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjddzp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjddzps",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "cjddzs",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "cjdh6th",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjgdy",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjjl",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cjtljp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "cleoftp",
+  "include": true,
+  "series_of": "cleopatr",
+  "confidence": "high",
+  "note": "Cleopatra Fortune updated version"
+ },
+ {
+  "id": "cmmb103",
+  "include": true,
+  "series_of": "centiped",
+  "confidence": "high",
+  "note": "Compilation of Centipede/Millipede/Missile Command"
+ },
+ {
+  "id": "cmmb162",
+  "include": true,
+  "series_of": "centiped",
+  "confidence": "high",
+  "note": "Compilation of Centipede/Millipede/Missile Command"
+ },
+ {
+  "id": "cobrata",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Anime license; unrelated to Super Cobra"
+ },
+ {
+  "id": "cpoker2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "crazywar",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "crtaxihr",
+  "include": true,
+  "series_of": "crzytaxi",
+  "confidence": "high",
+  "note": "Crazy Taxi series continuation"
+ },
+ {
+  "id": "crysking",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "crzmon2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "crzybug2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "crzybugs",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "csesame",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Taito Capriccio medal/prize series"
+ },
+ {
+  "id": "csesame2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Taito Capriccio medal/prize series"
+ },
+ {
+  "id": "csmash",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "cspike",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "cvs2",
+  "include": true,
+  "series_of": "xmvsf",
+  "confidence": "medium",
+  "note": "Capcom Vs. crossover series; Street Fighter lineage"
+ },
+ {
+  "id": "cvsgd",
+  "include": true,
+  "series_of": "xmvsf",
+  "confidence": "medium",
+  "note": "Capcom Vs. crossover series; Street Fighter lineage"
+ },
+ {
+  "id": "czmon_13",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "daichuka",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Techno-Top mahjong; different maker from Dynax Super Dai Chuuka Ken"
+ },
+ {
+  "id": "daimyojn",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "daireach",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "danchiq",
+  "include": true,
+  "series_of": "danchih",
+  "confidence": "medium",
+  "note": "Altron Danchi de... series follow-up"
+ },
+ {
+  "id": "dashhero",
+  "include": true,
+  "series_of": "dodghero",
+  "confidence": "medium",
+  "note": "Sigma Minna...Hero series follow-up to Dodge Hero"
+ },
+ {
+  "id": "dbshahb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "ddflower",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ddp2",
+  "include": true,
+  "series_of": "ddonpach",
+  "confidence": "high",
+  "note": "DoDonPachi series sequel"
+ },
+ {
+  "id": "ddp3",
+  "include": true,
+  "series_of": "ddonpach",
+  "confidence": "high",
+  "note": "DoDonPachi series sequel"
+ },
+ {
+  "id": "ddpdfk",
+  "include": true,
+  "series_of": "ddonpach",
+  "confidence": "high",
+  "note": "DoDonPachi series sequel"
+ },
+ {
+  "id": "ddpdojt",
+  "include": true,
+  "series_of": "ddonpach",
+  "confidence": "high",
+  "note": "DoDonPachi series sequel"
+ },
+ {
+  "id": "ddr3mk",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr3mp",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr4m",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr4mp",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr4mps",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr4ms",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddr5m",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddrextrm",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddrkara2",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddrkids",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "ddrusa",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dance Dance Revolution series (DDR 1st mix = dstage family)"
+ },
+ {
+  "id": "deathcox",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Death Crimson was console-only before"
+ },
+ {
+  "id": "dendego3",
+  "include": true,
+  "series_of": "dendego",
+  "confidence": "high",
+  "note": "Densha de GO! sequel"
+ },
+ {
+  "id": "derbyo2k",
+  "include": true,
+  "series_of": "derbyoc",
+  "confidence": "high",
+  "note": "Derby Owners Club sequel"
+ },
+ {
+  "id": "derbyoc2",
+  "include": true,
+  "series_of": "derbyoc",
+  "confidence": "high",
+  "note": "Derby Owners Club sequel"
+ },
+ {
+  "id": "derbyocw",
+  "include": true,
+  "series_of": "derbyoc",
+  "confidence": "high",
+  "note": "Derby Owners Club sequel"
+ },
+ {
+  "id": "dfeverg",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Unrelated to Dancing Eyes/Dancing Stage"
+ },
+ {
+  "id": "dfkbl",
+  "include": true,
+  "series_of": "ddonpach",
+  "confidence": "high",
+  "note": "DoDonPachi series sequel"
+ },
+ {
+  "id": "dhunting",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "diamdest",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "diggerma",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "dkbanana",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dkjfever",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dkmb",
+  "include": true,
+  "series_of": "dkong",
+  "confidence": "high",
+  "note": "Compilation of Donkey Kong/DK Jr/Mario Bros"
+ },
+ {
+  "id": "dmnfrnt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "dmx2m",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Dance Maniax series began 2000; not DDR"
+ },
+ {
+  "id": "dmx2majp",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Dance Maniax series began 2000; not DDR"
+ },
+ {
+  "id": "dncfrks",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Dance Maniax series began 2000; not DDR"
+ },
+ {
+  "id": "doa2m",
+  "include": true,
+  "series_of": "doa",
+  "confidence": "high",
+  "note": "DOA2 Millennium; family includes 1999 DOA2 (doa2)"
+ },
+ {
+  "id": "dolphin",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dquizgo2",
+  "include": true,
+  "series_of": "dquizgo",
+  "confidence": "high",
+  "note": "Date Quiz Go Go sequel"
+ },
+ {
+  "id": "dragchrn",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "dragnblz",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New Psikyo title"
+ },
+ {
+  "id": "dragntr",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dragntr2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dragntr3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "dreamhld",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "dreamwld",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "drgdance",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "dsem",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dancing Stage (DDR Europe) series"
+ },
+ {
+  "id": "dsem2",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dancing Stage (DDR Europe) series"
+ },
+ {
+  "id": "dsfdr",
+  "include": true,
+  "series_of": "dstage",
+  "confidence": "high",
+  "note": "Dancing Stage (DDR Europe) series"
+ },
+ {
+  "id": "dwex",
+  "include": true,
+  "series_of": "drgw3",
+  "confidence": "high",
+  "note": "Dragon World 3 EX update"
+ },
+ {
+  "id": "dygolf",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "dynabomb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "dynajack",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "emjscanb",
+  "include": true,
+  "series_of": "emjjoshi",
+  "confidence": "medium",
+  "note": "E-Touch Mahjong Series later entries"
+ },
+ {
+  "id": "emjtrapz",
+  "include": true,
+  "series_of": "emjjoshi",
+  "confidence": "medium",
+  "note": "E-Touch Mahjong Series later entries"
+ },
+ {
+  "id": "enchlamp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "extradrw",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "f355twn2",
+  "include": true,
+  "series_of": "f355",
+  "confidence": "high",
+  "note": "Ferrari F355 Challenge 2"
+ },
+ {
+  "id": "fantstry",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "fantzn2x",
+  "include": true,
+  "series_of": "fantzn2",
+  "confidence": "high",
+  "note": "System 16C remake of 1988 Fantasy Zone II"
+ },
+ {
+  "id": "fb2010",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fcockt2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fcockt_8",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "feversoc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "fghtjam",
+  "include": true,
+  "series_of": "sfa3",
+  "confidence": "medium",
+  "note": "Capcom fighter crossover compilation (SF Alpha, Darkstalkers etc.)"
+ },
+ {
+  "id": "fghtmn",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Punch Mania series began 2000"
+ },
+ {
+  "id": "flamegung",
+  "include": true,
+  "series_of": "flamegun",
+  "confidence": "medium",
+  "note": "2011 bootleg mod of 1999 Flame Gunner"
+ },
+ {
+  "id": "fmaniac2p",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 Fishing Maniac in MAME; Fishing Master unrelated"
+ },
+ {
+  "id": "fmaniac3",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 Fishing Maniac in MAME; Fishing Master unrelated"
+ },
+ {
+  "id": "fortellr",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fortfvr",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fpoker",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "frenzyxprss",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "frtgenie",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fruitpc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "fruitwld",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "ftimpactg",
+  "include": true,
+  "series_of": "ftimpcta",
+  "confidence": "medium",
+  "note": "2011 bootleg mod of Fighters' Impact"
+ },
+ {
+  "id": "ftspeed",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "g13jnr",
+  "include": true,
+  "series_of": "golgo13",
+  "confidence": "high",
+  "note": "Golgo 13 arcade gun game sequel"
+ },
+ {
+  "id": "g13knd",
+  "include": true,
+  "series_of": "golgo13",
+  "confidence": "high",
+  "note": "Golgo 13 arcade gun game sequel"
+ },
+ {
+  "id": "galfever",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Namco medal/prize game using Galaxian theme"
+ },
+ {
+  "id": "galpans3",
+  "include": true,
+  "series_of": "galpanic",
+  "confidence": "high",
+  "note": "Gals Panic series sequel"
+ },
+ {
+  "id": "ganbare",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "gbbchmp",
+  "include": true,
+  "series_of": "bishi",
+  "confidence": "high",
+  "note": "Bishi Bashi Champ series"
+ },
+ {
+  "id": "gdariusg",
+  "include": true,
+  "series_of": "gdarius2",
+  "confidence": "medium",
+  "note": "2011 bootleg mod of G-Darius"
+ },
+ {
+  "id": "gdvsgd",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gdvsgdnx",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gegemdb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ghostsev",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ghostsqu",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "gnome_9",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "gocowboy",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Prize/redemption game; unrelated title"
+ },
+ {
+  "id": "goldenra",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "gram2000",
+  "include": true,
+  "series_of": "ggram2",
+  "confidence": "high",
+  "note": "Giant Gram sequel"
+ },
+ {
+  "id": "gt2k",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtclassc",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore01",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore02",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore03",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore04",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore05",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfore06",
+  "include": true,
+  "series_of": "gt3d",
+  "confidence": "high",
+  "note": "Golden Tee series continuation"
+ },
+ {
+  "id": "gtfrk10m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtfrk11m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gticlub2",
+  "include": true,
+  "series_of": "gticlub",
+  "confidence": "high",
+  "note": "GTI Club sequel"
+ },
+ {
+  "id": "gtrfrk3m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk4m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk5m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk6m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk7m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk8m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gtrfrk9m",
+  "include": true,
+  "series_of": "gtrfrks",
+  "confidence": "high",
+  "note": "Guitar Freaks series continuation"
+ },
+ {
+  "id": "gundamos",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundcb79",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundcb83",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundmct",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundmgd",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundmxgd",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gundzaft",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "gwing2",
+  "include": true,
+  "series_of": "gigawing",
+  "confidence": "high",
+  "note": "Giga Wing sequel"
+ },
+ {
+  "id": "gwinggen",
+  "include": true,
+  "series_of": "gigawing",
+  "confidence": "high",
+  "note": "Giga Wing sequel"
+ },
+ {
+  "id": "gypmagic",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "hammer",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "happyskl",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "hapyfsh2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "hapytour",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "haunthig",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "hidctch3",
+  "include": true,
+  "series_of": "hidnctch",
+  "confidence": "high",
+  "note": "Hidden Catch series sequel"
+ },
+ {
+  "id": "hmgeo",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Unrelated to 1985 Sega Heavy Metal"
+ },
+ {
+  "id": "hnrose",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "honeypot",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "hotd3",
+  "include": true,
+  "series_of": "hotd",
+  "confidence": "high",
+  "note": "House of the Dead series"
+ },
+ {
+  "id": "hotd4",
+  "include": true,
+  "series_of": "hotd",
+  "confidence": "high",
+  "note": "House of the Dead series"
+ },
+ {
+  "id": "hotdex",
+  "include": true,
+  "series_of": "hotd",
+  "confidence": "high",
+  "note": "House of the Dead series"
+ },
+ {
+  "id": "hotgm4ev",
+  "include": true,
+  "series_of": "hotgmck",
+  "confidence": "high",
+  "note": "Taisen Hot Gimmick sequel"
+ },
+ {
+  "id": "hotgmcki",
+  "include": true,
+  "series_of": "hotgmck",
+  "confidence": "medium",
+  "note": "Hot Gimmick series spin-off"
+ },
+ {
+  "id": "hotgmkmp",
+  "include": true,
+  "series_of": "hotgmck",
+  "confidence": "medium",
+  "note": "Hot Gimmick series spin-off"
+ },
+ {
+  "id": "hplanet",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "hsf2",
+  "include": true,
+  "series_of": "sf2",
+  "confidence": "high",
+  "note": "Street Fighter II anniversary edition"
+ },
+ {
+  "id": "huahuas5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "igs_ncs2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "IGS gambling skill game"
+ },
+ {
+  "id": "igsm312",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "indrema5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "invmulti",
+  "include": true,
+  "series_of": "invaders",
+  "confidence": "medium",
+  "note": "Space Invaders multigame hack of 1978 classics"
+ },
+ {
+  "id": "invqix",
+  "include": true,
+  "series_of": "invaders",
+  "confidence": "high",
+  "note": "Space Invaders/Qix anniversary compilation"
+ },
+ {
+  "id": "itazuram",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "janjans2",
+  "include": true,
+  "series_of": "janjans1",
+  "confidence": "medium",
+  "note": "JangJang Shimasho mahjong sequel"
+ },
+ {
+  "id": "jhg3d",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "jinhuang",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "jking02",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "IGS gambling slot; unrelated to Taito Jungle King"
+ },
+ {
+  "id": "jking04",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "IGS gambling slot; unrelated to Taito Jungle King"
+ },
+ {
+  "id": "jking302us",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "IGS gambling slot; unrelated to Taito Jungle King"
+ },
+ {
+  "id": "jkrpkra5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "jockeygp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "jongoh",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "jpark3",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Konami JP III unrelated to Sega Jurassic Park"
+ },
+ {
+  "id": "jumppop",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "ESD 2001 game; Nics Jumping Pop is Plump Pop hack"
+ },
+ {
+  "id": "jungleyo",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "kazaaan",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "kazaaan2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "kf2k3pcb",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "killbldp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "kof2000",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kof2001",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kof2002",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kof2002um",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kof2003",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kof98um",
+  "include": true,
+  "series_of": "kof98",
+  "confidence": "high",
+  "note": "Remake of KOF '98"
+ },
+ {
+  "id": "kof98umh",
+  "include": true,
+  "series_of": "kof98",
+  "confidence": "high",
+  "note": "Remake of KOF '98"
+ },
+ {
+  "id": "kofnw",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kofxi",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kofxii",
+  "include": true,
+  "series_of": "kof94",
+  "confidence": "high",
+  "note": "King of Fighters series"
+ },
+ {
+  "id": "kov2",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kov2nl",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kov2p",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kov3",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kov3hd",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kov7sprt",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "kovshp",
+  "include": true,
+  "series_of": "kov",
+  "confidence": "high",
+  "note": "Knights of Valour series"
+ },
+ {
+  "id": "krzykeno",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "ldrink",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "legendoh",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "lhaunt_6",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhfy",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhtb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhzb3in1",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhzb4",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhzb4dhb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lhzbgqb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "loderndf",
+  "include": true,
+  "series_of": "ldrun",
+  "confidence": "high",
+  "note": "Lode Runner arcade sequel"
+ },
+ {
+  "id": "luckfoun",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "luckycrs",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "lupinsho",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Licensed Lupin games unrelated to 1980 Taito Lupin III"
+ },
+ {
+  "id": "luptype",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Licensed Lupin games unrelated to 1980 Taito Lupin III"
+ },
+ {
+  "id": "magicbom",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "magicle",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "magicpop",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "magimask",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "magjack",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "magjackp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "magjoker",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "magkengo",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "magslot",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "mariojjl",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "martmast",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "masmario",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "masmario2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "masmarios",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "maxspeed",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mayjin3",
+  "include": true,
+  "series_of": "mayjinsn",
+  "confidence": "high",
+  "note": "Mayjinsen sequel"
+ },
+ {
+  "id": "mchampdx",
+  "include": true,
+  "series_of": "multchmp",
+  "confidence": "high",
+  "note": "Multi Champ deluxe update"
+ },
+ {
+  "id": "mdhh100",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "medalnt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "medalnt2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "megat7e",
+  "include": true,
+  "series_of": "megat3",
+  "confidence": "medium",
+  "note": "Megatouch countertop series continuation"
+ },
+ {
+  "id": "mfightc",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mfish_13",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mfjump",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mgcs3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mgfx",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mghammer",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "mgzz",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "minnadk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mirworld",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "misncrft",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "missw02",
+  "include": true,
+  "series_of": "missw96",
+  "confidence": "medium",
+  "note": "Comad Miss World series"
+ },
+ {
+  "id": "mjgnight",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjgtaste",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Psikyo mahjong unrelated to Nichibutsu G-MEN"
+ },
+ {
+  "id": "mjkokryu",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjnigiri",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjsenpu",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjswacad",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjswacads",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjtenho",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "mjzb",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mjzhizun",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mkartag2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 arcade Mario Kart"
+ },
+ {
+  "id": "mkartagp",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 arcade Mario Kart"
+ },
+ {
+  "id": "mmaruchan",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Medal sugoroku game; not continuation of quiz"
+ },
+ {
+  "id": "mmmbanc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "mnrockman",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "momotaro",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New mahjong title; no pre-2000 predecessor"
+ },
+ {
+  "id": "monkeyba",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "monshow",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "montree",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "mpang",
+  "include": true,
+  "series_of": "pang",
+  "confidence": "high",
+  "note": "Pang series sequel"
+ },
+ {
+  "id": "mrdrilr2",
+  "include": true,
+  "series_of": "mrdrillr",
+  "confidence": "high",
+  "note": "Mr. Driller sequel"
+ },
+ {
+  "id": "mrdrilrg",
+  "include": true,
+  "series_of": "mrdrillr",
+  "confidence": "high",
+  "note": "Mr. Driller sequel"
+ },
+ {
+  "id": "mrkicker",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mrtlbeat",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ms5pcb",
+  "include": true,
+  "series_of": "mslug",
+  "confidence": "high",
+  "note": "Metal Slug series"
+ },
+ {
+  "id": "msi_sf2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "mslug3",
+  "include": true,
+  "series_of": "mslug",
+  "confidence": "high",
+  "note": "Metal Slug series"
+ },
+ {
+  "id": "mslug4",
+  "include": true,
+  "series_of": "mslug",
+  "confidence": "high",
+  "note": "Metal Slug series"
+ },
+ {
+  "id": "mslug5",
+  "include": true,
+  "series_of": "mslug",
+  "confidence": "high",
+  "note": "Metal Slug series"
+ },
+ {
+  "id": "mslug6",
+  "include": true,
+  "series_of": "mslug",
+  "confidence": "high",
+  "note": "Metal Slug series"
+ },
+ {
+  "id": "mtchxlgld",
+  "include": true,
+  "series_of": "mtouchxl",
+  "confidence": "medium",
+  "note": "MegaTouch XL series continuation"
+ },
+ {
+  "id": "mtchxlti",
+  "include": true,
+  "series_of": "mtouchxl",
+  "confidence": "medium",
+  "note": "MegaTouch XL series continuation"
+ },
+ {
+  "id": "musclhit",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mushitam",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "mvsc2",
+  "include": true,
+  "series_of": "mvsc",
+  "confidence": "high",
+  "note": "Marvel vs. Capcom sequel"
+ },
+ {
+  "id": "mwskins",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Midway golf title; NSS Skins Game is unrelated SNES game"
+ },
+ {
+  "id": "namcostr",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "New 2000 Namco title; not a classic compilation"
+ },
+ {
+  "id": "nbagold",
+  "include": true,
+  "series_of": "nbanfl",
+  "confidence": "high",
+  "note": "NBA Showtime Gold edition update"
+ },
+ {
+  "id": "ncarrera",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Gambling bootleg"
+ },
+ {
+  "id": "ndxron10",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "newmcard",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "newtiger",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "nfm",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "nightrai",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ninjaslt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "noraut3a",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "noraut3b",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "number10",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "oldsplus",
+  "include": true,
+  "series_of": "orlegend",
+  "confidence": "high",
+  "note": "Oriental Legend series"
+ },
+ {
+  "id": "orleg2",
+  "include": true,
+  "series_of": "orlegend",
+  "confidence": "high",
+  "note": "Oriental Legend series"
+ },
+ {
+  "id": "otenamhf",
+  "include": true,
+  "series_of": "otenamih",
+  "confidence": "high",
+  "note": "Otenami Haiken sequel"
+ },
+ {
+  "id": "p9112",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Police 911 series began 2000; Police Trainer unrelated"
+ },
+ {
+  "id": "pacmanbr",
+  "include": true,
+  "series_of": "puckman",
+  "confidence": "high",
+  "note": "Pac-Man arcade franchise entry"
+ },
+ {
+  "id": "pacmball",
+  "include": true,
+  "series_of": "puckman",
+  "confidence": "low",
+  "note": "Namco Pac-Man themed ball/redemption game; loose"
+ },
+ {
+  "id": "partygrs",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "pclubys",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Yun Sung game unrelated to Namco Puzzle Club"
+ },
+ {
+  "id": "pcnfrk10m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk2m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk3m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk4m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk5m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk6m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk7m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk8m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "pcnfrk9m",
+  "include": true,
+  "series_of": "pcnfrk",
+  "confidence": "high",
+  "note": "Percussion Freaks series"
+ },
+ {
+  "id": "penbros",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "pengpaydx",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "phantpyc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "pharrier",
+  "include": true,
+  "series_of": "sharrier",
+  "confidence": "medium",
+  "note": "Space Harrier spiritual sequel by Sega"
+ },
+ {
+  "id": "pirate2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "pirate_3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "pnchmn2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Punch Mania series began 2000"
+ },
+ {
+  "id": "popn4",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popn5",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popn6",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popn7",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popn8",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popn9",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popnanm",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popnanm2",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "popnmt",
+  "include": true,
+  "series_of": "popn1",
+  "confidence": "high",
+  "note": "Pop'n Music series"
+ },
+ {
+  "id": "prc2ksu",
+  "include": true,
+  "series_of": "pckobe99",
+  "confidence": "medium",
+  "note": "Print Club 2 photo-sticker series"
+ },
+ {
+  "id": "psmash3",
+  "include": true,
+  "series_of": "vtennis",
+  "confidence": "high",
+  "note": "Virtua Tennis / Power Smash 3"
+ },
+ {
+  "id": "pstone2",
+  "include": true,
+  "series_of": "pstone",
+  "confidence": "high",
+  "note": "Power Stone sequel"
+ },
+ {
+  "id": "ptblank3",
+  "include": true,
+  "series_of": "ptblank",
+  "confidence": "high",
+  "note": "Point Blank sequel"
+ },
+ {
+  "id": "pumpipx2",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpipx3",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpit3",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpit8",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitc",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpite",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpito",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitp2",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitp3",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitpc",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitpr",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "pumpitpx",
+  "include": true,
+  "series_of": "pumpit1",
+  "confidence": "high",
+  "note": "Pump It Up series"
+ },
+ {
+  "id": "puyomedal",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "py2k2",
+  "include": true,
+  "series_of": "photoy2k",
+  "confidence": "medium",
+  "note": "Photo Y2K sequel"
+ },
+ {
+  "id": "pzloop2",
+  "include": true,
+  "series_of": "puzzloop",
+  "confidence": "high",
+  "note": "Puzz Loop sequel"
+ },
+ {
+  "id": "qofd3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "qofdtbk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "questofd",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "rad_orun",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "rad_sf2",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "rad_sonic",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "radikald",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "raiden3",
+  "include": true,
+  "series_of": "raiden",
+  "confidence": "high",
+  "note": "Raiden series"
+ },
+ {
+  "id": "raiden4",
+  "include": true,
+  "series_of": "raiden",
+  "confidence": "high",
+  "note": "Raiden series"
+ },
+ {
+  "id": "rainwarr",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "rambo",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Sega Rambo unrelated to Taito Rambo III"
+ },
+ {
+  "id": "rangrmsn",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "rapfire5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "rbowlorama",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New Namco/Cosmodog bowling title"
+ },
+ {
+  "id": "rclimb_3",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "reactmd",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "rockn4",
+  "include": true,
+  "series_of": "rockn3",
+  "confidence": "high",
+  "note": "Rock'n series sequel"
+ },
+ {
+  "id": "royal5p",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "rrvac",
+  "include": true,
+  "series_of": "ridgerac",
+  "confidence": "high",
+  "note": "Ridge Racer arcade series"
+ },
+ {
+  "id": "samba2k",
+  "include": true,
+  "series_of": "samba",
+  "confidence": "high",
+  "note": "Samba de Amigo update"
+ },
+ {
+  "id": "samsh5sp",
+  "include": true,
+  "series_of": "samsho",
+  "confidence": "high",
+  "note": "Samurai Shodown series"
+ },
+ {
+  "id": "samsho5",
+  "include": true,
+  "series_of": "samsho",
+  "confidence": "high",
+  "note": "Samurai Shodown series"
+ },
+ {
+  "id": "samspsen",
+  "include": true,
+  "series_of": "samsho",
+  "confidence": "high",
+  "note": "Samurai Shodown series"
+ },
+ {
+  "id": "samsptk",
+  "include": true,
+  "series_of": "samsho",
+  "confidence": "high",
+  "note": "Samurai Shodown series"
+ },
+ {
+  "id": "sarc110",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Plug-and-play/handheld console product, not arcade"
+ },
+ {
+  "id": "sb2003",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Limenko title; unrelated to Bubble 2000"
+ },
+ {
+  "id": "sball2k1",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "sbp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "sbxc",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "scptour",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "sdmg2p",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "IGS Chinese gambling mahjong"
+ },
+ {
+  "id": "sengoku3",
+  "include": true,
+  "series_of": "sengoku",
+  "confidence": "high",
+  "note": "Sengoku series sequel"
+ },
+ {
+  "id": "sf2049se",
+  "include": true,
+  "series_of": "sf2049",
+  "confidence": "high",
+  "note": "SF Rush 2049 edition"
+ },
+ {
+  "id": "sf2049te",
+  "include": true,
+  "series_of": "sf2049",
+  "confidence": "high",
+  "note": "SF Rush 2049 edition"
+ },
+ {
+  "id": "sfz3ugd",
+  "include": true,
+  "series_of": "sfa3",
+  "confidence": "high",
+  "note": "Street Fighter Zero 3 Upper update"
+ },
+ {
+  "id": "sgdrvsim",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "shanghss",
+  "include": true,
+  "series_of": "shanghai",
+  "confidence": "medium",
+  "note": "Shanghai series (Sunsoft license) continuation"
+ },
+ {
+  "id": "shangtou",
+  "include": true,
+  "series_of": "shanghai",
+  "confidence": "medium",
+  "note": "Shanghai series (Sunsoft license) continuation"
+ },
+ {
+  "id": "shinfz",
+  "include": true,
+  "series_of": "shinobi",
+  "confidence": "medium",
+  "note": "Bootleg compilation of Shinobi / Fantasy Zone"
+ },
+ {
+  "id": "shngmtkbg",
+  "include": true,
+  "series_of": "shngmtkb",
+  "confidence": "medium",
+  "note": "2011 bootleg mod of 1998 Shanghai Matekibuyuu"
+ },
+ {
+  "id": "shootpar",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "sianniv",
+  "include": true,
+  "series_of": "invaders",
+  "confidence": "high",
+  "note": "Space Invaders anniversary re-release"
+ },
+ {
+  "id": "simpbowl",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Different game; not continuation of Simpsons beat-em-up"
+ },
+ {
+  "id": "sl2007",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "sldeluxe",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "slqzsp",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "smatch03",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "GMS gambling/skill machine"
+ },
+ {
+  "id": "soulclb2",
+  "include": true,
+  "series_of": "soulclbr",
+  "confidence": "high",
+  "note": "Soul Calibur series"
+ },
+ {
+  "id": "soulclb3",
+  "include": true,
+  "series_of": "soulclbr",
+  "confidence": "high",
+  "note": "Soul Calibur series"
+ },
+ {
+  "id": "spcliner",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "spec2k",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "specfrce",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "speeddrv",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "sprtjam",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "sprtshot",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ss2005",
+  "include": true,
+  "series_of": "shanghai",
+  "confidence": "medium",
+  "note": "Super Shanghai 2005, Shanghai series"
+ },
+ {
+  "id": "sscope2",
+  "include": true,
+  "series_of": "sscope",
+  "confidence": "high",
+  "note": "Silent Scope series"
+ },
+ {
+  "id": "sscopefh",
+  "include": true,
+  "series_of": "sscope",
+  "confidence": "high",
+  "note": "Silent Scope series"
+ },
+ {
+  "id": "sscopex",
+  "include": true,
+  "series_of": "sscope",
+  "confidence": "high",
+  "note": "Silent Scope series"
+ },
+ {
+  "id": "ssh2000",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Korean bootleg bonus-payout tile game; not Sunsoft Shanghai"
+ },
+ {
+  "id": "ssh2000wf",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Korean bootleg bonus-payout tile game; not Sunsoft Shanghai"
+ },
+ {
+  "id": "ssh2001",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Korean bootleg bonus-payout tile game; not Sunsoft Shanghai"
+ },
+ {
+  "id": "starseek",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "starzan",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "styphp",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "Stunt Typhoon began 2000; unrelated to Stunt Air"
+ },
+ {
+  "id": "sukuinuf",
+  "include": true,
+  "series_of": "inufuku",
+  "confidence": "high",
+  "note": "Sukusuku Inufuku sequel"
+ },
+ {
+  "id": "superb2k",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "superdbz",
+  "include": true,
+  "series_of": "dbz",
+  "confidence": "medium",
+  "note": "Banpresto Dragon Ball Z arcade fighter series"
+ },
+ {
+  "id": "sweetl",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "sweetl2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "sweetld4",
+  "include": true,
+  "series_of": "sweetlnd",
+  "confidence": "low",
+  "note": "Namco Sweet Land prize machine series"
+ },
+ {
+  "id": "swracer",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Star Wars racer; not sequel to earlier arcade games"
+ },
+ {
+  "id": "sws2000",
+  "include": true,
+  "series_of": "sws",
+  "confidence": "high",
+  "note": "Super World Stadium series"
+ },
+ {
+  "id": "sws2001",
+  "include": true,
+  "series_of": "sws",
+  "confidence": "high",
+  "note": "Super World Stadium series"
+ },
+ {
+  "id": "tblkkuzu",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New block-breaker title; generic name match"
+ },
+ {
+  "id": "tblkkuzug",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "New block-breaker title; generic name match"
+ },
+ {
+  "id": "tct2p",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "tduno2",
+  "include": true,
+  "series_of": "tduno",
+  "confidence": "high",
+  "note": "Touch de Uno! sequel"
+ },
+ {
+  "id": "tekken4",
+  "include": true,
+  "series_of": "tekken",
+  "confidence": "high",
+  "note": "Tekken series"
+ },
+ {
+  "id": "tekken51",
+  "include": true,
+  "series_of": "tekken",
+  "confidence": "high",
+  "note": "Tekken series"
+ },
+ {
+  "id": "tekken5d",
+  "include": true,
+  "series_of": "tekken",
+  "confidence": "high",
+  "note": "Tekken series"
+ },
+ {
+  "id": "tetfight",
+  "include": true,
+  "series_of": "atetris",
+  "confidence": "low",
+  "note": "Korean Tetris-franchise versus game"
+ },
+ {
+  "id": "tetgiant",
+  "include": true,
+  "series_of": "tetris",
+  "confidence": "medium",
+  "note": "Sega Tetris arcade continuation"
+ },
+ {
+  "id": "tetkiwam",
+  "include": true,
+  "series_of": "tetris",
+  "confidence": "medium",
+  "note": "Tetris arcade franchise entry"
+ },
+ {
+  "id": "tetrbx",
+  "include": true,
+  "series_of": "tetris",
+  "confidence": "medium",
+  "note": "Bootleg compilation of Tetris/Bloxeed"
+ },
+ {
+  "id": "texashld",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "tgm2",
+  "include": true,
+  "series_of": "tgmj",
+  "confidence": "high",
+  "note": "Tetris The Grand Master sequel"
+ },
+ {
+  "id": "theglad",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "theroes",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "thrild2",
+  "include": true,
+  "series_of": "thrilld",
+  "confidence": "high",
+  "note": "Thrill Drive sequel"
+ },
+ {
+  "id": "timecrs3",
+  "include": true,
+  "series_of": "timecris",
+  "confidence": "high",
+  "note": "Time Crisis series"
+ },
+ {
+  "id": "timecrs4",
+  "include": true,
+  "series_of": "timecris",
+  "confidence": "high",
+  "note": "Time Crisis series"
+ },
+ {
+  "id": "tm8k",
+  "include": true,
+  "series_of": "tm",
+  "confidence": "high",
+  "note": "Touchmaster series continuation"
+ },
+ {
+  "id": "tokyocop",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "toukon4",
+  "include": true,
+  "series_of": "toukon3",
+  "confidence": "high",
+  "note": "Toukon Retsuden arcade sequel"
+ },
+ {
+  "id": "tripfev",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "tripslot",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "tritreat",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "trivrus",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "trojhors",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "trophyh",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "trstrove",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "turkhunt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "twcupmil",
+  "include": true,
+  "series_of": "twcup90",
+  "confidence": "high",
+  "note": "Tecmo World Cup series"
+ },
+ {
+  "id": "twrshaft",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "ufo7",
+  "include": true,
+  "series_of": "newufo",
+  "confidence": "medium",
+  "note": "UFO Catcher crane series continuation"
+ },
+ {
+  "id": "ultarctc",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Arctic Thunder began 2001; only loose Hydro Thunder link"
+ },
+ {
+  "id": "undefeat",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "unkanyw",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "unkbel",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "unksmk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "vathlete",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "vcop3",
+  "include": true,
+  "series_of": "vcop",
+  "confidence": "high",
+  "note": "Virtua Cop sequel"
+ },
+ {
+  "id": "vf4",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "vf4cart",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "vf4evo",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "vf4evoct",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "vf4tuned",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "vf5",
+  "include": true,
+  "series_of": "vf",
+  "confidence": "high",
+  "note": "Virtua Fighter series"
+ },
+ {
+  "id": "videight",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Macro 2001 gambling-type game, unrelated"
+ },
+ {
+  "id": "virnba",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "vnight",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "von4",
+  "include": true,
+  "series_of": "von",
+  "confidence": "high",
+  "note": "Virtual-On series"
+ },
+ {
+  "id": "vonot",
+  "include": true,
+  "series_of": "von",
+  "confidence": "high",
+  "note": "Virtual-On series"
+ },
+ {
+  "id": "vparadis2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "vs2002ex",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs2002j",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs2002t3",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs4",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs42006",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs42k6ex",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vs4j",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vstrik3",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vstrik3c",
+  "include": true,
+  "series_of": "vs2",
+  "confidence": "high",
+  "note": "Virtua Striker series"
+ },
+ {
+  "id": "vtenis2c",
+  "include": true,
+  "series_of": "vtennis",
+  "confidence": "high",
+  "note": "Virtua Tennis series"
+ },
+ {
+  "id": "vtennis2",
+  "include": true,
+  "series_of": "vtennis",
+  "confidence": "high",
+  "note": "Virtua Tennis series"
+ },
+ {
+  "id": "vtennis3",
+  "include": true,
+  "series_of": "vtennis",
+  "confidence": "high",
+  "note": "Virtua Tennis series"
+ },
+ {
+  "id": "vtennisg",
+  "include": true,
+  "series_of": "vtennis",
+  "confidence": "high",
+  "note": "GD-ROM re-release of 1999 Virtua Tennis"
+ },
+ {
+  "id": "wcombat",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "westdrmg",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Medal/pusher machine"
+ },
+ {
+  "id": "whiterus",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "wrungp",
+  "include": true,
+  "series_of": "waverunr",
+  "confidence": "high",
+  "note": "Wave Runner sequel"
+ },
+ {
+  "id": "wsbbgd",
+  "include": true,
+  "series_of": "smlg99",
+  "confidence": "high",
+  "note": "Sega World Series Baseball / Super Major League sequel"
+ },
+ {
+  "id": "wswe",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 arcade Winning Eleven"
+ },
+ {
+  "id": "wswe2k3",
+  "include": false,
+  "series_of": null,
+  "confidence": "medium",
+  "note": "No pre-2000 arcade Winning Eleven"
+ },
+ {
+  "id": "xtrmhnt2",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "xtrmhunt",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "xyddzhh",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/multigame-gambling machine"
+ },
+ {
+  "id": "xypdk",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "xypmd",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "xyxcxysj",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/amusement-with-prize machine"
+ },
+ {
+  "id": "yukongl5",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "Gambling/medal machine"
+ },
+ {
+  "id": "yuyuhaku",
+  "include": false,
+  "series_of": null,
+  "confidence": "high",
+  "note": "New post-1999 title; title-stem match only"
+ },
+ {
+  "id": "zerogu2",
+  "include": true,
+  "series_of": "zerogun",
+  "confidence": "high",
+  "note": "Zero Gunner sequel"
+ },
+ {
+  "id": "zgundm",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "zgundmdx",
+  "include": false,
+  "series_of": null,
+  "confidence": "low",
+  "note": "Licensed Gundam games; not continuation of a pre-2000 arcade series"
+ },
+ {
+  "id": "zunou",
+  "include": true,
+  "series_of": "tduno",
+  "confidence": "medium",
+  "note": "Touch de Uno!/Unou brain-game follow-up"
+ }
+]

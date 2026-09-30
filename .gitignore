@@ -1,3 +1,6 @@
 .DS_Store
 dist/
 node_modules/
+
+# MAME dumps and working files for the data pipeline
+pipeline/cache/

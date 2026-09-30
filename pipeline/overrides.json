@@ -1,0 +1,34 @@
+{
+ "_comment": "Hand corrections that win over every automatic or reviewed decision. docs: keyed by \"<old record id or name>|<file>\". decision: keep|move|drop|multi (multi takes targets).",
+ "docs": {
+  "Candy Shop|Grayhound Crane Candy Shop.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "Congorilla|Congorilla.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "Godzilla Wars Jnr.|Godzilla Wars.pdf": {
+   "decision": "drop",
+   "note": "site owner review 2026-09-30"
+  },
+  "ssf2|Street Fighter II.pdf": {
+   "decision": "keep",
+   "note": "site owner review 2026-09-30",
+   "target": "ssf2"
+  },
+  "Gun Games|Gun_Games_Bulletin_(MGS-01).pdf": {
+   "decision": "multi",
+   "note": "site owner review 2026-09-30",
+   "targets": [
+    "duckhunt",
+    "hogalley",
+    "vsfdf",
+    "vsgshoe"
+   ]
+  }
+ },
+ "include": [],
+ "exclude": []
+}

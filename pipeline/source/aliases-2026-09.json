@@ -1,23 +1,29 @@
 {
 "10yard": [
-"10-Yard Fight '85",
-"Vs 10-Yard Fight"
+"Vs 10-Yard Fight",
+"10-Yard Fight '85"
+],
+"1292apvs": [
+"1392 Advanced Programmable Video System"
 ],
 "1943": [
 "1943: Midway Kaisen"
 ],
-"280zzzap": [
-"ZZZap"
+"32x": [
+"Mega Drive with 32X"
 ],
-"3stooges": [
-"The Three Stooges"
+"32x_scd": [
+"Mega-CD with 32X"
+],
+"3do_gdo101": [
+"3DO FC-1 Interactive Multiplayer",
+"3DO FC-2 Interactive Multiplayer"
 ],
 "3wonders": [
 "Wonder 3"
 ],
-"500gp": [
-"500 GP Dixe",
-"500GP 3 in 1"
+"7jigen": [
+"Mahjong X-Tal 7 - Crystal Mahjong / Mahjong Diamond 7"
 ],
 "88games": [
 "Hyper Sports Special",
@@ -26,12 +32,28 @@
 "9ballsht": [
 "9-Ball Shootout Championship"
 ],
-"accomm": [
-"Acorn Briefcase Communicator"
+"a4000": [
+"Amiga 4000/030"
+],
+"a5120": [
+"A5130"
+],
+"a800": [
+"Atari 1200XL"
+],
+"a800xl": [
+"Atari 65XE",
+"Atari 130XE",
+"Atari 600XL"
+],
+"abc800c": [
+"ABC 800 M/HR"
+],
+"ac1": [
+"Amateurcomputer AC1 SCCH"
 ],
 "aerofgt": [
-"Sonic Wings",
-"Sonic Wings / Aero Fighters"
+"Sonic Wings"
 ],
 "agallet": [
 "Akuu Gallet"
@@ -39,23 +61,33 @@
 "airass": [
 "Fire Barrel"
 ],
-"airbustr": [
-"Air Buster"
-],
 "airraid": [
 "Cross Shooter"
 ],
 "ajax": [
 "Typhoon"
 ],
-"alcon": [
-"Slap Fight"
-],
 "aliensec": [
 "Baraduke"
 ],
 "aligator": [
 "Lizard Hunt"
+],
+"alleymas": [
+"Up Your Alley"
+],
+"alm32": [
+"Mephisto Almeria 16 Bit"
+],
+"alphatp2": [
+"alphatronic P1",
+"alphatronic P2U"
+],
+"alphatp3": [
+"alphatronic P30"
+],
+"alphatro": [
+"Alphatronic PC w/BiCom Graphics"
 ],
 "alphaxz": [
 "The 26th Z"
@@ -69,9 +101,12 @@
 "amazonia": [
 "Amazonia King Plus"
 ],
+"ampoker2": [
+"Piccolo Poker 100"
+],
 "animaljr": [
-"Waiwai Animal Land Jr.",
-"Animalandia Jr."
+"Animalandia Jr.",
+"Waiwai Animal Land Jr."
 ],
 "anteater": [
 "Ameisenbaer",
@@ -80,18 +115,14 @@
 "aof3": [
 "Art of Fighting 3 - The Path of the Warrior"
 ],
+"apfm1000": [
+"APF Imagination Machine"
+],
 "arcadian": [
 "Rapid Hero"
 ],
 "area51mx": [
-"Area 51 / Maximum Force Duo",
-"Maximum Force / Area 51"
-],
-"arknoid2": [
-"Arkanoid 2 Revenge of DOH"
-],
-"armedf": [
-"Armed F Formation"
+"Area 51 / Maximum Force Duo"
 ],
 "armwar": [
 "Powered Gear: Strategic Variant Armor Equipment"
@@ -106,6 +137,10 @@
 "asteroid": [
 "Space Rocks"
 ],
+"astrocde": [
+"Bally Computer System",
+"Bally Home Library Computer"
+],
 "astron": [
 "Cobra Command"
 ],
@@ -113,9 +148,14 @@
 "The Lord of King"
 ],
 "atarifb": [
-"Atari Football II",
 "Atari 4 Player Football",
-"4 Player Football"
+"Atari Football II"
+],
+"avalnc13": [
+"The Key Of Avalon 1.2 - Summon The New Monsters"
+],
+"avalns13": [
+"The Key Of Avalon 1.2 - Summon The New Monsters"
 ],
 "avengers": [
 "Hissatsu Buraiken"
@@ -123,8 +163,8 @@
 "avspirit": [
 "Phantasm"
 ],
-"baddudes": [
-"Dragonninja"
+"b2m": [
+"Bashkiria-2M ROM-disk"
 ],
 "bagman": [
 "Le Bagnard"
@@ -135,9 +175,6 @@
 "bang": [
 "Gun Gabacho"
 ],
-"bangball": [
-"Battle Bubble"
-],
 "barricad": [
 "Brickyard"
 ],
@@ -147,16 +184,13 @@
 "bassdx": [
 "Get Bass: Sega Bass Fishing",
 "Get Bass: Sega Bass Fishing Deluxe",
-"Get Bass: Sega Bass Fishing Upright",
-"Sega Bass Fishing"
+"Get Bass: Sega Bass Fishing Upright"
 ],
 "batsugun": [
 "Batsugun - Special Version"
 ],
 "battlera": [
-"Bloody Wolf",
-"Narazumono Sentoubutai Bloody Wolf",
-"M.I.A. - Missing in Action"
+"Narazumono Sentoubutai Bloody Wolf"
 ],
 "bbakraid": [
 "Battle Bakraid"
@@ -168,8 +202,13 @@
 "bchopper": [
 "Mr. HELI no Daibouken"
 ],
-"beastrzr": [
-"Bloody Roar"
+"bcs3": [
+"BCS 3 rev 3.1 29-column",
+"BCS 3 rev 3.1 40-column",
+"BCS 3 rev 3.2"
+],
+"bebox": [
+"BeBox Dual603-133"
 ],
 "bgaregga": [
 "Battle Garegga - Type 2",
@@ -178,26 +217,19 @@
 "bigprowr": [
 "Tag Team Wrestling"
 ],
-"bigrun": [
-"Jaleco Rally Big Run"
-],
-"biomtoy": [
-"Bioplaything Cop"
-],
 "bionicc": [
 "Top Secret"
 ],
 "bioship": [
 "Space Battle Ship Gomorrah"
 ],
-"blasted": [
-"International Team Laser"
+"bishjan": [
+"Xiao Ao Jiang Hu"
 ],
-"blaster": [
-"Baster"
-],
-"bldyror2": [
-"Bloody Roar 2: Bringer of the New Age"
+"bk0010": [
+"BK 0010 FDD",
+"BK 0010.01",
+"BK 0011"
 ],
 "blktiger": [
 "Black Dragon"
@@ -214,9 +246,6 @@
 "bm4thmix": [
 "beatstage 4th MIX"
 ],
-"bmark": [
-"Bullet Mark Model B1 Gun Alignment Procedures"
-],
 "bmaster": [
 "Cross Blades!"
 ],
@@ -230,8 +259,8 @@
 "bodyslam": [
 "Dump Matsumoto"
 ],
-"bonkadv": [
-"Bonk's Adventure: Arcade Version"
+"bonuscrd": [
+"Big Deal"
 ],
 "bonzeadv": [
 "Jigoku Meguri"
@@ -239,20 +268,17 @@
 "boogwing": [
 "The Great Ragtime Show"
 ],
-"bosco": [
-"Bosconian"
-],
 "bottom9": [
 "Main Stadium"
-],
-"bowler": [
-"Bowling Game"
 ],
 "boxyboy": [
 "Souko Ban Deluxe"
 ],
 "brapboys": [
 "B.Rap Boys Special"
+],
+"brasil": [
+"Fashion"
 ],
 "brdrline": [
 "Star Raker"
@@ -264,8 +290,8 @@
 "Bump 'n' Jump"
 ],
 "bubl2000": [
-"Bubble 2000 V1.2",
-"Hot Bubble"
+"Hot Bubble",
+"Bubble 2000 V1.2"
 ],
 "bublbob2": [
 "Bubble Symphony"
@@ -274,35 +300,35 @@
 "Zoom 909"
 ],
 "buggyboy": [
-"Buggy Boy Junior/Speed Buggy",
-"Speed Buggy"
+"Buggy Boy Junior/Speed Buggy"
 ],
 "bullfgt": [
 "The Togyu"
 ],
+"burnforc": [
+"Burning Force"
+],
 "butasan": [
 "Butasan"
+],
+"bw12": [
+"Bondwell 14",
+"Bondwell Portable Computer Model 14"
 ],
 "bwcasino": [
 "Atlantic City Action"
 ],
-"bwings": [
-"Battle Wings"
-],
-"bzone": [
-"6502A Analog Vector Generator"
-],
 "cadanglr": [
 "Fishing"
 ],
-"calibr50": [
-"50 Caliber"
+"cafedoll": [
+"Mahjong Cafe Doll Great"
 ],
 "capbowl": [
 "Coors Light Bowling"
 ],
-"catnmous": [
-"Cat'n Mouse"
+"carrera": [
+"Carrera / Bomberman"
 ],
 "cawing": [
 "U.S. Navy"
@@ -313,14 +339,21 @@
 "cburnrub": [
 "Bump 'n' Jump"
 ],
-"cbuster": [
-"Two Crude"
+"ccmk5": [
+"Chess Champion: Mark VI/Philidor"
 ],
-"cchasm": [
-"High-Speed Vector Game System"
+"ccs2810": [
+"CCS Model 2422B FDC card",
+"CCS Model 300"
 ],
 "cdiscon1": [
 "Sweet Heart"
+],
+"cdx": [
+"Multi-Mega"
+],
+"centurion": [
+"Kasparov Cougar"
 ],
 "cgraplop": [
 "Graplop"
@@ -329,15 +362,14 @@
 "Magical Drop",
 "Magical Drop Plus 1"
 ],
-"champbas": [
-"Championship Baseball"
-],
 "champbb2": [
-"Taikyoku Base Ball",
-"Champion Baseball II"
+"Taikyoku Base Ball"
 ],
 "changes": [
 "Looper"
+],
+"chessac": [
+"Mephisto Schachakademie"
 ],
 "chinagat": [
 "Sai Yu Gou Ma Roku"
@@ -354,14 +386,17 @@
 "clapapa": [
 "Rootin' Tootin'"
 ],
-"cloak": [
-"Agent X"
+"club90s": [
+"Mahjong Love House"
 ],
-"clubpacm": [
-"Pacman Club"
+"cmast97": [
+"Cheri Mondo '97"
 ],
 "cninja": [
 "Tatakae Genshizin Joe & Mac"
+],
+"code1d": [
+"Code One Dispatch Ver 1.16"
 ],
 "combat": [
 "Catch-22"
@@ -373,42 +408,27 @@
 "Senjou no Ookami",
 "Space Invasion"
 ],
+"compis": [
+"Compis II"
+],
 "congo": [
 "Tip Top"
-],
-"contcirc": [
-"Continental Circuit"
 ],
 "contra": [
 "Gryzor"
 ],
-"cops": [
-"Cops Misc Faxed Pages"
-],
-"copsnrob": [
-"Cops n Robbers Spare"
-],
 "cosmccop": [
 "Armed Police Unit Gallop"
+],
+"cpc464": [
+"Amstrad CPC6128",
+"Amstrad CPC664"
 ],
 "cprogolf": [
 "18 Challenge Pro Golf"
 ],
-"cps3boot": [
-"CPS3 Multi-game bootleg for dead security cart",
-"Street Fighter III 2nd Impact: Giant Attack"
-],
-"crashnsc": [
-"Crash 'N Score"
-],
-"crater": [
-"Crater Raider U.R."
-],
 "crgolf": [
 "Champion Golf"
-],
-"crimfght": [
-"The Main Event to Crime Fighters Conversion"
 ],
 "critcrsh": [
 "Tatacot"
@@ -419,28 +439,19 @@
 "croupier": [
 "Croupier II"
 ],
-"crszone": [
-"Crisis Zone SD",
-"Crisis Zone Standard Update 1"
-],
-"crush": [
-"Korosuke Roller",
-"Make Trax"
-],
-"crusnexo": [
-"Cruisin' Exotica",
-"Cruisn Exocita SB 04-17-2000",
-"Cruisn Exotica Parts Order Form"
-],
 "crzcross": [
 "Taisen Puzzle-dama"
+],
+"crzybugs": [
+"Chong Chong Leyuan",
+"Magic Tree"
 ],
 "cupfinal": [
 "Hat Trick Hero '93"
 ],
 "cupsoc": [
-"Seibu Cup Soccer :Selection:",
-"Olympic Soccer '92"
+"Olympic Soccer '92",
+"Seibu Cup Soccer :Selection:"
 ],
 "cvs2": [
 "Capcom Vs. SNK 2: Millionaire Fighting 2001"
@@ -449,8 +460,11 @@
 "Cyberball 2072",
 "Tournament Cyberball 2072"
 ],
-"dangar": [
-"UFO Robo Danger"
+"cybikov1": [
+"Cybiko Xtreme"
+],
+"d9final": [
+"Rolling Panic"
 ],
 "darius": [
 "Darius Extra Version"
@@ -464,17 +478,14 @@
 "daytona": [
 "Daytona USA Special Edition"
 ],
-"dblaxle": [
-"Power Wheels"
-],
 "ddenlovj": [
 "Don Den Lover Vol. 1",
 "Don Den Lover Vol. 1 - Heukbaeg-euro Jeonghaja"
 ],
 "ddp2": [
 "DoDonPachi - Feng Bao",
-"DoDonPachi II - Fung Bou",
-"DoDonPachi II"
+"DoDonPachi II",
+"DoDonPachi II - Fung Bou"
 ],
 "ddp3": [
 "DoDonPachi Dai-Ou-Jou",
@@ -484,28 +495,28 @@
 "DoDonPachi Dai-Fukkatsu Ver 1.0"
 ],
 "ddr2m": [
-"Dance Dance Revolution 2nd Mix with beatmaniaIIDX CLUB VERSiON",
-"Dance Dance Revolution 2nd Mix with beatmaniaIIDX substream CLUB VERSiON 2",
 "Dance Dance Revolution 2nd Mix - Link Ver",
-"Dance Dance Revolution Best of Cool Dancers"
+"Dance Dance Revolution 2nd Mix with beatmaniaIIDX CLUB VERSiON",
+"Dance Dance Revolution 2nd Mix with beatmaniaIIDX substream CLUB VERSiON 2"
 ],
 "ddr3mk": [
 "Dance Dance Revolution 3rd Mix",
 "Dance Dance Revolution 3rd Mix - Ver.Korea"
 ],
-"ddragon3": [
-"Double Dragon 3"
-],
 "deadang": [
 "Gang Hunter / Dead Angle",
 "Lead Angle"
 ],
+"deerhunt": [
+"Deer Hunting USA V1",
+"Deer Hunting USA V2",
+"Deer Hunting USA V3"
+],
 "defender": [
 "T.T Defender"
 ],
-"demoderb": [
-"Demolition Derby 4 Player",
-"Demolition Derby U.R."
+"deluxe5": [
+"Deluxe 4 U"
 ],
 "dendego": [
 "Densha de GO! EX"
@@ -522,9 +533,6 @@
 "deroon": [
 "Deroon DeroDero / Tecmo Stackers"
 ],
-"desertwr": [
-"Desert War - Operation Combat Rescue"
-],
 "devilw": [
 "Dark Adventure",
 "Majuu no Ohkoku"
@@ -538,17 +546,28 @@
 "diehard": [
 "Dynamite Deka"
 ],
+"dimahoo": [
+"Great Mahou Daisakusen"
+],
 "dino": [
 "Cadillacs: Kyouryuu Shin Seiki"
+],
+"dinoki25": [
+"Konglongwang - D-Kids VS Alpha Yaosai"
 ],
 "discoboy": [
 "DJ Girl"
 ],
-"dkmb": [
-"Donkey Kong / Donkey Kong Junior / Mario Bros"
+"dmnfrnt": [
+"Demon Front V1.1 / Moyu Zhanxian V1.1"
 ],
-"dkongjr": [
-"Donkey Kong Jr."
+"dn3500": [
+"Apollo DN3000",
+"Apollo DN3000 19\" Monochrome",
+"Apollo DN3500 19\" Monochrome"
+],
+"dncfrks": [
+"Dance Maniax"
 ],
 "doa2m": [
 "Dead or Alive 2"
@@ -574,19 +593,9 @@
 "dorunrun": [
 "Super Pierrot"
 ],
-"dotron": [
-"Disc of Tron"
-],
-"downhill": [
-"Downhill Biker"
-],
-"drgnunit": [
-"Castle of Dragon"
-],
 "drgnwrld": [
-"Zhongguo Long",
-"Dung Fong Zi Zyu",
 "Chuugokuryuu",
+"Dung Fong Zi Zyu",
 "Dongbang Jiju"
 ],
 "drgpunch": [
@@ -594,8 +603,8 @@
 ],
 "drgw2": [
 "Zhongguo Long II",
-"Dungfong Zi Zyu II",
-"Chuugokuryuu II"
+"Chuugokuryuu II",
+"Dungfong Zi Zyu II"
 ],
 "drgw3": [
 "Chuugokuryuu 3 Special"
@@ -603,17 +612,19 @@
 "drtoppel": [
 "Dr. Toppel's Tankentai"
 ],
+"dspirit": [
+"Dragon Spirit"
+],
 "dstage": [
 "Dance Dance Revolution",
 "Dance Dance Revolution - Internet Ranking Ver",
 "Dancing Stage"
 ],
 "dstlk": [
-"Vampire: The Night Warriors",
-"Dark Stalkers"
+"Vampire: The Night Warriors"
 ],
-"duckhunt": [
-"Gun Games"
+"dwpc": [
+"Chuugokuryuu Pretty Chance [Dragon World Pretty Chance]"
 ],
 "dynablst": [
 "Atomic Punk",
@@ -628,15 +639,15 @@
 "ecofghtr": [
 "Ultimate Ecology"
 ],
-"einning": [
-"Extra Inning",
-"Extra Innings"
-],
-"elevator": [
-"Jungle Hunt to Elevator Action Conversion"
+"ehx20": [
+"Epson CM6032",
+"Epson CM6127"
 ],
 "elvactr": [
 "Elevator Action II"
+],
+"emax": [
+"Emax Plus Digital Sampling Keyboard"
 ],
 "empcity": [
 "Street Fight"
@@ -644,11 +655,8 @@
 "enigma2": [
 "Phantoms II"
 ],
-"eurocube65": [
-"EuroBEEB-1",
-"EuroBEEB-2",
-"EuroBEEB-3C",
-"EuroBEEB-3M"
+"euro2k2": [
+"Europa 2002 Space"
 ],
 "evilngt": [
 "Hell Night"
@@ -656,24 +664,35 @@
 "exedexes": [
 "Savage Bees"
 ],
+"expcard": [
+"Jiyou Gaoshou"
+],
 "explbrkr": [
 "Bakuretsu Breaker"
 ],
 "exprraid": [
 "Western Express"
 ],
-"f15se": [
-"Sound"
+"f1": [
+"Apricot F10",
+"Apricot F1e",
+"Apricot F2"
+],
+"falco5220e": [
+"Falco 500e",
+"Falco 5220s"
 ],
 "famibox": [
 "FamicomStation"
 ],
 "fantjour": [
-"Gokujou Parodius: Kako no Eikou o Motomete",
-"Gokujyo Parodius"
+"Gokujou Parodius: Kako no Eikou o Motomete"
 ],
 "fax": [
 "FAX 2"
+],
+"fb4": [
+"Fruit Bonus 2005"
 ],
 "fbait2bc": [
 "Bass Angler 2"
@@ -681,11 +700,17 @@
 "fbaitbc": [
 "Bass Angler"
 ],
+"fever13": [
+"Ukiyo Box"
+],
 "feversos": [
 "Dangun Feveron"
 ],
 "fghtatck": [
 "F/A"
+],
+"fghtmn": [
+"Punch Mania: Hokuto no Ken"
 ],
 "fieldday": [
 "The Undoukai"
@@ -697,19 +722,22 @@
 "Same! Same! Same!",
 "Jiao! Jiao! Jiao!"
 ],
-"firetrk": [
-"Fire Truck",
-"Smokey Joe"
-],
 "fixeight": [
 "FixEight - Jigoku no Eiyuu Densetsu"
+],
+"fkddz2": [
+"Jue Zhan Shanghai Tan"
+],
+"fl7_50": [
+"Flaming 7's",
+"Flaming 7's, 1000 bonus)",
+"Flaming 7's, 2000 bonus)"
 ],
 "flyboy": [
 "Fast Freddie"
 ],
 "footchmp": [
-"Hat Trick Hero",
-"Football Champ"
+"Hat Trick Hero"
 ],
 "forgottn": [
 "Lost Worlds"
@@ -718,33 +746,38 @@
 "Aeroboto"
 ],
 "fround": [
-"Hard Puncher",
-"Final Round",
-"The Final Round / Hard Puncher"
+"Hard Puncher"
 ],
 "fshark": [
-"Hishou Zame",
-"Sky Shark"
+"Sky Shark",
+"Hishou Zame"
 ],
-"ftimpcta": [
-"Fighters' Impact"
+"fstation": [
+"Fun Station Spielekoffer 7 Spiele",
+"Fun Station Spielekoffer 8 Spiele"
 ],
-"funystrp": [
-"Puck People"
+"futari15": [
+"Mushihime-Sama Futari Ver 1.0"
+],
+"futaribl": [
+"Mushihime-Sama Futari Black Label"
 ],
 "futflash": [
 "Laser Base"
 ],
+"fw_a7_11": [
+"unknown Fun World A7-11 game 2"
+],
 "galaxian": [
 "Moon Alien",
-"T.T Spacian Part-2",
-"Super GX"
+"Super GX",
+"T.T Spacian Part-2"
 ],
 "galaxyr": [
 "Star Blazer"
 ],
-"galgame4": [
-"Galaxy Games + prototype StarPak 4 cartridge"
+"galkoku": [
+"Mahjong Hyouban Musume"
 ],
 "galpani4": [
 "Gals Panic DX",
@@ -754,18 +787,19 @@
 "galpans2": [
 "Gals Panic SU"
 ],
-"gametngk": [
-"Game Paradise"
+"gambl186": [
+"Multi Game"
 ],
-"gametree": [
-"The Game Tree"
+"gameboy": [
+"Game Boy Pocket",
+"Super Game Boy",
+"Super Game Boy 2"
+],
+"gammagic": [
+"99 Bottles of Beer"
 ],
 "gaplus": [
-"Galaga 3",
-"Galaga III"
-],
-"gaunt2": [
-"Four-Player Gauntlet II"
+"Galaga 3"
 ],
 "gberet": [
 "Rush'n Attack"
@@ -773,25 +807,20 @@
 "gbusters": [
 "Crazy Cop"
 ],
-"gdarius2": [
-"G-Darius"
+"gekisha": [
+"Mahjong Gekisha Part II"
 ],
-"germwars": [
-"Survival"
+"gen_nomd": [
+"Mega Jet"
 ],
-"gforce2": [
-"Galaxy Force"
+"genesis": [
+"Mega Drive"
 ],
 "ghlpanic": [
 "Oh! Bakyuuun"
 ],
 "ghouls": [
 "Daimakaimura"
-],
-"gladiatr": [
-"Golden Castle",
-"Great Gurianos",
-"Ougon no Shiro"
 ],
 "glass": [
 "Super Splash"
@@ -803,14 +832,16 @@
 "Gallop Racer 2 Link HW"
 ],
 "gng": [
-"Makaimura",
-"Ghost 'N Goblins"
+"Makaimura"
 ],
-"gobyrc": [
-"RC De Go"
+"goldstrk": [
+"Sparkle"
 ],
 "gondo": [
 "Makyou Senshi"
+],
+"goretrop": [
+"Go Retro Portable 250+ Games"
 ],
 "gotcha": [
 "Pasha Pasha Champ Mini Game Festival"
@@ -821,20 +852,18 @@
 "gradius4": [
 "Gradius IV"
 ],
-"gratia": [
-"Second Earth Gratia"
-],
-"gravitar": [
-"Lunar Battle",
-"Gravitar Retrofit"
-],
-"grdian": [
-"Get Star"
-],
 "grdnstrm": [
-"Sen Jing - Guardian Storm",
+"Hong Hu Zhanji II",
 "Jeon Sin - Guardian Storm",
-"Hong Hu Zhanji II"
+"Sen Jing - Guardian Storm"
+],
+"grid1101": [
+"Compass 1109"
+],
+"grid1121": [
+"Compass II 1129",
+"Compass II 1131",
+"Compass II 1139"
 ],
 "grindstm": [
 "V-Five"
@@ -871,17 +900,7 @@
 "Great 1000 Miles Rally: U.S.A Version!"
 ],
 "gtmr2": [
-"Great 1000 Miles Rally 2 USA",
-"Great 1000 Miles Rally 2"
-],
-"gtrak10": [
-"Gran Trak 10",
-"Trak 10"
-],
-"gtrak20": [
-"Gran Trak 20",
-"Trak 20",
-"Twin Racer"
+"Great 1000 Miles Rally 2 USA"
 ],
 "gtrfrk2m": [
 "Guitar Freaks 2nd Mix",
@@ -900,11 +919,21 @@
 "gumbo": [
 "Miss Puzzle"
 ],
+"gundcb79": [
+"Mobile Suit Gundam 0079 Card Builder Ver.2.02"
+],
+"gundcb83": [
+"Mobile Suit Gundam 0083 Card Builder Check Disk",
+"Mobile Suit Gundam 0083 Card Builder Ver.2.10"
+],
 "gundl94": [
 "Primella"
 ],
 "gunforc2": [
 "Geo Storm"
+],
+"gunfront": [
+"Gun Frontier"
 ],
 "gunlock": [
 "RayForce"
@@ -915,51 +944,62 @@
 "gyrodine": [
 "Buzzard"
 ],
-"halleysc": [
-"Halley's Comet '87"
+"h89": [
+"H-88",
+"H-89 with CDR Equipment",
+"H-89 with MMS Equipment"
 ],
-"hangon": [
-"Hang-On Ride-On Type Switch Settings"
+"hanakanz": [
+"Kkotbinyeo",
+"Speed Up / Kkotbinyeo"
 ],
-"harddriv": [
-"Hard Drivin' Compact"
-],
-"hardyard": [
-"NFL Hard Yardage"
-],
-"harley": [
-"Harley-Davidson & L.A.Riders"
+"hanamai": [
+"Hana Kochou"
 ],
 "hcastle": [
 "Akuma-Jou Dracula"
 ],
+"hec2hrp": [
+"Hector 2HR",
+"Hector HRX + Disc2",
+"Hector HRX + mini Disc"
+],
+"hektor2": [
+"Hektor"
+],
 "hero": [
 "Hero in the Castle of Doom"
+],
+"hgokou": [
+"Hanafuda Hana Gokou Bangaihen"
 ],
 "hharry": [
 "Daiku no Gensan"
 ],
-"hippodrm": [
-"Fighting Fantasy"
+"hjingi": [
+"Hana Oriduru"
 ],
-"hitme": [
-"21 Game"
-],
-"hoccer": [
-"Hoccer V1"
-],
-"hogalley": [
-"Gun Games"
-],
-"hoopitup": [
-"Hoop It Up 3 on 3"
+"homelab2": [
+"Brailab 4",
+"Homelab 3",
+"Homelab 4"
 ],
 "hoops96": [
 "Dunk Dream '95",
 "Hoops"
 ],
+"hr16": [
+"HR-16B"
+],
 "huncholy": [
 "Herbie at the Olympics"
+],
+"hunter16": [
+"Husky Hunter 16/80",
+"Husky Hunter 2/16"
+],
+"hunter2": [
+"Husky Hunter"
 ],
 "hvyunit": [
 "Heavy Unit -U.S.A. Version-"
@@ -968,8 +1008,7 @@
 "Hyper Olympic '84"
 ],
 "icecold": [
-"Zeke's Peak",
-"Ice Cold Beer and Zeke's Peak"
+"Zeke's Peak"
 ],
 "idsoccer": [
 "American Soccer"
@@ -995,22 +1034,17 @@
 "inthunt": [
 "Kaitei Daisensou"
 ],
-"invaders": [
-"Space Invaders",
-"Jatre Specter",
-"Super Invaders",
-"Space King",
-"Space War",
-"Ultra Invaders"
+"intv": [
+"Intellivision II",
+"Intellivision Keyboard Component",
+"Intellivision w/Entertainment Computer System + Intellivoice expansions"
 ],
 "invadpt2": [
-"Space Invaders Deluxe",
-"Moon Base Zeta"
-],
-"invho2": [
-"Head On 2 / Invinco"
+"Moon Base Zeta",
+"Space Invaders Deluxe"
 ],
 "iqblock": [
+"IQ Block",
 "Shuzi Leyuan"
 ],
 "ironfort": [
@@ -1026,17 +1060,25 @@
 "Tokushu Butai Jackal",
 "Top Gunner"
 ],
+"jaguar": [
+"Jaguar CD"
+],
 "jailbrek": [
 "Manhattan 24 Bunsyo"
 ],
-"jchan": [
-"The Kung-Fu Master Jackie Chan"
-],
-"jetfight": [
-"Jet Fighter"
+"janbari": [
+"Medal Mahjong Janjan Baribari"
 ],
 "jetwave": [
 "Wave Shark"
+],
+"jking02": [
+"Kuaile Xiyou Ji",
+"Tarzan II"
+],
+"jkrmast": [
+"The New 1997 Joker Master",
+"The New 1997 Joker Master - New York"
 ],
 "jojo": [
 "JoJo no Kimyou na Bouken"
@@ -1044,21 +1086,21 @@
 "jojoba": [
 "JoJo no Kimyou na Bouken: Mirai e no Isan"
 ],
-"joust": [
-"Joust Upright Preliminary"
+"jongpute": [
+"T.T Mahjong"
 ],
 "joyfulr": [
 "Munch Mobile"
 ],
 "jumpshot": [
-"Jump Shot Engineering Sample",
-"Jumpshot BI-Polar Prom Substitutions List",
-"Jumpshot U.R.",
-"PAC-PACK"
+"Jump Shot Engineering Sample"
 ],
 "junglek": [
 "Jungle Hunt",
 "Pirate Pete"
+],
+"kaguya2": [
+"Mahjong Kaguyahime Sono2 Fukkokuban"
 ],
 "kaiserkn": [
 "Global Champion"
@@ -1078,22 +1120,22 @@
 "kazan": [
 "Iga Ninjyutsuden"
 ],
-"kchamp": [
-"Karate Dou"
+"kbm": [
+"Keyboardheaven"
 ],
-"kchampvs": [
-"Taisen Karate Dou"
+"kc85_2": [
+"KC 85/3",
+"KC 85/4",
+"KC 85/5"
 ],
 "kick": [
-"Kickman",
-"Kick Heat Sink Assy Drawing"
+"Kickman"
 ],
 "kicker": [
 "Shao-lin's Road"
 ],
 "kidniki": [
-"Kaiketsu Yanchamaru",
-"Kid Niki - The Radical Ninja"
+"Kaiketsu Yanchamaru"
 ],
 "kingdmgp": [
 "Shippu Mahou Daisakusen"
@@ -1107,17 +1149,22 @@
 "kizuna": [
 "Kizuna Encounter - Super Tag Battle 4 Way Battle Version / Fu'un Super Tag Battle Special Version"
 ],
-"kof2002um": [
-"The King of Fighters 2002 Unlimited Match"
-],
 "konam80s": [
 "Konami 80's Gallery"
 ],
 "konamigt": [
 "Konami RF2: Red Fighter"
 ],
+"korgm1": [
+"M1 EX Music Workstation",
+"M1R EX Music Workstation",
+"M1R Music Workstation"
+],
 "kov2nl": [
 "Sanguo Zhan Ji 2 Gaishi Yingxiong"
+],
+"krvnjvtv": [
+"OC-2000"
 ],
 "kungfum": [
 "Spartan X"
@@ -1125,14 +1172,17 @@
 "kyros": [
 "Kyros no Yakata"
 ],
+"kyukaidk": [
+"Kyuukai Douchuuki"
+],
 "lacrazyc": [
 "Susume! Taisen Puzzle-Dama"
 ],
 "ladykill": [
 "Moeyo Gonta!!"
 ],
-"ladymstr": [
-"Nunchackun"
+"laseract": [
+"LaserActive with Mega Drive Pack PAC-S1"
 ],
 "laserbat": [
 "Lazarian"
@@ -1158,6 +1208,11 @@
 "le2": [
 "Lethal Enforcers II: The Western"
 ],
+"leapster": [
+"Leapster 2",
+"Leapster L-MAX",
+"Leapster TV"
+],
 "legion": [
 "Chouji Meikyuu Legion"
 ],
@@ -1170,8 +1225,14 @@
 "lgtnfght": [
 "Trigon"
 ],
-"liberate": [
-"Dual Assault"
+"lhb": [
+"Daai Baan Sing",
+"Mahjong Ryukobou"
+],
+"lhb2": [
+"Long Hu Bang II: Cuo Pai Gaoshou",
+"Long Hu Bang III: Cuo Pai Gaoshou",
+"Mahjong Nenrikishu SP"
 ],
 "lightbr": [
 "Dungeon Magic"
@@ -1179,28 +1240,48 @@
 "liquidk": [
 "Mizubaku Daibouken"
 ],
+"llc1": [
+"LLC-2"
+],
 "lockload": [
-"Gun Hard",
-"Locked and Loaded"
+"Gun Hard"
 ],
 "locomotn": [
 "Guttang Gottong"
 ],
+"lola8": [
+"Lola 8 NK",
+"Lola 8A"
+],
 "lomakai": [
-"Makai Densetsu",
-"The Legend of Makai"
+"Makai Densetsu"
+],
+"lond32": [
+"Mephisto London 16 Bit"
 ],
 "lrescue": [
 "Galaxy Rescue"
 ],
-"lsasquad": [
-"Land Sea Air Squad"
-],
 "ltswords": [
 "Ken-Go"
 ],
+"lvcards": [
+"Lovely Poker"
+],
 "lwings": [
 "Ares no Tsubasa"
+],
+"lynx48k": [
+"Lynx 128k",
+"Lynx 96k"
+],
+"lyon32": [
+"Mephisto Lyon 16 Bit",
+"Mephisto Lyon 68030",
+"Mephisto TM Lyon"
+],
+"m5": [
+"m.5 BRNO mod"
 ],
 "machbrkr": [
 "Mach Breakers - Numan Athletics 2"
@@ -1217,11 +1298,17 @@
 "mainevt": [
 "Ring no Ohja"
 ],
+"majrjhdx": [
+"Mahjong Raijinhai"
+],
 "majtitl2": [
 "The Irem Skins Game"
 ],
 "malzak": [
 "Malzak II"
+],
+"manicpnc": [
+"Pokasuka Ghost!"
 ],
 "manxtt": [
 "Manx TT Superbike - DX"
@@ -1230,11 +1317,8 @@
 "800 Fathoms"
 ],
 "mastboy": [
-"Master Boy Olympic",
-"Master Boy Version II"
-],
-"masterw": [
-"Yukiwo"
+"Master Boy Version II",
+"Master Boy Olympic"
 ],
 "matchit": [
 "Shisensho - Joshiryo-Hen"
@@ -1246,20 +1330,32 @@
 "Exciting Hour"
 ],
 "maxforce": [
-"Maximum Force v1.02",
-"Maximum Force"
+"Maximum Force",
+"Maximum Force v1.02"
 ],
-"maxrpm": [
-"Max RPM U.R. 2 Player"
+"mbaa": [
+"Melty Blood Actress Again"
+],
+"mbee": [
+"Microbee PC85",
+"Microbee 128k Standard",
+"Microbee 32k Communicator"
 ],
 "mbombrd": [
 "Muscle Bomber Duo: Heat Up Warriors"
 ],
+"mc400": [
+"MC Word",
+"MC 200"
+],
 "mcatadv": [
 "Catt"
 ],
-"mdntmrdr": [
-"Midnight Marauder"
+"mcb216": [
+"CB-308"
+],
+"md2": [
+"Micro Decision MD-3"
 ],
 "megaman": [
 "Rockman: The Power Battle"
@@ -1273,61 +1369,84 @@
 ],
 "megat4": [
 "Super Megatouch IV",
-"Super Megatouch IV Tournament Edition",
-"Super Megatouch IV Turnier Version",
-"Megatouch IV Tournament Edition"
+"Megatouch IV Tournament Edition",
+"Super Megatouch IV Tournament Edition"
 ],
 "megat5": [
 "Megatouch 5 Tournament Edition",
 "Megatouch 5 Turnier Version"
 ],
-"megatack": [
-"Megattack"
+"meltyb": [
+"Melty Blood Act Cadenza Version B"
+],
+"meltybld": [
+"Melty Blood Act Cadenza"
 ],
 "mercs": [
 "Senjou no Ookami II"
 ],
-"mermaid": [
-"Yachtsman"
-],
 "metmqstr": [
 "Oni - The Ninja Master"
 ],
-"mgcldtex": [
-"Magical Date / Magical Date - Dokidoki Kokuhaku Daisakusen"
+"mgakuen": [
+"Chi-Toitsu"
 ],
-"mhavoc": [
-"Alpha One",
-"Major Havoc Conversion Kit A",
-"The Adventures of Major Havoc"
+"mhhonban": [
+"Zoku Mahjong Housoukyoku"
+],
+"mia": [
+"M.I.A.: Missing in Action"
 ],
 "mikie": [
 "Shinnyuu Shain Tooru-kun"
 ],
 "missile": [
-"Super Missile Attack",
-"Cocktail Missile Command",
-"Sit-Down Missile Command"
+"Super Missile Attack"
 ],
 "missw96": [
 "Miss Mister World '96"
 ],
-"mk": [
-"Mortal Kombat 1 Kit 43125 Templete for Controls",
-"Mortal Kombat 1 Kit T-Unit CPU Ademendment"
+"mj1": [
+"Sega Yonin Uchi Mahjong MJ"
 ],
-"mk2": [
-"Mortal Kombat 2 (Dollar Bill Validtor Operation",
-"Mortal Kombat 2 Kit"
+"mjdejavu": [
+"Mahjong Shinkirou Deja Vu 2"
+],
+"mjelctrn": [
+"Mahjong Electromagnetic Base"
+],
+"mjgottsu": [
+"Mahjong Bakuhatsu Junjouden"
+],
+"mjlstory": [
+"Lady Maker"
+],
+"mjmaglmp": [
+"Pili Shen Deng"
+],
+"mjmyorn2": [
+"Mahjong The Mysterious Orient"
+],
+"mjmyster": [
+"Maque Caihui Ying"
+],
+"mjmyuniv": [
+"Maa Zoek Lung Hing Fu Dai"
+],
+"mjnatsu": [
+"Natsuiro Mahjong"
+],
+"mjreach": [
+"Mahjong Reach Part II"
 ],
 "mmaulers": [
 "Kyukyoku Sentai Dadandarn"
 ],
-"monacogp": [
-"Pro Monaco GP"
+"mo5": [
+"MO5E"
 ],
-"moonal2": [
-"Moon Alien Part II"
+"mo6": [
+"Prodest PC 128"
 ],
 "mooncrst": [
 "Eagle"
@@ -1342,63 +1461,50 @@
 "mrtnt": [
 "Gorkans"
 ],
-"mslug2": [
-"Metal Slug 2"
-],
-"mstworld": [
-"Monsters World 2"
-],
-"msword": [
-"Magic Sword"
+"mt65": [
+"Micron",
+"Microtan 6809 System"
 ],
 "mtwins": [
 "Chiki Chiki Boys"
+],
+"mtx512": [
+"MTX 500",
+"RS 128"
 ],
 "mutantf": [
 "Death Brade",
 "Heroes"
 ],
+"mwskins": [
+"Skins Game Tournament Edition"
+],
 "mx5000": [
 "Flak Attack"
-],
-"myangel": [
-"Quiz My Angel"
 ],
 "myhero": [
 "Cheongchun Ilbeonji",
 "Seishun Scandal"
 ],
-"mysticm": [
-"Mystic Marathon Parts"
-],
 "mysticri": [
 "Mahou Keibitai Gun Hohki"
 ],
 "mystston": [
-"Mysterious Stones: Dr. Kick in Adventure",
-"Mysterious Stones"
+"Mysterious Stones: Dr. Kick in Adventure"
+],
+"n64": [
+"Nintendo 64DD",
+"Nintendo Gateway 64"
 ],
 "nagano98": [
 "Hyper Olympic in Nagano"
-],
-"narc": [
-"Z-Unit"
 ],
 "nastar": [
 "Nastar Warrior",
 "Rastan Saga 2"
 ],
-"nbagold": [
-"NBA Showtime Gold Edition / NFL Blitz 2000 Gold Edition"
-],
 "nbahangt": [
 "NBA Maximum Hangtime"
-],
-"nbajamte": [
-"NBA Jam Tournament"
-],
-"nbanfl": [
-"SportStation"
 ],
 "nbapbp": [
 "NBA All The Way"
@@ -1406,15 +1512,47 @@
 "nbbatman": [
 "Yakyuu Kakutou League-Man"
 ],
+"nc100": [
+"NC150"
+],
+"nc96": [
+"New Cherry '96"
+],
 "nemesis": [
 "Gradius"
 ],
-"neodrift": [
-"Neo Drift Out"
+"neocdz": [
+"Neo-Geo CD"
+],
+"nes": [
+"Nintendo Entertainment System"
 ],
 "nettoqc": [
-"Se Gye Hweng Dan Ultra Champion",
-"Cheng Ba Shi Jie - Chao Shi Kong Guan Jun"
+"Cheng Ba Shi Jie - Chao Shi Kong Guan Jun",
+"Se Gye Hweng Dan Ultra Champion"
+],
+"newbrain": [
+"NewBrain A",
+"NewBrain MD"
+],
+"nexts": [
+"NeXTcube",
+"NeXTstation Color"
+],
+"nextst": [
+"NeXTcube Turbo",
+"NeXTcube Turbo Color",
+"NeXTstation Turbo Color"
+],
+"nfb96": [
+"New Fruit Bonus '96"
+],
+"ng_mv1": [
+"Neo-Geo MV-1F",
+"Neo-Geo MV-1FZ"
+],
+"ngp": [
+"NeoGeo Pocket Color"
 ],
 "nhomerun": [
 "Moero!! Pro Yakyuu Homerun Kyousou"
@@ -1432,17 +1570,14 @@
 "nomnlnd": [
 "No Man's Land"
 ],
+"norautp": [
+"Noraut Joker Poker"
+],
 "nost": [
 "Nostradamus Yeeon"
 ],
-"nostromo": [
-"Star Trek"
-],
 "nprobowl": [
 "Pro Bowl 2"
-],
-"nslasher": [
-"Night Slasher"
 ],
 "nspirit": [
 "Saigo no Nindou"
@@ -1453,21 +1588,16 @@
 "nyny": [
 "Waga Seishun no Arcadia"
 ],
-"oceanhun": [
-"The Ocean Hunter: The Seven Seas Adventure"
-],
-"offroad": [
-"Ivan 'Ironman' Stewart's Super Off-Road"
-],
-"offrthnd": [
-"OffRoad Thunder SB 01-21-2000",
-"OffRoad Thunder SB 12-17-1999"
-],
 "olds": [
 "Oriental Legend Special / Xiyou Shi E Zhuan Super"
 ],
 "olibochu": [
 "Punching Kid"
+],
+"olybossd": [
+"Olympia BOSS A 8085",
+"Olympia BOSS B",
+"Olympia BOSS B 8085"
 ],
 "omegaf": [
 "Omega Fighter Special"
@@ -1475,24 +1605,30 @@
 "opengolf": [
 "Golfing Greats 2"
 ],
+"orangec": [
+"Orange Club - Maru-hi Ippatsu Kaihou",
+"Vip Club - Maru-hi Ippatsu Kaihou"
+],
+"orao": [
+"Orao 103"
+],
+"oric1": [
+"Oric Atmos",
+"Oric Telestrat"
+],
 "orleg2": [
-"Xiyou Shi E Zhuan 2",
-"Saiyuu Shakuyakuden 2"
+"Saiyuu Shakuyakuden 2",
+"Xiyou Shi E Zhuan 2"
 ],
 "osman": [
 "Cannon Dancer"
 ],
-"outr2": [
-"OutRun 2 Mini DX"
-],
-"outr2st": [
-"OutRun 2 SP Standard"
-],
 "p47": [
 "P-47: The Freedom Fighter"
 ],
-"pacland": [
-"PAC-LAND U.R."
+"p911": [
+"Police 24/7",
+"Police 911"
 ],
 "pacnpal": [
 "Pac-Man & Chomp Chomp"
@@ -1504,11 +1640,12 @@
 "pang3": [
 "Pang! 3: Kaitou Tachi no Karei na Gogo"
 ],
-"passsht": [
-"Center Court"
+"partnerw": [
+"Partner 1F/G",
+"Partner WF/G"
 ],
-"pbillrd": [
-"Perfect Billiards"
+"pasopia7": [
+"Pasopia 7 PA7007 with PA7170"
 ],
 "pbobble": [
 "Bubble Buster"
@@ -1517,8 +1654,22 @@
 "Bust-A-Move Again",
 "Puzzle Bobble 2X"
 ],
-"pc_drmro": [
-"Virus"
+"pc1512": [
+"PC1512 DD",
+"PC1512 HD10",
+"PC1512 HD20"
+],
+"pc1640": [
+"PC1640 DD",
+"PC1640 HD20",
+"PC1640 HD30"
+],
+"pc8201": [
+"PC-8201A",
+"PC-8300"
+],
+"pcd": [
+"PC-X"
 ],
 "pcktgal": [
 "Pocket Gal 2",
@@ -1547,8 +1698,8 @@
 "DrumMania 6th Mix"
 ],
 "pcnfrk7m": [
-"DrumMania 7th Mix power-up ver.",
-"DrumMania 7th Mix"
+"DrumMania 7th Mix",
+"DrumMania 7th Mix power-up ver."
 ],
 "pcnfrk8m": [
 "DrumMania 8th Mix"
@@ -1556,56 +1707,125 @@
 "pcnfrk9m": [
 "DrumMania 9th Mix"
 ],
-"pgalvip": [
-"Gals Hustler"
+"pcw8256": [
+"PCW9512",
+"PCW10",
+"PCW8512"
 ],
-"pipibibs": [
-"Pipi & Bibis"
+"pecom32": [
+"Pecom 64"
 ],
-"pitnrun": [
-"Pit & Run"
+"pegasus": [
+"Aamber Pegasus with RAM expansion unit"
+],
+"penbros": [
+"Hong Tian Lei"
+],
+"pg685": [
+"Simatic PG685 OUA12"
+],
+"photoply2k1it": [
+"Photo Play Masters 2001"
+],
+"pilot1k": [
+"Palm Pilot Personal",
+"Palm Pilot Pro",
+"Pilot 5000"
+],
+"pitboss": [
+"Player's Choice",
+"Dealer's Choice",
+"House of Cards"
+],
+"pkrmast": [
+"Miss Bingo"
+],
+"pktet346": [
+"Tetris"
 ],
 "plegends": [
 "Gouketsuji Gaiden - Saikyou Densetsu"
 ],
-"pleiads": [
-"Centuri Pleiades",
-"Pleiades"
-],
 "plotting": [
 "Flipull"
 ],
-"plsmaswd": [
-"Star Gladiator 2: Nightmare of Bilstein"
+"pmd851": [
+"PMD-85.2",
+"PMD-85.2A",
+"PMD-85.2B"
+],
+"pofo": [
+"Portfolio 2"
 ],
 "pokechmp": [
 "Billard List"
 ],
-"polepos": [
-"Pole Position Second Edition"
+"polgar": [
+"Mephisto Polgar 10 MHz"
+],
+"poly1": [
+"Poly 2 Learning System",
+"Poly Development System"
+],
+"poly88": [
+"Poly-8813"
+],
+"popnmt": [
+"Pop'n Music Mickey Tunes!"
+],
+"port32": [
+"Mephisto Portorose 16 Bit",
+"Mephisto Portorose 68030"
 ],
 "pow": [
 "Datsugoku - Prisoners of War"
 ],
-"powerdrv": [
-"Power-Drive U.R."
-],
 "powerins": [
 "Gouketsuji Ichizoku"
 ],
+"ppp": [
+"ParaParaParadise 1st Mix Plus"
+],
 "prehisle": [
 "Genshitou 1930's",
-"Wonsido 1930's",
-"Prehistoric Isle"
+"Wonsido 1930's"
+],
+"primoa32": [
+"Primo A-48",
+"Primo A-64",
+"Primo B-32"
+],
+"princ": [
+"Prin-C"
+],
+"prof180x": [
+"PROF-181X"
+],
+"progear": [
+"Progear no Arashi"
 ],
 "prtytime": [
 "Ganbare! Gonta!! 2 / Party Time: Gonta the Diver II"
 ],
+"psion3": [
+"Series 3s"
+],
+"psioncm": [
+"Organiser II Alpha POS 200",
+"Organiser II CM Multilingual",
+"Organiser II LA"
+],
+"psionhc120": [
+"HC 100",
+"HC 110"
+],
+"psionlz": [
+"Organiser II LZ64",
+"Organiser II P 432",
+"Organiser II P 464"
+],
 "pspikes": [
 "Super Volley '91"
-],
-"psyforce": [
-"Psychic Force EX"
 ],
 "ptblank": [
 "Gun Bullet"
@@ -1617,11 +1837,13 @@
 "Gunbalina"
 ],
 "puckman": [
-"Pac-Man",
-"Pac-Man & Ms. Pac-Man"
+"Pac-Man"
 ],
 "pumpipx2": [
 "Pump it Up EXTRA + Plus"
+],
+"puyofev": [
+"Puyo Puyo Fever"
 ],
 "puzzli2": [
 "Puzzli 2 Super / Pao Pao Yu Super"
@@ -1632,8 +1854,11 @@
 "pwrinst2": [
 "Gouketsuji Ichizoku 2"
 ],
-"qad": [
-"Quiz & Dragons"
+"px4": [
+"PX-4+"
+],
+"pyl601": [
+"Pyldin-601A"
 ],
 "qbert": [
 "Mello Yello Q*bert",
@@ -1642,11 +1867,12 @@
 "qix": [
 "Qix II"
 ],
-"qndream": [
-"Quiz Nanairo Dreams"
-],
 "quartet": [
 "Quartet 2"
+],
+"queenbee": [
+"Humlan's Lyckohjul",
+"X-Reel"
 ],
 "quester": [
 "Quester Special Edition"
@@ -1657,12 +1883,11 @@
 "quizpani": [
 "Medal Quiz Panicuru Roulette"
 ],
+"qvt102": [
+"QVT-102A"
+],
 "rabiolep": [
 "Rabbit Punch"
-],
-"racedriv": [
-"Race Drivin' Panorama",
-"Race Drivin' Compact"
 ],
 "rackemup": [
 "The Hustler"
@@ -1670,22 +1895,20 @@
 "racknrol": [
 "Hex Pool"
 ],
+"rad_gen1": [
+"Mega Drive Collection Volume 1"
+],
+"rad_gen2": [
+"Mega Drive Collection Volume 2"
+],
 "radarzon": [
 "Outline"
-],
-"rampage": [
-"Star Guards U.R. to Rampage U.R."
 ],
 "rastan": [
 "Rastan Saga"
 ],
 "rbff2": [
-"Real Bout Fatal Fury 2 - The Newcomers",
-"Real Bout Fatal Fury 2"
-],
-"rbibb": [
-"Atari R.B.I. Baseball",
-"V.S.R.B.I. Baseball"
+"Real Bout Fatal Fury 2 - The Newcomers"
 ],
 "rdft2": [
 "Raiden Fighters 2 - Operation Hell Dive 2000"
@@ -1702,14 +1925,8 @@
 "renegade": [
 "Nekketsu Kouha Kunio-kun"
 ],
-"repulse": [
-"'99: The Last War"
-],
 "rfjet": [
 "Raiden Fighters Jet 2000"
-],
-"ridgera2": [
-"Ridge Racer 2 Update 1"
 ],
 "ringdest": [
 "Super Muscle Bomber: The International Blowout"
@@ -1717,39 +1934,36 @@
 "riskchal": [
 "Gussun Oyoyo"
 ],
-"roadblst": [
-"Road Blasters Cockpit"
+"rm380z": [
+"RM-380Z, COS 3.4D/F",
+"RM-380Z, COS 3.4E/M",
+"RM-380Z, COS 4.0B/M with HRG"
 ],
-"roadedge": [
-"Roads Edge"
-],
-"robby": [
-"Robby Roto"
+"rm380zf": [
+"RM-380Z, COS 4.0B/F with HRG"
 ],
 "rockrage": [
 "Koi no Hotrock"
 ],
-"rocnrope": [
-"Rock and Rope"
-],
-"rodland": [
-"R&T"
-],
 "rohga": [
 "Wolf Fang: Kuuga 2001"
+],
+"rompers": [
+"Rompers"
+],
+"ronjans": [
+"Ron Jan"
 ],
 "roundup": [
 "Fitter",
 "T.T Fitter"
 ],
-"rpc600": [
-"Archimedes A7000",
-"Risc PC 700",
-"StrongARM Risc PC",
-"J233 StrongARM Risc PC"
+"royalcrd": [
+"Lucky Lady",
+"Reflex Cards"
 ],
-"rrvac": [
-"Ridge Racer V"
+"rt1715": [
+"Robotron PC-1715W"
 ],
 "rungun": [
 "Slam Dunk"
@@ -1757,14 +1971,14 @@
 "rungun2": [
 "Slam Dunk 2"
 ],
-"rvschool": [
-"Shiritsu Justice Gakuen: Legion of Heroes"
-],
 "rygar": [
 "Argus no Senshi"
 ],
 "sailormn": [
 "Pretty Soldier Sailor Moon"
+],
+"sailorws": [
+"Mahjong Sailor Wars-R"
 ],
 "salamand": [
 "Lifeforce"
@@ -1782,14 +1996,15 @@
 "Sengoku Ace"
 ],
 "sandor": [
-"Puzzle & Action: Treasure Hunt",
-"Puzzle & Action: BoMulEul Chajara"
+"Puzzle & Action: BoMulEul Chajara",
+"Puzzle & Action: Treasure Hunt"
 ],
 "sandscrp": [
 "Kuai Da Shizi Huangdi"
 ],
-"sarge": [
-"Sarge U.R."
+"sapi1": [
+"SAPI-1 ZPS 3",
+"SAPI-1 ZPS 2"
 ],
 "sasissu": [
 "DaeJeon! SanJeon SuJeon"
@@ -1800,8 +2015,15 @@
 "sauro": [
 "Sea Wolf"
 ],
-"savagere": [
-"Savage Reign"
+"savant": [
+"Savant II"
+],
+"sb2m600b": [
+"Challenger 1P MF Series 2",
+"Challenger 1P Series 2"
+],
+"sc3000": [
+"SC-3000/Super Control Station SF-7000"
 ],
 "scessjoe": [
 "Ashita no Joe"
@@ -1816,9 +2038,9 @@
 "Eggs"
 ],
 "scud": [
-"Scud Race - Twin/DX",
 "Scud Race / Sega Super GT - Deluxe",
-"Scud Race Plus / Sega Super GT Plus - Twin/DX"
+"Scud Race Plus / Sega Super GT Plus - Twin/DX",
+"Scud Race - Twin/DX"
 ],
 "sdi": [
 "Defense"
@@ -1826,12 +2048,15 @@
 "seabattl": [
 "Armada"
 ],
-"secretag": [
-"Sly Spy"
+"segacd": [
+"Mega-CD"
+],
+"segacd2": [
+"Mega-CD 2"
 ],
 "seganinj": [
-"Ninja",
-"Ninja Princess"
+"Ninja Princess",
+"Ninja"
 ],
 "seicross": [
 "Sector Zone"
@@ -1839,8 +2064,8 @@
 "senkyu": [
 "Battle Balls"
 ],
-"sexyboom": [
-"Super Puzzle"
+"sexygal": [
+"Sweet Gal"
 ],
 "sf2049te": [
 "San Francisco Rush 2049: Tournament Edition Unlocked"
@@ -1849,8 +2074,7 @@
 "Street Fighter II' Turbo: Hyper Fighting"
 ],
 "sfa": [
-"Street Fighter Zero",
-"Street Fighter Alpha"
+"Street Fighter Zero"
 ],
 "sfa2": [
 "Street Fighter Zero 2"
@@ -1858,35 +2082,30 @@
 "sfa3": [
 "Street Fighter Zero 3"
 ],
-"sfrushrk": [
-"San Francisco Rush The Rock Alcatraz Edition",
-"SF Rush the Rock"
-],
 "sfx": [
 "Skelagon"
 ],
 "sfzch": [
 "Street Fighter Alpha: Warriors' Dreams"
 ],
+"sg1000": [
+"SG-1000 II"
+],
 "sgemf": [
 "Pocket Fighter"
 ],
 "sgmast": [
-"Jumbo Ozaki Super Masters Golf",
-"Super Masters"
-],
-"shackled": [
-"Breywood"
+"Jumbo Ozaki Super Masters Golf"
 ],
 "shadfrce": [
 "Shadow Force - Henshin Ninja"
 ],
 "shadowld": [
-"Youkai Douchuuki"
+"Youkai Douchuuki)"
 ],
 "shadoww": [
-"Ninja Gaiden",
-"Ninja Ryukenden"
+"Ninja Ryukenden",
+"Ninja Gaiden"
 ],
 "shangkid": [
 "Hokuha Syourin Hiryu no Ken"
@@ -1901,9 +2120,21 @@
 "shogwarr": [
 "Fujiyama Buster"
 ],
+"showhand": [
+"Wangpai Duijue"
+],
 "sidebs2": [
-"Side by Side 2 Evoluzione RR",
-"Side by Side 2 Evoluzione"
+"Side by Side 2 Evoluzione",
+"Side by Side 2 Evoluzione RR"
+],
+"simultano": [
+"Chess Champion 2150"
+],
+"skattv": [
+"Trumpf As"
+],
+"skilldrp": [
+"Lucky Coin"
 ],
 "skullfng": [
 "Skull Fang - Kuhga Gaiden"
@@ -1920,20 +2151,25 @@
 "slrasslt": [
 "Solar Assault Revised"
 ],
-"smgolf": [
-"VS. Golf"
-],
 "smleague": [
 "Final Arch"
 ],
-"smlg99": [
-"World Series '99"
+"smoto20": [
+"Super Moto"
 ],
-"sokyugrt": [
-"Terra Diver"
+"sms": [
+"Master System",
+"Mark III",
+"Master System Store Display Unit"
+],
+"snes": [
+"Super Nintendo Entertainment System"
 ],
 "solomon": [
 "Solomon no Kagi"
+],
+"sorcerer": [
+"Sorcerer 2"
 ],
 "sotsugyo": [
 "Jor-eop Jeungmyeongseo"
@@ -1969,20 +2205,28 @@
 "speakres": [
 "Stratovox"
 ],
-"speedrac": [
-"Wheels & Racer"
-],
 "spf2t": [
-"Super Puzzle Fighter II X",
-"Puzzle Fighter"
+"Super Puzzle Fighter II X"
+],
+"spk306us": [
+"Super Poker / Formosa"
 ],
 "splash": [
 "New Splash",
+"Splash",
 "Painted Lady"
 ],
+"splatter": [
+"Splatterhouse"
+],
+"spooky": [
+"Spooky Night"
+],
+"sporzbx": [
+"Wireless Boxing"
+],
 "sprint1": [
-"Sprint 2",
-"Sprint One"
+"Sprint 2"
 ],
 "sprtauth": [
 "Sports Authority"
@@ -1996,6 +2240,9 @@
 "sranger": [
 "Rough Ranger"
 ],
+"srmp3": [
+"Real Mahjong Gold Yumehai / Super Real Mahjong GOLD part.2"
+],
 "srumbler": [
 "Rush & Crash"
 ],
@@ -2007,8 +2254,7 @@
 "Sogeki"
 ],
 "ssf2": [
-"Super Street Fighter II: The Tournament Battle",
-"Super Street Fighter 2: The New Challengers"
+"Super Street Fighter II: The Tournament Battle"
 ],
 "ssf2t": [
 "Super Street Fighter II X: Grand Master Challenge"
@@ -2016,17 +2262,18 @@
 "ssi": [
 "Majestic Twelve - The Space Invaders Part IV"
 ],
-"ssoldier": [
-"Perfect Soldiers"
-],
-"sspaceat": [
-"Super Space Attack"
+"sstar97": [
+"Super Star 97 / Ming Xing 97 Jianan Ban",
+"Zuanshi II"
 ],
 "sstrangr": [
 "Space Stranger 2"
 ],
 "sstriker": [
 "Mahou Daisakusen"
+],
+"st": [
+"MEGA ST"
 ],
 "stagger1": [
 "Red Hawk"
@@ -2037,17 +2284,14 @@
 "starforc": [
 "Mega Force"
 ],
-"stargrds": [
-"Star Guards U.R."
-],
-"startrek": [
-"Star Trek Cockpit"
-],
-"starwars": [
-"Star Wars Cockpit"
+"starzan": [
+"Jungle King"
 ],
 "statriv4": [
 "Triv Five Special Edition"
+],
+"ste": [
+"MEGA STe"
 ],
 "strgchmp": [
 "Handle Champ"
@@ -2061,8 +2305,8 @@
 "strnskil": [
 "The Guiness"
 ],
-"superchs": [
-"Super Chase"
+"superbik": [
+"Super Bike"
 ],
 "superten": [
 "Super Ten V8.2",
@@ -2076,41 +2320,45 @@
 "Puzzle Bang Bang"
 ],
 "suprglob": [
-"Beastie Feastie",
-"The Glob"
-],
-"suprgolf": [
-"Albatross"
+"The Glob",
+"Beastie Feastie"
 ],
 "suprmous": [
 "Funny Mouse"
+],
+"survival": [
+"Germ Wars"
 ],
 "svf": [
 "The J.League 1994",
 "Super Visual Soccer: Sega Cup"
 ],
+"svision": [
+"TV Link PAL"
+],
 "sws92": [
 "Super World Stadium '92 Gekitouban"
+],
+"swtpc09": [
+"swtpc S/09 OS9",
+"swtpc S/09 Sbug + piaide",
+"swtpc S/09 UNIBug + DMAF2"
+],
+"t2_l8": [
+"Terminator 2: Judgment Day Profanity"
 ],
 "tail2nos": [
 "Super Formula",
 "Tail to Nose - Great Championship"
 ],
-"tailg": [
-"Tail Gunner 2"
+"targeth": [
+"Quick Shots"
 ],
-"tankers": [
-"Fun Games"
-],
-"tapper": [
-"Root Beer Tapper"
-],
-"targ": [
-"TARC"
+"tarzanc": [
+"Tarzan"
 ],
 "tbyahhoo": [
-"Magical Twin Bee",
-"TwinBee Yahho!"
+"Magical Twin Bee"
 ],
 "tceptor": [
 "3-D Thunder Ceptor II"
@@ -2127,20 +2375,17 @@
 "techromn": [
 "Choukou Senki Kikaioh"
 ],
-"teedoff": [
-"Tee'd Off Golf"
+"tek4051": [
+"Tektronix 4052A"
+],
+"tek4107a": [
+"Tektronix 4109A"
 ],
 "tekken2": [
 "Tekken 2"
 ],
-"tekken51": [
-"Tekken 5"
-],
 "tengai": [
-"Sengoku Blade: Sengoku Ace Episode II"
-],
-"tenpindx": [
-"Ten Pin"
+"Sengoku Blade: Sengoku Ace Episode II / Tengai"
 ],
 "tgm2": [
 "Tetris: The Absolute - The Grand Master 2 Plus"
@@ -2148,14 +2393,14 @@
 "tgtbal96": [
 "Target Ball"
 ],
+"theglad": [
+"Tougenkyou - Road of the Sword"
+],
 "thehand": [
 "Got-Ya"
 ],
 "thndzone": [
 "Desert Assault"
-],
-"thoop2": [
-"Strikes Back"
 ],
 "tigeroad": [
 "Tora e no Michi"
@@ -2165,6 +2410,9 @@
 ],
 "tm2k": [
 "Touchmaster 2000"
+],
+"tmmjprd": [
+"Tokimeki Mahjong Paradise - Doki Doki Hen"
 ],
 "tmnt": [
 "Teenage Mutant Hero Turtles"
@@ -2178,11 +2426,17 @@
 "tnk3": [
 "T.A.N.K"
 ],
+"to7": [
+"T9000"
+],
+"to8": [
+"TO8D"
+],
 "toki": [
 "JuJu Densetsu"
 ],
-"tokyowar": [
-"Tokyo Wars SD"
+"tokyogal": [
+"Tokimeki Bishoujo"
 ],
 "topspeed": [
 "Full Throttle"
@@ -2191,31 +2445,26 @@
 "Toride II",
 "Toride II Bok Su Oi Jeon Adauchi Gaiden"
 ],
-"tornbase": [
-"Ball Park",
-"Tornado Baseball"
-],
 "trackfld": [
-"Hyper Olympic",
-"Track & Field Trophey Promotion",
-"Track and Field"
-],
-"tranqgun": [
-"Tranquilizer Gun"
+"Hyper Olympic"
 ],
 "transfrm": [
 "Astro Flash"
 ],
-"trapeze": [
-"Trampoline"
-],
 "travrusa": [
 "MotoRace USA",
-"MotoTour / Zippy Race",
-"Motor Race USA"
+"MotoTour / Zippy Race"
+],
+"trgheart": [
+"Trigger Heart Exelica"
 ],
 "tricktrp": [
 "Labyrinth Runner"
+],
+"triton72": [
+"Triton L4.1",
+"Triton L5.1",
+"Triton L5.2"
 ],
 "troangel": [
 "New Tropical Angel"
@@ -2226,18 +2475,22 @@
 "trstar": [
 "Prime Time Fighter"
 ],
+"trvmadns": [
+"Trivia Madness - Series B Question set"
+],
 "tshingen": [
 "Takeda Shingen"
-],
-"ttblock": [
-"Table Block"
-],
-"turfmast": [
-"Neo Turf Masters"
 ],
 "turtles": [
 "600",
 "Turpin"
+],
+"tutor": [
+"Tomy Pyuuta",
+"Tomy Pyuuta Jr."
+],
+"tvc64": [
+"TVC 64+"
 ],
 "twcup98": [
 "Tecmo World Soccer '98"
@@ -2248,17 +2501,14 @@
 "twincobr": [
 "Kyukyoku Tiger"
 ],
-"twineag2": [
-"Twin Eagle II"
-],
-"twineagl": [
-"Twin Eagle"
-],
 "twinfalc": [
 "Whizz"
 ],
 "twinhawk": [
 "Daisenpu"
+],
+"tx0_8kw": [
+"TX-0 original demonstrator"
 ],
 "uccops": [
 "Undercover Cops Alpha: Renewal Version"
@@ -2266,25 +2516,27 @@
 "uniwars": [
 "Gingateikoku no Gyakushu"
 ],
-"unkpacg": [
-"Coco Louco",
-"unknown 'Pac Man with cars' gambling game"
-],
 "unsquad": [
 "Area 88"
-],
-"upyoural": [
-"Alley Master"
 ],
 "usgames": [
 "Games V18.2",
 "Games V18.5",
-"Games V18.7C",
-"Games V21.1C",
-"Games V25.1"
+"Games V18.7C"
+],
+"uts20": [
+"UTS-10"
 ],
 "vamphalf": [
 "Vamp x1/2"
+],
+"van32": [
+"Mephisto TM Vancouver",
+"Mephisto Vancouver 16 Bit",
+"Mephisto Vancouver 68030"
+],
+"vanilla": [
+"Mahjong Final Bunny"
 ],
 "vaportra": [
 "Kuhga - Operation Code 'Vapor Trail'"
@@ -2295,14 +2547,14 @@
 "vendetta": [
 "Crime Fighters 2"
 ],
+"vesta": [
+"PK8000 Sura/Hobby"
+],
 "vf3": [
 "Virtua Fighter 3 Team Battle"
 ],
 "vf4": [
 "Virtua Fighter 4"
-],
-"victlap": [
-"Driver Victory Lap"
 ],
 "victory": [
 "Victor Banana"
@@ -2325,20 +2577,8 @@
 "vs2v991": [
 "Virtua Striker 2 '99"
 ],
-"vsfdf": [
-"Gun Games"
-],
 "vsgongf": [
 "Ring Fighter"
-],
-"vsgshoe": [
-"Gun Games"
-],
-"vtenis2c": [
-"Virtua Tennis 2"
-],
-"vtennis": [
-"Virtua Tennis"
 ],
 "vulcan": [
 "Gradius II: GOFER no Yabou"
@@ -2347,24 +2587,27 @@
 "Pyros",
 "Wardner no Mori"
 ],
-"warofbug": [
-"War of the Bugs"
-],
 "warpwarp": [
-"Rock-Ola Warp-Warp"
+"Warp Warp"
+],
+"wcat3": [
+"Wild Cat S"
 ],
 "wcbowl": [
 "World Class Bowling Tournament",
 "World Class Bowling Deluxe"
 ],
+"wccf322e": [
+"World Club Champion Football European Clubs 2004-2005 Ver.1.1"
+],
+"wccf341j": [
+"World Club Champion Football European Clubs 2004-2005 Ver.1.1"
+],
+"wcombat": [
+"World Combat / Warzaid"
+],
 "wcvol95": [
 "World Cup Volleyball '95 Extra Version"
-],
-"wecleman": [
-"WEC Le Mans"
-],
-"wg3dh": [
-"Wayne Gretzky's 3D Hockey Fatality Edition"
 ],
 "wiggie": [
 "Super Bar"
@@ -2382,13 +2625,18 @@
 "wiping": [
 "Rug Rats"
 ],
+"wivernwg": [
+"Wyvern Wings"
+],
 "wizdfire": [
 "Dark Seal 2"
 ],
+"wldkicks": [
+"World Kicks PCB"
+],
 "wof": [
 "Sangokushi II",
-"Tenchi wo Kurau II: Sekiheki no Tatakai",
-"Warriors of Faith"
+"Tenchi wo Kurau II: Sekiheki no Tatakai"
 ],
 "worldwar": [
 "Bermuda Triangle"
@@ -2396,48 +2644,47 @@
 "wpksoc": [
 "Kick for the Goal"
 ],
-"wrally": [
-"World Rallye Championship",
-"World Rally"
-],
-"wrungp": [
-"Model T-35HD"
-],
 "ws": [
 "Pro Yakyuu World Stadium '89",
 "Pro Yakyuu World Stadium '90"
 ],
-"wsbbgd": [
-"World Series 2001",
-"World Series Baseball",
-"World Series Baseball 2001"
+"wschamp": [
+"Wing Shooting Championship V1.00",
+"Wing Shooting Championship V1.01"
 ],
-"wwjgtin": [
-"Photo Finish"
+"wswan": [
+"WonderSwan Color"
 ],
-"xenophob": [
-"Xenophone"
+"wtchjack": [
+"Witch Jackpot"
+],
+"wwitch": [
+"Little Witch"
 ],
 "xexex": [
 "Orius"
 ],
-"xmen": [
-"X-Men 4 Player"
-],
 "xsleena": [
 "Solar-Warrior"
 ],
-"yamyam": [
-"Wise Guy"
+"xymg": [
+"Wanli Changcheng"
 ],
-"zeropnt2": [
-"Zero 2 Point"
+"xypmd": [
+"Xingyun Paomadi"
+],
+"yamyam": [
+"Wise Guy",
+"Yam! Yam!"
+],
+"z9001": [
+"KC 85/1.11",
+"KC 87.10",
+"KC 87.11"
 ],
 "zeroteam": [
-"New Zero Team",
 "Zero Team",
-"Zero Team Selection",
-"Zero Team Suicide Revival Kit",
+"New Zero Team",
 "Zero Team 2000"
 ],
 "zerotrgt": [
@@ -2446,8 +2693,8 @@
 "znpwfv": [
 "All Japan Pro-Wrestling Featuring Virtua"
 ],
-"zwackery": [
-"Zwackery U.R."
+"zoo": [
+"Zulu"
 ],
 "zzyzzyxx": [
 "Brix"
