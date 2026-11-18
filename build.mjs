@@ -213,6 +213,7 @@ const head = (title, desc, canonical) => `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap">
 <link rel="stylesheet" href="/m.css">
+<script src="/engagement.js" defer></script>
 </head>
 <body>
 <div class="scanlines"></div>
@@ -358,5 +359,11 @@ h1 { font-size: 1.25rem; color: var(--phosphor-bright); font-weight: bold; margi
 // 5. Sitemap covering every page.
 writeFileSync(join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   urls.map(u => `  <url><loc>${SITE}${u.loc}</loc><lastmod>${lastmod}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n') + '\n</urlset>\n');
+
+// Fixed, static endpoints for privacy-friendly aggregate action counts.
+mkdirSync(join(OUT, 'signals'), { recursive: true });
+for (const action of ['search-results', 'search-empty', 'machine-open', 'manual-open']) {
+  writeFileSync(join(OUT, 'signals', action + '.txt'), 'ok\n');
+}
 
 console.log(`Built ${machines.length} machine pages (+ index, sitemap) into ${OUT}/. ${DATA.length - machines.length} records without a MAME id were skipped.`);
